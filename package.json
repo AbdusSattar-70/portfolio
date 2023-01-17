@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/AbdusSattar-70/portfolio/issues"
   },
-  "homepage": "https://github.com/AbdusSattar-70/portfolio#readme",
+  "homepage": "https://github.com/AbdusSattar-70/portfolio#index.html",
   "devDependencies": {
     "hint": "^7.1.3",
     "stylelint": "^13.13.1",
