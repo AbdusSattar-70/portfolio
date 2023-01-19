@@ -363,6 +363,7 @@ recent work section style
 .skill-1,
 .skill-2,
 .skill-3 {
+  height: 400px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -388,9 +389,10 @@ recent work section style
 .Languages,
 .frameworks,
 .skills {
+  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
   font-family: "Inter", sans-serif;
   font-style: normal;
