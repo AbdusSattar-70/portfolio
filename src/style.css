@@ -203,6 +203,10 @@ recent work section style
   color: var(--color-white);
 }
 
+.card button {
+  color: var(--color-white);
+}
+
 .button button:hover {
   color: #ff6b00;
   background: #fff5e1;
