@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style-type: none;
+  list-style: none;
 }
 
 body {
@@ -24,6 +24,7 @@ body {
 :root {
   --color-white: rgb(255, 255, 255);
   --color-Safety-Orange: #ff6b00;
+  --color-black: #1c1a19;
 }
 
 /* ------------navbar  style ------------ */
@@ -46,7 +47,7 @@ header {
 .headline-container style
 ---------------------------- */
 .section {
-  background-color: #1c1a19;
+  background-color: var(--color-black);
   background-image: url("./images/background-1.svg");
   background-repeat: no-repeat;
   background-position: 100% 130%;
@@ -107,6 +108,11 @@ header {
 recent work section style
 ---------------------------- */
 
+.section-works {
+  background-color: #e5e5e5;
+  margin-bottom: 120px;
+}
+
 .works-title {
   height: 83px;
   margin-top: 120px;
@@ -116,7 +122,7 @@ recent work section style
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  color: #1c1a19;
+  color: var(--color-black);
   border-bottom: 1px solid #212121;
 }
 
@@ -181,6 +187,21 @@ recent work section style
   height: 40px;
   background-color: rgba(255, 255, 255, 0.24);
   border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.about-me button {
+  margin-top: 24px;
+  margin-right: 175px;
+  padding: 12px;
+  width: 161px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: var(--color-Safety-Orange);
+  color: var(--color-white);
 }
 
 .button button:hover {
@@ -275,4 +296,102 @@ recent work section style
   margin-top: 22px;
   background-color: var(--color-Safety-Orange);
   border: 1px solid var(--color-Safety-Orange);
+}
+
+/* about me section style */
+
+.about-section {
+  background-color: var(--color-black);
+}
+
+.about-me {
+  width: 375px;
+  height: 652px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./images/illustration-about-me-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 90%;
+}
+
+.about-me h2 {
+  width: 327px;
+  height: 79px;
+  margin-top: 120px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: var(--color-Safety-Orange);
+}
+
+.about-me p {
+  width: 327px;
+  height: 148px;
+  margin-top: 24px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+.about-me hr {
+  margin-top: 175px;
+  border: 1px solid var(--color-white);
+  width: 327px;
+  height: 1px;
+  margin-bottom: auto;
+}
+
+.skills-list {
+  height: 1250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.skill-1,
+.skill-2,
+.skill-3 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.skill-1::before {
+  content: url(./icons/Rectangle-1.svg);
+  margin-right: 10px;
+}
+
+.skill-2::before {
+  content: url(./icons/Rectangle-2.svg);
+  margin-right: 10px;
+}
+
+.skill-3::before {
+  content: url(./icons/Rectangle-3.svg);
+  margin-right: 10px;
+}
+
+.Languages,
+.frameworks,
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
 }
