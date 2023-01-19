@@ -4,20 +4,30 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 body {
   width: 375px;
-  height: 755px;
 }
 
 .navbar-container,
-.headline-container {
+.headline-container,
+.section-works {
   margin-left: 24px;
   margin-right: 24px;
 }
 
+/* color variable list */
+
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-Safety-Orange: #ff6b00;
+}
+
 /* ------------navbar  style ------------ */
+
 header {
   position: sticky;
   top: 0;
@@ -56,7 +66,7 @@ header {
 
 .headline-text h1 {
   font-family: "Crete Round", serif;
-  color: #ff6b00;
+  color: var(--color-Safety-Orange);
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -79,7 +89,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
 }
 
 .social-media-icons {
@@ -93,6 +103,176 @@ header {
   justify-content: space-around;
 }
 
-.social-media-icons li {
-  list-style-type: none;
+/* ------------------------
+recent work section style
+---------------------------- */
+
+.works-title {
+  height: 83px;
+  margin-top: 120px;
+  margin-bottom: 24px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+  border-bottom: 1px solid #212121;
+}
+
+.feature-image {
+  margin-top: 80px;
+}
+
+.title-post {
+  margin-top: 24px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.post-description {
+  height: 124px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.button {
+  display: flex;
+  margin-top: 12px 0;
+  gap: 12px;
+  width: 236px;
+  height: 40px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--color-white);
+}
+
+.button-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 12px 75px 22px 16px;
+  gap: 12px;
+  width: 236px;
+  height: 40px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--color-white);
+}
+
+.button-list button {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.button button:hover {
+  color: #ff6b00;
+  background: #fff5e1;
+  border: 1px solid var(--color-Safety-Orange);
+}
+
+.button button:active {
+  color: #f4f1f0;
+}
+
+.Recent-work:nth-child(1) .button button {
+  padding: 10px 12px;
+  background-color: var(--color-white);
+  border: 1px solid #8993a4;
+}
+
+.Recent-work .see-project-btn,
+.card .see-project-btn {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+}
+
+.Recent-work:nth-child(1) .button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+}
+
+.Recent-work .see-project-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  border: 1px solid var(--color-Safety-Orange);
+  padding: 12px;
+  width: 124px;
+  height: 48px;
+  background-color: var(--color-Safety-Orange);
+}
+
+/* work card style  */
+
+.work-cards {
+  display: grid;
+  grid-template-columns: 327px;
+  grid-template-rows: repeat(6, 386px);
+}
+
+.card {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: end;
+  background-image: url("./images/background-3.svg");
+  background-repeat: no-repeat;
+}
+
+.card h3 {
+  height: 81px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--color-white);
+  margin: 0 16px 12px 16px;
+}
+
+.description {
+  height: 87px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-white);
+  margin: 0 16px;
+}
+
+.card .see-project-btn {
+  width: 327px;
+  height: 48px;
+  margin-top: 22px;
+  background-color: var(--color-Safety-Orange);
+  border: 1px solid var(--color-Safety-Orange);
 }
