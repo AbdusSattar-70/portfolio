@@ -109,7 +109,6 @@ recent work section style
 ---------------------------- */
 
 .section-works {
-  background-color: #e5e5e5;
   margin-bottom: 120px;
 }
 
@@ -201,6 +200,10 @@ recent work section style
   font-size: 17px;
   line-height: 24px;
   background-color: var(--color-Safety-Orange);
+  color: var(--color-white);
+}
+
+.card button {
   color: var(--color-white);
 }
 
@@ -360,6 +363,7 @@ recent work section style
 .skill-1,
 .skill-2,
 .skill-3 {
+  height: 400px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -385,9 +389,10 @@ recent work section style
 .Languages,
 .frameworks,
 .skills {
+  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
   font-family: "Inter", sans-serif;
   font-style: normal;
