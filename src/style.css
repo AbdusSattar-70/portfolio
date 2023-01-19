@@ -14,7 +14,7 @@ body {
 
 .navbar-container,
 .headline-container,
-.section-works {
+.works-container {
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -108,28 +108,30 @@ header {
 recent work section style
 ---------------------------- */
 
-.section-works {
-  margin-bottom: 120px;
-}
-
 .works-title {
   height: 83px;
   margin-top: 120px;
-  margin-bottom: 24px;
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
   color: var(--color-black);
-  border-bottom: 1px solid #212121;
+}
+
+.Recent-work hr {
+  margin-top: 24px;
+  height: 0.5px;
+  border: 0.5px solid #212121;
 }
 
 .feature-image {
+  height: 237px;
   margin-top: 80px;
 }
 
 .title-post {
+  height: 36px;
   margin-top: 24px;
   font-family: "Crete Round", serif;
   font-style: normal;
@@ -140,7 +142,8 @@ recent work section style
 }
 
 .post-description {
-  height: 124px;
+  height: 147px;
+  margin-top: 12px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -149,43 +152,48 @@ recent work section style
   color: #091e42;
 }
 
-.button {
-  display: flex;
-  margin-top: 12px 0;
-  gap: 12px;
-  width: 236px;
+.tag-ul-1 {
+  width: 297px;
   height: 40px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag-ul-1 li {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: var(--color-white);
-}
-
-.button-list {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 12px 75px 22px 16px;
-  gap: 12px;
-  width: 236px;
-  height: 40px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: var(--color-white);
-}
-
-.button-list button {
-  display: flex;
-  align-items: center;
+  color: #091e42;
+  box-sizing: border-box;
   padding: 10px 12px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.24);
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  border: 1px solid #8993a4;
+}
+
+.Recent-work button {
+  width: 124px;
+}
+
+.see-project-btn {
+  width: 327px;
+  margin-top: 22px;
+}
+
+.Recent-work button,
+.see-project-btn {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+  height: 48px;
+  background-color: var(--color-Safety-Orange);
+  border: 1px solid var(--color-Safety-Orange);
 }
 
 .about-me button {
@@ -203,70 +211,23 @@ recent work section style
   color: var(--color-white);
 }
 
-.card button {
-  color: var(--color-white);
-}
-
-.button button:hover {
+.Recent-work button:hover,
+.see-project-btn:hover,
+.about-me button:hover {
   color: #ff6b00;
   background: #fff5e1;
   border: 1px solid var(--color-Safety-Orange);
 }
 
-.button button:active {
-  color: #f4f1f0;
-}
-
-.Recent-work:nth-child(1) .button button {
-  padding: 10px 12px;
-  background-color: var(--color-white);
-  border: 1px solid #8993a4;
-}
-
-.Recent-work .see-project-btn,
-.card .see-project-btn {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--color-white);
-}
-
-.Recent-work:nth-child(1) .button {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #091e42;
-}
-
-.Recent-work .see-project-btn {
-  display: flex;
-  align-items: center;
-  margin-top: 12px;
-  margin-bottom: 24px;
-  border: 1px solid var(--color-Safety-Orange);
-  padding: 12px;
-  width: 124px;
-  height: 48px;
-  background-color: var(--color-Safety-Orange);
-}
-
-/* work card style  */
-
 .work-cards {
   display: grid;
-  grid-template-columns: 327px;
-  grid-template-rows: repeat(6, 386px);
+  grid-template: repeat(6, 386px) / 1fr;
 }
 
 .card {
   display: flex;
-  flex-flow: wrap column;
-  justify-content: end;
+  flex-direction: column;
+  justify-content: flex-end;
   background-image: url("./images/background-3.svg");
   background-repeat: no-repeat;
 }
@@ -290,26 +251,40 @@ recent work section style
   font-size: 16px;
   line-height: 24px;
   color: var(--color-white);
-  margin: 0 16px;
+  margin: 12px 16px;
 }
 
-.card .see-project-btn {
-  width: 327px;
-  height: 48px;
-  margin-top: 22px;
-  background-color: var(--color-Safety-Orange);
-  border: 1px solid var(--color-Safety-Orange);
+.card-ul {
+  height: 40px;
+  margin-top: 12px;
+  margin-right: 45px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-ul li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 0.24);
+  color: var(--color-white);
+  box-sizing: border-box;
+  padding: 10px 12px;
 }
 
 /* about me section style */
 
 .about-section {
   background-color: var(--color-black);
+  margin-top: 120px;
 }
 
 .about-me {
-  width: 375px;
   height: 652px;
+  margin-left: 24px;
+  padding-right: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -319,7 +294,6 @@ recent work section style
 }
 
 .about-me h2 {
-  width: 327px;
   height: 79px;
   margin-top: 120px;
   font-family: "Crete Round", serif;
@@ -332,7 +306,6 @@ recent work section style
 }
 
 .about-me p {
-  width: 327px;
   height: 148px;
   margin-top: 24px;
   font-family: "Inter", sans-serif;
