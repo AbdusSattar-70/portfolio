@@ -4,20 +4,31 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
   width: 375px;
-  height: 755px;
 }
 
 .navbar-container,
-.headline-container {
+.headline-container,
+.works-container {
   margin-left: 24px;
   margin-right: 24px;
 }
 
+/* color variable list */
+
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-Safety-Orange: #ff6b00;
+  --color-black: #1c1a19;
+}
+
 /* ------------navbar  style ------------ */
+
 header {
   position: sticky;
   top: 0;
@@ -36,7 +47,7 @@ header {
 .headline-container style
 ---------------------------- */
 .section {
-  background-color: #1c1a19;
+  background-color: var(--color-black);
   background-image: url("./images/background-1.svg");
   background-repeat: no-repeat;
   background-position: 100% 130%;
@@ -56,7 +67,7 @@ header {
 
 .headline-text h1 {
   font-family: "Crete Round", serif;
-  color: #ff6b00;
+  color: var(--color-Safety-Orange);
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -79,7 +90,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
 }
 
 .social-media-icons {
@@ -93,6 +104,272 @@ header {
   justify-content: space-around;
 }
 
-.social-media-icons li {
-  list-style-type: none;
+/* ------------------------
+recent work section style
+---------------------------- */
+
+.works-title {
+  height: 83px;
+  margin-top: 120px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--color-black);
+}
+
+.Recent-work hr {
+  margin-top: 24px;
+  height: 0.5px;
+  border: 0.5px solid #212121;
+}
+
+.feature-image {
+  height: 237px;
+  margin-top: 80px;
+}
+
+.title-post {
+  height: 36px;
+  margin-top: 24px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.post-description {
+  height: 147px;
+  margin-top: 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.tag-ul-1 {
+  width: 297px;
+  height: 40px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag-ul-1 li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+}
+
+.Recent-work button {
+  width: 124px;
+}
+
+.see-project-btn {
+  width: 327px;
+  margin-top: 22px;
+}
+
+.Recent-work button,
+.see-project-btn {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+  height: 48px;
+  background-color: var(--color-Safety-Orange);
+  border: 1px solid var(--color-Safety-Orange);
+}
+
+.about-me button {
+  margin-top: 24px;
+  margin-right: 175px;
+  padding: 12px;
+  width: 161px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: var(--color-Safety-Orange);
+  color: var(--color-white);
+}
+
+.Recent-work button:hover,
+.see-project-btn:hover,
+.about-me button:hover {
+  color: #ff6b00;
+  background: #fff5e1;
+  border: 1px solid var(--color-Safety-Orange);
+}
+
+.work-cards {
+  display: grid;
+  grid-template: repeat(6, 386px) / 1fr;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("./images/background-3.svg");
+  background-repeat: no-repeat;
+}
+
+.card h3 {
+  height: 81px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--color-white);
+  margin: 0 16px 12px 16px;
+}
+
+.description {
+  height: 87px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-white);
+  margin: 12px 16px;
+}
+
+.card-ul {
+  height: 40px;
+  margin-top: 12px;
+  margin-right: 45px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-ul li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 0.24);
+  color: var(--color-white);
+  box-sizing: border-box;
+  padding: 10px 12px;
+}
+
+/* about me section style */
+
+.about-section {
+  background-color: var(--color-black);
+  margin-top: 120px;
+}
+
+.about-me {
+  height: 652px;
+  margin-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./images/illustration-about-me-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 90%;
+}
+
+.about-me h2 {
+  height: 79px;
+  margin-top: 120px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: var(--color-Safety-Orange);
+}
+
+.about-me p {
+  height: 148px;
+  margin-top: 24px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+.about-me hr {
+  margin-top: 175px;
+  border: 1px solid var(--color-white);
+  width: 327px;
+  height: 1px;
+  margin-bottom: auto;
+}
+
+.skills-list {
+  height: 1250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.skill-1,
+.skill-2,
+.skill-3 {
+  height: 400px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.skill-1::before {
+  content: url(./icons/Rectangle-1.svg);
+  margin-right: 10px;
+}
+
+.skill-2::before {
+  content: url(./icons/Rectangle-2.svg);
+  margin-right: 10px;
+}
+
+.skill-3::before {
+  content: url(./icons/Rectangle-3.svg);
+  margin-right: 10px;
+}
+
+.Languages,
+.frameworks,
+.skills {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
 }
