@@ -360,6 +360,7 @@ recent work section style
   content: url(./icons/Rectangle-3.svg);
   margin-right: 10px;
 }
+
 .Languages,
 .frameworks,
 .skills {
@@ -404,6 +405,35 @@ form input {
   color: #979493;
   border-style: none;
   border-bottom: 1px solid #dbd8d7;
+}
+
+textarea {
+  width: 327px;
+  height: 114px;
+  margin-bottom: 24px;
+  padding: 12px;
+  background-color: #fbf8f7;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+}
+
+form button {
+  padding: 12px;
+  margin: 0 98px;
+  width: 131px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: var(--color-Safety-Orange);
+  border: 1px solid var(--color-Safety-Orange);
+  color: var(--color-white);
 }
 
 footer {
