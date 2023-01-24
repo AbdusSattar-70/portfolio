@@ -15,6 +15,7 @@ body {
 .navbar-container,
 .headline-container,
 .works-container,
+.form-container,
 .footer {
   margin-left: 24px;
   margin-right: 24px;
@@ -359,7 +360,6 @@ recent work section style
   content: url(./icons/Rectangle-3.svg);
   margin-right: 10px;
 }
-
 .Languages,
 .frameworks,
 .skills {
@@ -399,25 +399,4 @@ footer {
   margin: 13px 121px 0 120px;
   background-color: #0d151e;
   border-radius: 10px;
-}
-
-button:enabled {
-  background: #f55800;
-}
-
-button:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  cursor: pointer;
-  transform: scale(1.1);
-  color: #f55800;
-}
-
-button:active {
-  background: #e05304;
-}
-
-button:disabled {
-  background: #f4f1f0;
-  color: #5b5957;
 }
