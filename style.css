@@ -15,8 +15,7 @@ body {
 .navbar-container,
 .headline-container,
 .works-container,
-.form-container,
-.footer {
+.form-container {
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -173,6 +172,21 @@ recent work section style
   box-sizing: border-box;
   padding: 10px 12px;
   border: 1px solid #8993a4;
+}
+
+form button {
+  padding: 12px;
+  margin: 0 98px;
+  width: 131px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: var(--color-Safety-Orange);
+  border: 1px solid var(--color-Safety-Orange);
+  color: var(--color-white);
 }
 
 .Recent-work button {
@@ -419,21 +433,7 @@ textarea {
   font-size: 15px;
   line-height: 24px;
   color: #3c3a39;
-}
-
-form button {
-  padding: 12px;
-  margin: 0 98px;
-  width: 131px;
-  height: 48px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  background-color: var(--color-Safety-Orange);
-  border: 1px solid var(--color-Safety-Orange);
-  color: var(--color-white);
+  border-style: none;
 }
 
 footer {
@@ -450,12 +450,16 @@ footer {
 }
 
 .social_navigation {
+  margin: 0 87px;
+  width: 200px;
+  height: 40px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .liner {
-  height: 4px;
+  height: 5px;
   width: 134px;
   margin: 13px 121px 0 120px;
   background-color: #0d151e;
