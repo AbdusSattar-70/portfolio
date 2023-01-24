@@ -14,7 +14,8 @@ body {
 
 .navbar-container,
 .headline-container,
-.works-container {
+.works-container,
+.footer {
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -372,4 +373,52 @@ recent work section style
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
+}
+
+.footer {
+  background-color: white;
+  padding-bottom: 2%;
+  margin-top: 120px;
+}
+
+.social_navigation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .item {
+  color: #505f79 !important;
+}
+
+.footer .liner {
+  height: 4px;
+  width: 145px;
+  margin: 15px auto auto auto;
+  background: #0d151e;
+  border-radius: 10px;
+}
+
+button {
+  transition: all 1s ease;
+}
+
+button:enabled {
+  background: #f55800;
+}
+
+button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  cursor: pointer;
+  transform: scale(1.1);
+  color: #f55800;
+}
+
+button:active {
+  background: #e05304;
+}
+
+button:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
