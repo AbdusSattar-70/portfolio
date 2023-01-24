@@ -375,6 +375,37 @@ recent work section style
   line-height: 43px;
 }
 
+/* contact form and footer style */
+
+.form-container p {
+  height: 216px;
+  margin-top: 120px;
+  margin-bottom: 58px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+form input {
+  height: 48px;
+  width: 327px;
+  margin: 24px 0;
+  padding: 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
+  color: #979493;
+  border-style: none;
+  border-bottom: 1px solid #dbd8d7;
+}
+
 footer {
   height: 81px;
   margin-top: 124px;
