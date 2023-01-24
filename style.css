@@ -14,7 +14,8 @@ body {
 
 .navbar-container,
 .headline-container,
-.works-container {
+.works-container,
+.form-container {
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -171,6 +172,21 @@ recent work section style
   box-sizing: border-box;
   padding: 10px 12px;
   border: 1px solid #8993a4;
+}
+
+form button {
+  padding: 12px;
+  margin: 0 98px;
+  width: 131px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: var(--color-Safety-Orange);
+  border: 1px solid var(--color-Safety-Orange);
+  color: var(--color-white);
 }
 
 .Recent-work button {
@@ -372,4 +388,80 @@ recent work section style
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
+}
+
+/* contact form and footer style */
+
+.form-container p {
+  height: 216px;
+  margin-top: 120px;
+  margin-bottom: 58px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+form input {
+  height: 48px;
+  width: 327px;
+  margin: 24px 0;
+  padding: 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
+  color: #979493;
+  border-style: none;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+textarea {
+  width: 327px;
+  height: 114px;
+  margin-bottom: 24px;
+  padding: 12px;
+  background-color: #fbf8f7;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+  border-style: none;
+}
+
+footer {
+  height: 81px;
+  margin-top: 124px;
+  margin-bottom: 8px;
+}
+
+.top-line {
+  width: 375px;
+  height: 1px;
+  margin-bottom: 15px;
+  border: 0.1px solid #dfe1e6;
+}
+
+.social_navigation {
+  margin: 0 87px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.liner {
+  height: 5px;
+  width: 134px;
+  margin: 13px 121px 0 120px;
+  background-color: #0d151e;
+  border-radius: 10px;
 }
