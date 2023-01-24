@@ -100,6 +100,11 @@ header {
   margin-bottom: 120px;
 }
 
+form ul {
+  display: flex;
+  flex-direction: column;
+}
+
 .social-media-icons ul {
   display: flex;
   justify-content: space-around;
@@ -227,12 +232,25 @@ form button {
   color: var(--color-white);
 }
 
-.Recent-work button:hover,
-.see-project-btn:hover,
-.about-me button:hover {
-  color: #ff6b00;
-  background: #fff5e1;
+button:enabled {
+  background-color: var(--color-Safety-Orange);
+  color: var(--color-white);
+}
+
+button:hover {
+  background-color: #fff5e1;
   border: 1px solid var(--color-Safety-Orange);
+  color: var(--color-Safety-Orange);
+}
+
+button:active {
+  background-color: #e05304;
+  color: var(--color-white);
+}
+
+button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
 
 .work-cards {
@@ -391,6 +409,11 @@ form button {
 }
 
 /* contact form and footer style */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
 
 .form-container p {
   height: 216px;
