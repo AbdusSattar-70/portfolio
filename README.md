@@ -1,8 +1,17 @@
 <a name="readme-top"></a>
 
 <div align="center">
- <h3><b>portfolio is my demo project for learning Git and GitHub workflows</b></h3>
-<h5>This is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed. </h5>
+ <h3><b>Portfolio is my demo project for learning Git and GitHub workflows</b></h3>
+<h5>This is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed. In this milestone, I create a complete mobile version. It has four main sections headline, works, about me, and a contact form. Thanks ❤️ to my coding partner ## @Santosh-Konappanavar for contributing to creating the contact form section.
+ </h5>
+</div>
+
+<div align="center">
+<h3><b>Mobible version screenshot</b></h3>
+<img src="images/Screenshot-1.png" alt="screenshoot" width="140"  height="auto"/>
+<img src="images/Screenshot-2png.png" alt="screenshoot" width="140"  height="auto"/>
+<img src="images/screencapture-3.png" alt="screenshoot" width="140"  height="auto"/>
+<img src="images/screencapture-4.png" alt="screenshoot" width="140"  height="auto"/>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -135,8 +144,6 @@ gitHub
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Mobile version]**
-- [ ] **[Contact form]**
 - [ ] **[Desktop version]**
 - [ ] **[Application deploy]**
 - [ ] **[Validate contact form]**
@@ -167,6 +174,8 @@ If you like this project you can use it following [MIT](./LICENSE) license.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+Thanks ❤️ to my coding partner ## @Santosh-Konappanavar for contributing to creating the contact form section.
 
 I would like to thank and appreciate who contributes this project.
 
