@@ -250,14 +250,37 @@
 
     <!-- About me section end -->
     <!-- contact form section  -->
-<section>
-  <div class="form-container">
-    <p>
-      I'm always interested in hearing about new projects,
-      so if you'd like to chat please get in touch.
-    </p>
-  </div>
-</section>
+    <section>
+      <div class="form-container">
+        <p>
+          I'm always interested in hearing about new projects,
+          so if you'd like to chat please get in touch.
+        </p>
+        <form action="https://formspree.io/f/xeqwonbn" method="POST">
+          <ul>
+            <li>
+              <label for="name">
+                <input type="text" name="name" id="name" maxlength="30" required placeholder="Full name">
+              </label>
+            </li>
+            <li>
+              <label for="email">
+                <input type="email" name="email" id="email" required placeholder="Email address">
+              </label>
+            </li>
+            <li>
+              <label for="message">
+                <textarea name="message" id="message" maxlength="500" required placeholder="Enter text here">
+            </textarea>
+              </label>
+            </li>
+            <li>
+              <button type="submit">Get in touch</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
 
   </main>
 </body>
