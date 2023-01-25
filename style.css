@@ -496,12 +496,16 @@ footer {
   border-radius: 10px;
 }
 
-/* desktop version style using media query */
+/* -------------------------------------------------------
+ -------desktop version style using media query--------
+------------------------------------------------- */
 
 @media screen and (min-width: 768px) {
   body {
     width: 100%;
   }
+
+  /* header/ navbar media query start */
 
   .navbar-container {
     min-height: 72px;
@@ -527,5 +531,47 @@ footer {
     font-size: 15px;
     line-height: 20px;
     color: var(--color-white);
+  }
+
+  /* header/ navbar media query end */
+  /* headline/homepage media query star */
+
+  .section {
+    height: 500px;
+    background-color: var(--color-black);
+    background-image: url("./images/desktop-1.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: 100%;
+    background-position-y: 90%;
+  }
+
+  .headline-container {
+    width: 50%;
+    flex-direction: row-reverse;
+  }
+
+  .headline-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    height: 100%;
+    padding-right: 10%;
+  }
+
+  .headline-text h1 {
+    font-size: 50px;
+  }
+
+  .headline-text h3 {
+    font-size: 25px;
+  }
+
+  .social-media-icons {
+    width: 15%;
+    margin-top: 25%;
+    flex-direction: column;
+    justify-content: center;
   }
 }
