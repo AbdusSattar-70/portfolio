@@ -495,3 +495,37 @@ footer {
   background-color: #0d151e;
   border-radius: 10px;
 }
+
+/* desktop version style using media query */
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .navbar-container {
+    min-height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-toggler {
+    display: none;
+  }
+
+  .nav-ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .nav-ul li a {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-white);
+  }
+}
