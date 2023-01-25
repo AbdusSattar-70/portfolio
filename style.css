@@ -15,8 +15,7 @@ body {
 .navbar-container,
 .headline-container,
 .works-container,
-.form-container,
-.footer {
+.form-container {
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -485,7 +484,7 @@ footer {
 .liner {
   height: 5px;
   width: 134px;
-  margin: 13px 0 8px 142px;
+  margin: 13px 0 8px 125px;
   background-color: #0d151e;
   border-radius: 10px;
 }
