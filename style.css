@@ -578,9 +578,9 @@ footer {
   /* work section media query for desktop version */
 
   .works-container {
-    min-width: 600px;
+    width: 85%;
     min-height: 800px;
-    margin: 1px 50px;
+    margin: 1px 10%;
     display: flex;
     flex-direction: column;
   }
@@ -653,6 +653,10 @@ footer {
     padding: 12px 8px;
   }
 
+  form button {
+    margin-left: 10%;
+  }
+
   .post-text button {
     height: 35px;
     width: 40%;
@@ -665,42 +669,48 @@ footer {
 
   .desktop-cards {
     display: grid;
-    grid-template: repeat(2, minmax(320px, 1fr)) / repeat(3, minmax(220px, 1fr));
-    grid-gap: 4%;
+    grid-template: repeat(2, minmax(350px, 1fr)) / repeat(3, minmax(220px, 1fr));
+    grid-gap: 2%;
   }
 
   .desktop-card-4 {
     background-image: url("images/dc-4.svg");
     background-repeat: no-repeat;
-    background-size: 130%;
+    background-size: 100%;
+    background-position-y: 100%;
   }
 
   .desktop-card-2,
   .desktop-card-5 {
     background-image: url("images/dc-2.svg");
     background-repeat: no-repeat;
-    background-size: 130%;
+    background-size: 100%;
+    background-position-y: 100%;
   }
 
   .desktop-card-3,
   .desktop-card-6 {
     background-image: url("images/dc-3.svg");
     background-repeat: no-repeat;
-    background-size: 130%;
+    background-size: 100%;
+    background-position-y: 100%;
   }
 
   .desktop-card-1 {
     background-image: url("images/dc-1.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: stretch;
+    background-size: 100%;
+    background-position-y: 80%;
+  }
+
+  .dummy-text {
+    display: none;
   }
 
   .desktop-card-1 button {
+    margin-top: 140%;
     height: 40px;
+    width: 100%;
     border: 1px solid var(--color-Safety-Orange);
   }
 
@@ -711,7 +721,7 @@ footer {
   }
 
   .card-text {
-    margin: 0 4%;
+    margin: 0 6%;
   }
 
   .desk-card h3 {
@@ -721,7 +731,7 @@ footer {
     font-size: 25px;
     line-height: 30px;
     color: var(--color-white);
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 
   .desk-card p {
@@ -731,13 +741,14 @@ footer {
     font-size: 12px;
     line-height: 13px;
     color: var(--color-white);
-    margin-bottom: 10%;
+    padding-right: 15%;
+    margin-bottom: 5%;
   }
 
   .desk-card ul {
-    height: 12%;
-    width: 60%;
-    margin-bottom: 10%;
+    height: 15%;
+    width: 80%;
+    margin-bottom: 5%;
     display: flex;
     justify-content: space-between;
   }
@@ -745,12 +756,34 @@ footer {
   .desk-card li {
     font-family: "Inter", sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 8px;
-    color: #091e42;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--color-white);
     box-sizing: border-box;
-    padding: 8px 4px;
+    padding: 7px 6px;
     background-color: rgba(255, 255, 255, 0.24);
+  }
+
+  .form-container p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    align-items: center;
+    color: #262626;
+    text-align: left;
+    margin-top: 25px;
+    word-wrap: break-word;
+  }
+
+  .card-text p:hover,
+  .card-text p:focus,
+  .card-text h3:hover,
+  .card-text h3:focus,
+  .desk-card li:hover,
+  .desk-card li:focus {
+    color: var(--color-Safety-Orange);
   }
 
   /* about me section media query for desktop */
@@ -794,13 +827,16 @@ footer {
 
   .form-container {
     flex-direction: row;
+    justify-content: center;
     align-items: baseline;
     margin: 5% 10%;
   }
 
-  .form-container p {
-    margin-top: 25px;
-    margin-right: 20px;
+  #name,
+  #email,
+  #message {
+    width: 450px;
+    margin-left: 10%;
   }
 
   .footer {
