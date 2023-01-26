@@ -195,7 +195,7 @@ form button {
 }
 
 .Recent-work button {
-  min-width: 124px;
+  width: 124px;
 }
 
 .see-project-btn {
@@ -256,6 +256,10 @@ button:disabled {
 .work-cards {
   display: grid;
   grid-template: repeat(6, 386px) / 1fr;
+}
+
+.desktop-cards {
+  display: none;
 }
 
 .card {
@@ -574,6 +578,9 @@ footer {
   /* work section media query for desktop version */
 
   .works-container {
+    min-width: 600px;
+    min-height: 800px;
+    margin: 1px 50px;
     display: flex;
     flex-direction: column;
   }
@@ -581,52 +588,56 @@ footer {
   .work-title-dv {
     width: 100%;
     height: 100%;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
   }
 
   .works-title {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
     margin: 2px;
     margin-top: 55px;
-    width: 15%;
+    width: 20%;
   }
 
   .work-title-dv hr {
     margin: 0;
-    width: 85%;
+    width: 80%;
     height: 1px;
     background-color: #0d151e;
   }
 
   .feature-area {
-    min-width: 750px;
+    height: 50%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 
   .feature-image {
     width: 60%;
-    height: 448px;
+    height: 70%;
+    margin: 0 10px 0 0;
   }
 
   .post-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
     width: 40%;
-    height: 300px;
-    padding: 10px;
-    padding-bottom: 100px;
   }
 
   .title-post {
     font-size: 20px;
-    line-height: 20px;
+    margin-top: 0;
   }
 
   .post-description {
-    font-size: 15px;
-    margin-top: 0;
-    margin-bottom: 0;
+    font-size: 80%;
+    line-height: 95%;
+    height: 70%;
   }
 
   .tag-ul-1 {
@@ -634,51 +645,112 @@ footer {
     justify-content: space-around;
     width: 70%;
     height: 10%;
-    margin-bottom: 6px;
   }
 
   .tag-ul-1 li {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 4px;
     padding: 12px 8px;
   }
 
   .post-text button {
-    padding: 6px 6px;
-    width: 10%;
-    font-size: 15px;
-    margin-top: 12px;
+    height: 35px;
+    width: 40%;
+    font-size: 95%;
   }
 
   .work-cards {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template: repeat(2, minmax(450px, 1fr)) / repeat(3, minmax(200px, 1fr));
-    grid-gap: 24px;
-  }
-
-  .card {
-    justify-content: space-around;
-    align-content: flex-end;
-    align-items: center;
-  }
-
-  .card button {
     display: none;
   }
 
-  .card-ul {
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-    height: 5%;
+  .desktop-cards {
+    display: grid;
+    grid-template: repeat(2, minmax(320px, 1fr)) / repeat(3, minmax(220px, 1fr));
+    grid-gap: 4%;
   }
 
-  .card-ul li {
-    font-size: 10px;
-    line-height: 4px;
-    padding: 12px 8px;
+  .desktop-card-4 {
+    background-image: url("images/dc-4.svg");
+    background-repeat: no-repeat;
+    background-size: 130%;
+  }
+
+  .desktop-card-2,
+  .desktop-card-5 {
+    background-image: url("images/dc-2.svg");
+    background-repeat: no-repeat;
+    background-size: 130%;
+  }
+
+  .desktop-card-3,
+  .desktop-card-6 {
+    background-image: url("images/dc-3.svg");
+    background-repeat: no-repeat;
+    background-size: 130%;
+  }
+
+  .desktop-card-1 {
+    background-image: url("images/dc-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+
+  .desktop-card-1 button {
+    height: 40px;
+    border: 1px solid var(--color-Safety-Orange);
+  }
+
+  .desk-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .card-text {
+    margin: 0 4%;
+  }
+
+  .desk-card h3 {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--color-white);
+    margin-bottom: 10%;
+  }
+
+  .desk-card p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    color: var(--color-white);
+    margin-bottom: 10%;
+  }
+
+  .desk-card ul {
+    height: 12%;
+    width: 60%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desk-card li {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    color: #091e42;
+    box-sizing: border-box;
+    padding: 8px 4px;
+    background-color: rgba(255, 255, 255, 0.24);
   }
 
   /* about me section media query for desktop */
@@ -722,7 +794,8 @@ footer {
 
   .form-container {
     flex-direction: row;
-    margin: 0 10%;
+    align-items: baseline;
+    margin: 5% 10%;
   }
 
   .form-container p {
