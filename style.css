@@ -780,6 +780,11 @@ footer {
     word-wrap: break-word;
   }
 
+  .about-me p {
+    margin-right: 20%;
+    margin-top: 30%;
+  }
+
   .card-text p:hover,
   .card-text p:focus,
   .card-text h3:hover,
@@ -811,11 +816,6 @@ footer {
     height: 60%;
     margin-left: 10%;
     margin-top: 15%;
-  }
-
-  .about-me p {
-    margin-right: 20%;
-    margin-top: 30%;
   }
 
   .about-container hr {
