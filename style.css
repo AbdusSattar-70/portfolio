@@ -808,8 +808,14 @@ footer {
     align-items: flex-start;
     background-image: none;
     width: 50%;
-    height: 70%;
+    height: 60%;
     margin-left: 10%;
+    margin-top: 15%;
+  }
+
+  .about-me p {
+    margin-right: 20%;
+    margin-top: 30%;
   }
 
   .about-container hr {
