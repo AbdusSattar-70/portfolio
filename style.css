@@ -860,4 +860,12 @@ footer {
   button {
     transition: all 2s ease;
   }
+
+  button:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    cursor: pointer;
+    transform: scale(1.2);
+    color: #f55800;
+  }
 }
