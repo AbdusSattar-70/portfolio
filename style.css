@@ -794,6 +794,10 @@ footer {
     color: var(--color-Safety-Orange);
   }
 
+  button {
+    transition: all 2s ease;
+  }
+
   /* about me section media query for desktop */
 
   .about-section {
@@ -855,9 +859,5 @@ footer {
 
   .liner {
     display: none;
-  }
-
-  button {
-    transition: all 2s ease;
   }
 }
