@@ -856,4 +856,8 @@ footer {
   .liner {
     display: none;
   }
+
+  button {
+    transition: all 2s ease;
+  }
 }
