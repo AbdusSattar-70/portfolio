@@ -34,12 +34,12 @@ footer {
 header {
   position: sticky;
   top: 0;
-  height: 92px;
+  height: 100%;
   background-color: #3c3a39;
 }
 
 .navbar-container {
-  height: 90px;
+  height: 80%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -506,7 +506,7 @@ footer {
   /* header/ navbar media query start */
 
   .navbar-container {
-    min-height: 72px;
+    height: 72px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -521,6 +521,11 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+  }
+
+  .nav-ul img {
+    height: 45%;
+    width: 45%;
   }
 
   .nav-ul li a {
@@ -562,10 +567,13 @@ footer {
 
   .headline-text h1 {
     font-size: 50px;
+    line-height: 90%;
   }
 
   .headline-text h3 {
     font-size: 25px;
+    color: var(--color-white);
+    margin: 4% 0;
   }
 
   .social-media-icons {
@@ -578,55 +586,51 @@ footer {
   /* work section media query for desktop version */
 
   .works-container {
-    width: 85%;
-    min-height: 800px;
-    margin: 1px 10%;
+    width: 75%;
+    margin: 0 12%;
     display: flex;
     flex-direction: column;
   }
 
   .work-title-dv {
-    width: 100%;
-    height: 100%;
     margin-bottom: 0;
     display: flex;
     align-items: center;
   }
 
   .works-title {
-    font-size: 16px;
+    font-size: 100%;
     line-height: 20px;
-    margin: 2px;
     margin-top: 55px;
-    width: 20%;
+    width: 17%;
   }
 
   .work-title-dv hr {
     margin: 0;
-    width: 80%;
+    width: 100%;
     height: 1px;
     background-color: #0d151e;
   }
 
   .feature-area {
-    height: 50%;
     display: flex;
     align-items: flex-start;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
   }
 
   .feature-image {
-    width: 60%;
+    width: 50%;
     height: 70%;
-    margin: 0 10px 0 0;
+    margin: 0 20px 0 0;
   }
 
   .post-text {
     display: flex;
     flex-direction: column;
     margin: 0 0;
-    width: 40%;
+    width: 50%;
+    padding-right: 10%;
   }
 
   .title-post {
@@ -635,22 +639,20 @@ footer {
   }
 
   .post-description {
-    font-size: 80%;
-    line-height: 95%;
-    height: 70%;
+    font-size: 100%;
   }
 
   .tag-ul-1 {
     display: flex;
     justify-content: space-around;
-    width: 70%;
+    width: 50%;
     height: 10%;
   }
 
   .tag-ul-1 li {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 4px;
-    padding: 12px 8px;
+    padding: 12px 4px;
   }
 
   form button {
@@ -669,15 +671,16 @@ footer {
 
   .desktop-cards {
     display: grid;
-    grid-template: repeat(2, minmax(350px, 1fr)) / repeat(3, minmax(220px, 1fr));
-    grid-gap: 2%;
+    grid-template: repeat(2, minmax(386px, 1fr)) / repeat(3, minmax(220px, 1fr));
+    grid-column-gap: 2%;
+    grid-row-gap: 0;
   }
 
   .desktop-card-4 {
     background-image: url("images/dc-4.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 100%;
+    background-position-y: 20%;
   }
 
   .desktop-card-2,
@@ -685,7 +688,7 @@ footer {
     background-image: url("images/dc-2.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 100%;
+    background-position-y: 20%;
   }
 
   .desktop-card-3,
@@ -693,14 +696,14 @@ footer {
     background-image: url("images/dc-3.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 100%;
+    background-position-y: 20%;
   }
 
   .desktop-card-1 {
     background-image: url("images/dc-1.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 80%;
+    background-position-y: 20%;
   }
 
   .dummy-text {
@@ -708,7 +711,7 @@ footer {
   }
 
   .desktop-card-1 button {
-    margin-top: 140%;
+    margin-top: 107%;
     height: 40px;
     width: 100%;
     border: 1px solid var(--color-Safety-Orange);
@@ -721,7 +724,7 @@ footer {
   }
 
   .card-text {
-    margin: 0 6%;
+    margin: 11% 6%;
   }
 
   .desk-card h3 {
@@ -731,23 +734,23 @@ footer {
     font-size: 25px;
     line-height: 30px;
     color: var(--color-white);
-    margin-bottom: 5%;
+    margin-bottom: 7%;
   }
 
   .desk-card p {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 13px;
+    font-size: 15px;
+    line-height: 18px;
     color: var(--color-white);
     padding-right: 15%;
-    margin-bottom: 5%;
+    margin-bottom: 6%;
   }
 
   .desk-card ul {
     height: 15%;
-    width: 80%;
+    width: 75%;
     margin-bottom: 5%;
     display: flex;
     justify-content: space-between;
@@ -760,7 +763,7 @@ footer {
     font-size: 12px;
     color: var(--color-white);
     box-sizing: border-box;
-    padding: 7px 6px;
+    padding: 8px 12px;
     background-color: rgba(255, 255, 255, 0.24);
   }
 
