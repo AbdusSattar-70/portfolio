@@ -38,6 +38,22 @@ header {
   background-color: #3c3a39;
 }
 
+.branding-logo {
+  animation: rotate 8s ease-in 4s 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+    background-color: #e05304;
+  }
+
+  to {
+    transform: rotate(360deg);
+    background-color: aqua;
+  }
+}
+
 .navbar-container {
   height: 80%;
   display: flex;
@@ -179,6 +195,10 @@ recent work section style
   border: 1px solid #8993a4;
 }
 
+button {
+  transition: all 2s ease;
+}
+
 form button {
   padding: 12px;
   margin: 0 98px;
@@ -241,6 +261,8 @@ button:hover {
   background-color: #fff5e1;
   border: 1px solid var(--color-Safety-Orange);
   color: var(--color-Safety-Orange);
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 button:active {
