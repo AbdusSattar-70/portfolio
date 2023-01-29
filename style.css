@@ -585,6 +585,7 @@ media query for mobile from 450px to 767px screen
 
 /* -------------------------------------------------------
  -------desktop version style using media query--------
+ from 768px to 1000px screen size
 ------------------------------------------------- */
 
 @media screen and (min-width: 768px) {
@@ -688,15 +689,15 @@ media query for mobile from 450px to 767px screen
   }
 
   .works-title {
-    font-size: 100%;
+    font-size: 25px;
     line-height: 20px;
     margin-top: 55px;
-    width: 17%;
+    width: 45%;
   }
 
   .work-title-dv hr {
     margin: 0;
-    width: 100%;
+    width: 80%;
     height: 1px;
     background-color: #0d151e;
   }
@@ -709,8 +710,8 @@ media query for mobile from 450px to 767px screen
   }
 
   .feature-image {
-    width: 50%;
-    height: 70%;
+    width: 60%;
+    height: 100%;
     margin: 0 20px 0 0;
   }
 
@@ -718,8 +719,7 @@ media query for mobile from 450px to 767px screen
     display: flex;
     flex-direction: column;
     margin: 0 0;
-    width: 50%;
-    padding-right: 10%;
+    width: 40%;
   }
 
   .title-post {
@@ -729,19 +729,23 @@ media query for mobile from 450px to 767px screen
 
   .post-description {
     font-size: 100%;
+    line-height: 15px;
+    margin-top: 0;
+    height: 120px;
   }
 
   .tag-ul-1 {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: fit-content;
     height: 10%;
   }
 
   .tag-ul-1 li {
-    font-size: 10px;
+    font-size: 15px;
     line-height: 4px;
     padding: 12px 4px;
+    margin-right: 10px;
   }
 
   form button {
@@ -750,7 +754,7 @@ media query for mobile from 450px to 767px screen
 
   .post-text button {
     height: 35px;
-    width: 40%;
+    width: 42%;
     font-size: 95%;
   }
 
@@ -760,11 +764,12 @@ media query for mobile from 450px to 767px screen
 
   .desktop-cards {
     display: grid;
-    grid-template: repeat(2, minmax(386px, 1fr)) / repeat(3, minmax(220px, 1fr));
+    grid-template: repeat(2, minmax(250px, 1fr)) / repeat(3, minmax(200px, 1fr));
     grid-column-gap: 2%;
-    grid-row-gap: 0;
+    grid-row-gap: 2%;
   }
 
+  .desktop-card-1,
   .desktop-card-4 {
     background-image: url("images/dc-4.svg");
     background-repeat: no-repeat;
@@ -788,59 +793,45 @@ media query for mobile from 450px to 767px screen
     background-position-y: 20%;
   }
 
-  .desktop-card-1 {
-    background-image: url("images/dc-1.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: 20%;
-  }
-
-  .dummy-text {
-    display: none;
-  }
-
-  .desktop-card-1 button {
-    margin-top: 107%;
-    height: 40px;
-    width: 100%;
-    border: 1px solid var(--color-Safety-Orange);
-  }
-
   .desk-card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-evenly;
   }
 
   .card-text {
-    margin: 11% 6%;
+    margin: 30% 0 0 5%;
   }
 
   .desk-card h3 {
     font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 18px;
     color: var(--color-white);
     margin-bottom: 7%;
+  }
+
+  .desktop-card-3 h3,
+  .desktop-card-6 h3 {
+    line-height: 35px;
   }
 
   .desk-card p {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 10px;
+    line-height: 12px;
     color: var(--color-white);
     padding-right: 15%;
     margin-bottom: 6%;
   }
 
   .desk-card ul {
-    height: 15%;
-    width: 75%;
-    margin-bottom: 5%;
+    height: 25%;
+    width: fit-content;
     display: flex;
     justify-content: space-between;
   }
@@ -852,8 +843,15 @@ media query for mobile from 450px to 767px screen
     font-size: 12px;
     color: var(--color-white);
     box-sizing: border-box;
-    padding: 8px 12px;
+    padding: 8px 8px;
+    margin-right: 8px;
     background-color: rgba(255, 255, 255, 0.24);
+  }
+
+  .desk-card button {
+    height: 40px;
+    border: 1px solid var(--color-Safety-Orange);
+    display: none;
   }
 
   .form-container p {
@@ -863,6 +861,115 @@ media query for mobile from 450px to 767px screen
     font-size: 22px;
     line-height: 30px;
     align-items: center;
+    color: #262626;
+    text-align: left;
+    margin-top: 25px;
+    word-wrap: break-word;
+  }
+
+  .about-me p {
+    margin-right: 20%;
+  }
+
+  /* about me section media query for desktop */
+
+  .about-section {
+    margin-top: 0;
+    height: 900px;
+  }
+
+  .about-container {
+    background-image: url("images/aboutmeback.svg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 100% 10%;
+  }
+
+  .about-me {
+    justify-content: center;
+    align-items: flex-start;
+    background-image: none;
+    width: 50%;
+    height: 60%;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .about-container hr {
+    margin-top: 50px;
+  }
+
+  .skills-list {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .Languages,
+  .frameworks,
+  .skills {
+    align-items: flex-start;
+  }
+
+  .form-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin: 5% 10%;
+  }
+
+  #name,
+  #email,
+  #message {
+    width: 400px;
+    margin-left: 10%;
+  }
+
+  .footer {
+    width: 10%;
+    margin-left: 25%;
+  }
+
+  .liner {
+    display: none;
+  }
+}
+
+/* -------------------------------------------------------
+ -------desktop version style using media query--------
+ from 1000px to wider screen size
+------------------------------------------------- */
+
+@media screen and (min-width: 1000px) {
+  /* work section media query for desktop version */
+
+  .works-container {
+    width: 75%;
+    margin: 0 12%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-title-dv {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .works-title {
+    font-size: 100%;
+    line-height: 20px;
+    margin-top: 55px;
+    width: 20%;
+  }
+
+  .work-title-dv hr {
+    width: 80%;
+  }
+
+  .form-container p {
+    font-size: 22px;
+    line-height: 30px;
     color: #262626;
     text-align: left;
     margin-top: 25px;
@@ -890,8 +997,6 @@ media query for mobile from 450px to 767px screen
   }
 
   .about-container {
-    background-image: url("images/aboutmeback.svg");
-    background-repeat: no-repeat;
     background-size: 40%;
     background-position: 100% 5%;
   }
@@ -939,9 +1044,5 @@ media query for mobile from 450px to 767px screen
   .footer {
     width: 10%;
     margin-left: 35%;
-  }
-
-  .liner {
-    display: none;
   }
 }
