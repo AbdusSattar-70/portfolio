@@ -2,7 +2,7 @@
 
 <div align="center">
  <h3><b>Portfolio is my demo project for learning Git and GitHub workflows</b></h3>
-<h5>This is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed. In this milestone, I create a complete mobile version. It has four main sections headline, works, about me, and a contact form. Thanks ❤️ to my coding partner ## @Santosh-Konappanavar for contributing to creating the contact form section.
+<h5>This is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed.I create a complete mobile version and desktop version. It has four main sections headline, works, about me, and a contact form. Thanks ❤️ to my coding partner  <b> @Santosh-Konappanavar </b> for contributing to creating the contact form section.<b> In this milestone, I am deploying my website by using gitHub pages </b>.
  </h5>
 </div>
 
@@ -74,6 +74,7 @@
 
 - **[html]**
 - **[css]**
+- **[css animation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,7 +133,7 @@ gitHub
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [@githubhandle](https://github.com/AbdusSattar-70)
 - Twitter: [@twitterhandle](twitter.com/Abdus_Sattar70)
@@ -144,10 +145,9 @@ gitHub
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Desktop version]**
-- [ ] **[Application deploy]**
-- [ ] **[Validate contact form]**
 - [ ] **[Preserve data in the browser ]**
+- [ ] **[Test web accessibility]**
+- [ ] **[DOM manipulation using js]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -167,7 +167,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project you can use it following [MIT](./LICENSE) license.
+If you like this project, Please give me ⭐️ and you can use it following [MIT](./LICENSE) license.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,7 +175,7 @@ If you like this project you can use it following [MIT](./LICENSE) license.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thanks ❤️ to my coding partner ## @Santosh-Konappanavar for contributing to creating the contact form section.
+Thanks ❤️ to my coding partner <b> @Santosh-Konappanavar </b> for contributing to creating the contact form section.
 
 I would like to thank and appreciate who contributes this project.
 
