@@ -343,59 +343,59 @@ button:disabled {
 }
 
 .about-me {
+  height: 600px;
   margin-left: 24px;
   padding-right: 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-image: url("./images/illustration-about-me-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 100% 90%;
+  background-position: 100% 100%;
 }
 
 .about-me h2 {
-  height: 79px;
-  margin-top: 120px;
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
+  font-size: 4.5rem;
+  line-height: 5rem;
   letter-spacing: 0.37px;
   color: var(--color-Safety-Orange);
+  padding-top: 100px;
 }
 
 .about-me p {
-  height: 148px;
-  margin-top: 24px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
+  margin-top: 10px;
 }
 
 .about-container hr {
   border: 1px solid var(--color-white);
   min-width: 327px;
   height: 1px;
-  margin: 5px 24px 120px 24px;
+  margin: 0 24px 0 24px;
 }
 
 .skills-list {
-  height: 600px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   color: var(--color-white);
+  margin-top: 50px;
 }
 
 .skill-1,
 .skill-2,
 .skill-3 {
-  height: 400px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -421,10 +421,10 @@ button:disabled {
 .Languages,
 .frameworks,
 .skills {
-  height: 350px;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -516,8 +516,76 @@ footer {
   border-radius: 10px;
 }
 
+/* ---------------------------------------------------
+media query for mobile from 450px to 767px screen
+--------------------------------------------------- */
+
+@media screen and (min-width: 450px) {
+  .work-cards {
+    grid-template: repeat(3, 1fr) / repeat(2, minmax(160px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .card h3 {
+    margin-top: 15%;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: 0;
+  }
+
+  .card-ul {
+    width: fit-content;
+    margin-right: 0;
+  }
+
+  .card-ul li {
+    padding: 10px 6px;
+    margin: 0 5px;
+    font-size: 15px;
+  }
+
+  .see-project-btn {
+    min-width: 150px;
+  }
+
+  .about-me p {
+    padding-right: 10%;
+  }
+
+  .form-container {
+    margin: 0 15%;
+  }
+
+  .form-container p {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  #name,
+  #email,
+  #message {
+    width: 320px;
+    margin-left: 10%;
+  }
+
+  .footer {
+    width: 5%;
+    margin-left: 10%;
+  }
+
+  .liner {
+    display: none;
+  }
+}
+
 /* -------------------------------------------------------
  -------desktop version style using media query--------
+ from 768px to 1000px screen size
 ------------------------------------------------- */
 
 @media screen and (min-width: 768px) {
@@ -621,15 +689,15 @@ footer {
   }
 
   .works-title {
-    font-size: 100%;
+    font-size: 25px;
     line-height: 20px;
     margin-top: 55px;
-    width: 17%;
+    width: 45%;
   }
 
   .work-title-dv hr {
     margin: 0;
-    width: 100%;
+    width: 80%;
     height: 1px;
     background-color: #0d151e;
   }
@@ -642,8 +710,8 @@ footer {
   }
 
   .feature-image {
-    width: 50%;
-    height: 70%;
+    width: 60%;
+    height: 100%;
     margin: 0 20px 0 0;
   }
 
@@ -651,8 +719,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 0 0;
-    width: 50%;
-    padding-right: 10%;
+    width: 40%;
   }
 
   .title-post {
@@ -662,19 +729,23 @@ footer {
 
   .post-description {
     font-size: 100%;
+    line-height: 15px;
+    margin-top: 0;
+    height: 120px;
   }
 
   .tag-ul-1 {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: fit-content;
     height: 10%;
   }
 
   .tag-ul-1 li {
-    font-size: 10px;
+    font-size: 15px;
     line-height: 4px;
     padding: 12px 4px;
+    margin-right: 10px;
   }
 
   form button {
@@ -683,7 +754,7 @@ footer {
 
   .post-text button {
     height: 35px;
-    width: 40%;
+    width: 42%;
     font-size: 95%;
   }
 
@@ -693,11 +764,12 @@ footer {
 
   .desktop-cards {
     display: grid;
-    grid-template: repeat(2, minmax(386px, 1fr)) / repeat(3, minmax(220px, 1fr));
+    grid-template: repeat(2, minmax(250px, 1fr)) / repeat(3, minmax(200px, 1fr));
     grid-column-gap: 2%;
-    grid-row-gap: 0;
+    grid-row-gap: 2%;
   }
 
+  .desktop-card-1,
   .desktop-card-4 {
     background-image: url("images/dc-4.svg");
     background-repeat: no-repeat;
@@ -721,59 +793,45 @@ footer {
     background-position-y: 20%;
   }
 
-  .desktop-card-1 {
-    background-image: url("images/dc-1.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: 20%;
-  }
-
-  .dummy-text {
-    display: none;
-  }
-
-  .desktop-card-1 button {
-    margin-top: 107%;
-    height: 40px;
-    width: 100%;
-    border: 1px solid var(--color-Safety-Orange);
-  }
-
   .desk-card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-evenly;
   }
 
   .card-text {
-    margin: 11% 6%;
+    margin: 30% 0 0 5%;
   }
 
   .desk-card h3 {
     font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 18px;
     color: var(--color-white);
     margin-bottom: 7%;
+  }
+
+  .desktop-card-3 h3,
+  .desktop-card-6 h3 {
+    line-height: 35px;
   }
 
   .desk-card p {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 10px;
+    line-height: 12px;
     color: var(--color-white);
     padding-right: 15%;
     margin-bottom: 6%;
   }
 
   .desk-card ul {
-    height: 15%;
-    width: 75%;
-    margin-bottom: 5%;
+    height: 25%;
+    width: fit-content;
     display: flex;
     justify-content: space-between;
   }
@@ -785,8 +843,15 @@ footer {
     font-size: 12px;
     color: var(--color-white);
     box-sizing: border-box;
-    padding: 8px 12px;
+    padding: 8px 8px;
+    margin-right: 8px;
     background-color: rgba(255, 255, 255, 0.24);
+  }
+
+  .desk-card button {
+    height: 40px;
+    border: 1px solid var(--color-Safety-Orange);
+    display: none;
   }
 
   .form-container p {
@@ -804,7 +869,115 @@ footer {
 
   .about-me p {
     margin-right: 20%;
-    margin-top: 30%;
+  }
+
+  /* about me section media query for desktop */
+
+  .about-section {
+    margin-top: 0;
+    height: 900px;
+  }
+
+  .about-container {
+    background-image: url("images/aboutmeback.svg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 100% 10%;
+  }
+
+  .about-me {
+    justify-content: center;
+    align-items: flex-start;
+    background-image: none;
+    width: 50%;
+    height: 60%;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .about-container hr {
+    margin-top: 50px;
+  }
+
+  .skills-list {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .Languages,
+  .frameworks,
+  .skills {
+    align-items: flex-start;
+  }
+
+  .form-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin: 5% 10%;
+  }
+
+  #name,
+  #email,
+  #message {
+    width: 400px;
+    margin-left: 10%;
+  }
+
+  .footer {
+    width: 10%;
+    margin-left: 25%;
+  }
+
+  .liner {
+    display: none;
+  }
+}
+
+/* -------------------------------------------------------
+ -------desktop version style using media query--------
+ from 1000px to wider screen size
+------------------------------------------------- */
+
+@media screen and (min-width: 1000px) {
+  /* work section media query for desktop version */
+
+  .works-container {
+    width: 75%;
+    margin: 0 12%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-title-dv {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .works-title {
+    font-size: 100%;
+    line-height: 20px;
+    margin-top: 55px;
+    width: 20%;
+  }
+
+  .work-title-dv hr {
+    width: 80%;
+  }
+
+  .form-container p {
+    font-size: 22px;
+    line-height: 30px;
+    color: #262626;
+    text-align: left;
+    margin-top: 25px;
+    word-wrap: break-word;
+  }
+
+  .about-me p {
+    margin-right: 20%;
   }
 
   .card-text p:hover,
@@ -819,15 +992,13 @@ footer {
   /* about me section media query for desktop */
 
   .about-section {
-    margin-top: 130px;
-    height: 20%;
+    margin-top: 0;
+    height: 900px;
   }
 
   .about-container {
-    background-image: url("images/aboutmeback.svg");
-    background-repeat: no-repeat;
     background-size: 40%;
-    background-position: 100% 15%;
+    background-position: 100% 5%;
   }
 
   .about-me {
@@ -837,7 +1008,7 @@ footer {
     width: 50%;
     height: 60%;
     margin-left: 10%;
-    margin-top: 15%;
+    margin-top: 5%;
   }
 
   .about-container hr {
@@ -872,10 +1043,6 @@ footer {
 
   .footer {
     width: 10%;
-    margin-left: 25%;
-  }
-
-  .liner {
-    display: none;
+    margin-left: 35%;
   }
 }
