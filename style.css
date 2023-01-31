@@ -97,7 +97,7 @@ header {
   letter-spacing: 0.37px;
 }
 
-.headline-text h2 {
+.headline-text h3 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -660,7 +660,7 @@ media query for mobile from 450px to 767px screen
     line-height: 90%;
   }
 
-  .headline-text h2 {
+  .headline-text h3 {
     font-size: 25px;
     color: var(--color-white);
     margin: 4% 0;
