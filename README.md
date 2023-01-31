@@ -146,8 +146,10 @@ gitHub
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Preserve data in the browser ]**
-- [ ] **[Test web accessibility]**
-- [ ] **[DOM manipulation using js]**
+- [ ] **[Mobile menu (pair programming)]**
+- [ ] **[Details modal (pair programming)]**
+- [ ] **[Validate contact form (pair programming)]**
+- [ ] **[ Preserve data in the browser (pair programming)]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,7 +177,7 @@ If you like this project, Please give me ⭐️ and you can use it following [MI
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thanks ❤️ to my coding partner <b> @Santosh-Konappanavar </b> for contributing to creating the contact form section.
+Thanks ❤️ to my coding partner <b> @Santosh-Konappanavar </b> for contributing to creating the contact form section.Also Thanks ❤️ to my coding partner <b> @Baqar Abbas </b> and <b> @Shu Richmond </b> for contributing to checking web accessibility and implement.
 
 I would like to thank and appreciate who contributes this project.
 
