@@ -97,7 +97,7 @@ header {
   letter-spacing: 0.37px;
 }
 
-.headline-text h3 {
+.headline-text h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -231,10 +231,10 @@ form button {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--color-white);
+  color: black;
   height: 48px;
-  background-color: var(--color-Safety-Orange);
-  border: 1px solid var(--color-Safety-Orange);
+  background-color: #f55800;
+  border: 1px solid #f55800;
 }
 
 .about-me button {
@@ -248,19 +248,19 @@ form button {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  background-color: var(--color-Safety-Orange);
-  color: var(--color-white);
+  background-color: #f55800;
+  color: black;
 }
 
 button:enabled {
-  background-color: var(--color-Safety-Orange);
-  color: var(--color-white);
+  background-color: #f55800;
+  color: black;
 }
 
 button:hover {
   background-color: #fff5e1;
-  border: 1px solid var(--color-Safety-Orange);
-  color: var(--color-Safety-Orange);
+  border: 1px solid #f55800;
+  color: #c03b1b;
   cursor: pointer;
   transform: scale(1.2);
 }
@@ -660,7 +660,7 @@ media query for mobile from 450px to 767px screen
     line-height: 90%;
   }
 
-  .headline-text h3 {
+  .headline-text h2 {
     font-size: 25px;
     color: var(--color-white);
     margin: 4% 0;
@@ -822,8 +822,8 @@ media query for mobile from 450px to 767px screen
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 15px;
+    line-height: 16px;
     color: var(--color-white);
     padding-right: 15%;
     margin-bottom: 6%;
@@ -850,7 +850,7 @@ media query for mobile from 450px to 767px screen
 
   .desk-card button {
     height: 40px;
-    border: 1px solid var(--color-Safety-Orange);
+    border: 1px solid #f55800;
     display: none;
   }
 
