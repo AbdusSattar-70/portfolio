@@ -22,7 +22,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+  - [🚀 Live Demo and presentation video](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -80,8 +80,8 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
+## 🚀 Live Demo and presentation video <a name="live-demo"></a>
+- [Presentation video Link](https://www.loom.com/share/8de0a404588a41e2807963a1b08356f9)
 - [Live Demo Link](https://abdussattar-70.github.io/portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
