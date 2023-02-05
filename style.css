@@ -39,7 +39,7 @@ header {
 }
 
 .branding-logo {
-  animation: rotate 8s ease-in 4s 1;
+  animation: rotate 8s ease-in-out 4s 1;
 }
 
 @keyframes rotate {
@@ -54,15 +54,51 @@ header {
   }
 }
 
-.navbar-container {
-  height: 80%;
+.logo-container {
+  min-height: 72px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
-.nav-ul {
+.mobile-menu {
+  min-height: 655px;
+  min-width: 327px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
   display: none;
+}
+
+.mobile-menu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+.mobile-menu ul li {
+  min-width: 300px;
+  margin: 5% 0;
+}
+
+#crossImg {
+  height: 40px;
+  width: 40px;
+  margin-top: 30px;
+  margin-right: 24px;
+}
+.desk-menu {
+  display: none;
+}
+
+nav li a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  color: hsl(40, 100%, 94%);
 }
 
 /* ------------------------
@@ -602,23 +638,27 @@ media query for mobile from 450px to 767px screen
     align-items: center;
   }
 
-  .nav-toggler {
+  .mobile-menu {
     display: none;
   }
 
-  .nav-ul {
+  #hamImg {
+    display: none;
+  }
+
+  .desk-menu {
     width: 50%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
 
-  .nav-ul img {
+  .desk-menu img {
     height: 45%;
     width: 45%;
   }
 
-  .nav-ul li a {
+  .desk-menu li a {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
