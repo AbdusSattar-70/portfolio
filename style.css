@@ -244,7 +244,7 @@ recent work section style
 }
 
 button {
-  transition: all 2s ease;
+  transition: all 1s ease-in;
 }
 
 form button {
@@ -310,7 +310,7 @@ button:hover {
   border: 1px solid #f55800;
   color: #c03b1b;
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 button:active {
@@ -339,6 +339,10 @@ button:disabled {
   background-image: url("./images/background-3.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.card:hover {
+  box-shadow: 10px 5px 5px 0 rgba(0, 0, 0, 0.75);
 }
 
 .card h3 {
@@ -804,7 +808,7 @@ media query for mobile from 450px to 767px screen
 
   .desktop-cards {
     display: grid;
-    grid-template: repeat(2, minmax(250px, 1fr)) / repeat(3, minmax(200px, 1fr));
+    grid-template: repeat(2, minmax(300px, 1fr)) / repeat(3, minmax(200px, 1fr));
     grid-column-gap: 2%;
     grid-row-gap: 2%;
   }
@@ -814,7 +818,7 @@ media query for mobile from 450px to 767px screen
     background-image: url("images/dc-4.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 20%;
+    background-position-y: 40%;
   }
 
   .desktop-card-2,
@@ -822,7 +826,7 @@ media query for mobile from 450px to 767px screen
     background-image: url("images/dc-2.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 20%;
+    background-position-y: 40%;
   }
 
   .desktop-card-3,
@@ -830,7 +834,7 @@ media query for mobile from 450px to 767px screen
     background-image: url("images/dc-3.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 20%;
+    background-position-y: 40%;
   }
 
   .desk-card {
@@ -840,7 +844,7 @@ media query for mobile from 450px to 767px screen
   }
 
   .card-text {
-    margin: 30% 0 0 5%;
+    margin: 5% 0 0 5%;
   }
 
   .desk-card h3 {
@@ -870,20 +874,25 @@ media query for mobile from 450px to 767px screen
   }
 
   .desk-card ul {
-    height: 25%;
+    height: 15%;
     width: fit-content;
     display: flex;
     justify-content: space-between;
+  }
+
+  .desk-card:hover,
+  .desk-card:focus {
+    box-shadow: 10px 5px 5px 0 rgba(0, 0, 0, 0.75);
   }
 
   .desk-card li {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 13px;
     color: var(--color-white);
     box-sizing: border-box;
-    padding: 8px 8px;
+    padding: 6px 8px;
     margin-right: 8px;
     background-color: rgba(255, 255, 255, 0.24);
   }
@@ -1007,6 +1016,42 @@ media query for mobile from 450px to 767px screen
     width: 80%;
   }
 
+  .desktop-cards {
+    grid-template: repeat(2, minmax(370px, 1fr)) / repeat(3, minmax(200px, 1fr));
+  }
+
+  .desktop-card-1,
+  .desktop-card-4 {
+    background-position-y: 20%;
+  }
+
+  .desktop-card-2,
+  .desktop-card-5 {
+    background-position-y: 20%;
+  }
+
+  .desktop-card-3,
+  .desktop-card-6 {
+    background-position-y: 20%;
+  }
+
+  .card-text {
+    margin-top: 15%;
+  }
+
+  .desk-card ul {
+    height: 20%;
+  }
+
+  .desk-card li {
+    font-size: 15px;
+    padding: 10px 8px;
+  }
+
+  .desk-card button {
+    margin-top: 5%;
+  }
+
   .form-container p {
     font-size: 22px;
     line-height: 30px;
@@ -1018,15 +1063,6 @@ media query for mobile from 450px to 767px screen
 
   .about-me p {
     margin-right: 20%;
-  }
-
-  .card-text p:hover,
-  .card-text p:focus,
-  .card-text h3:hover,
-  .card-text h3:focus,
-  .desk-card li:hover,
-  .desk-card li:focus {
-    color: var(--color-Safety-Orange);
   }
 
   /* about me section media query for desktop */
