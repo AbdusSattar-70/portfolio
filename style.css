@@ -64,10 +64,14 @@ header {
 .mobile-menu {
   min-height: 655px;
   min-width: 327px;
-  display: flex;
+  display: none;
   flex-direction: row-reverse;
   justify-content: space-around;
-  display: none;
+}
+
+form ul {
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-menu ul {
@@ -76,6 +80,30 @@ header {
   flex-direction: column;
   justify-content: center;
   margin-left: 5%;
+}
+
+.tag-ul-1 li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+}
+
+.card-ul li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 0.24);
+  color: var(--color-white);
+  box-sizing: border-box;
+  padding: 10px 12px;
 }
 
 .mobile-menu ul li {
@@ -89,6 +117,7 @@ header {
   margin-top: 30px;
   margin-right: 24px;
 }
+
 .desk-menu {
   display: none;
 }
@@ -149,11 +178,6 @@ nav li a {
   font-size: 16px;
   line-height: 24px;
   color: var(--color-white);
-}
-
-form ul {
-  display: flex;
-  flex-direction: column;
 }
 
 .social-media-icons {
@@ -217,18 +241,6 @@ recent work section style
   margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
-}
-
-.tag-ul-1 li {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #091e42;
-  box-sizing: border-box;
-  padding: 10px 12px;
-  border: 1px solid #8993a4;
 }
 
 button {
@@ -357,18 +369,6 @@ button:disabled {
   margin-right: 45px;
   display: flex;
   justify-content: space-evenly;
-}
-
-.card-ul li {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  background-color: rgba(255, 255, 255, 0.24);
-  color: var(--color-white);
-  box-sizing: border-box;
-  padding: 10px 12px;
 }
 
 /* about me section style */
