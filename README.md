@@ -2,7 +2,7 @@
 
 <div align="center">
  <h3><b>Portfolio is my demo project for learning Git and GitHub workflows</b></h3>
-<h5>This is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed.I create a complete mobile version and desktop version. It has four main sections headline, works, about me, and a contact form. Thanks ❤️ to my coding partner  <b> @Santosh-Konappanavar </b> for contributing to creating the contact form section.<b> In this milestone, I am deploying my website by using gitHub pages </b>.
+<h5>This is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed.I create a complete mobile version and desktop version. It has four main sections headline, works, about me, and a contact form. Thanks ❤️ to my coding partner <b> MEHMET Selçuk Güler </b> for contributing to creating the mobile menu interactivity.<b> In this milestone, we have created mobile-menu using js </b>.
  </h5>
 </div>
 
@@ -49,22 +49,9 @@
 
 <details>
   <summary>Client</summary>
+  <b>This project only works client side right now.</b>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li>HTML, CSS and JS</li>
   </ul>
 </details>
 
@@ -81,6 +68,7 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo and presentation video <a name="live-demo"></a>
+
 - [Presentation video Link](https://www.loom.com/share/8de0a404588a41e2807963a1b08356f9)
 - [Live Demo Link](https://abdussattar-70.github.io/portfolio/)
 
@@ -146,7 +134,6 @@ gitHub
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Preserve data in the browser ]**
-- [ ] **[Mobile menu (pair programming)]**
 - [ ] **[Details modal (pair programming)]**
 - [ ] **[Validate contact form (pair programming)]**
 - [ ] **[ Preserve data in the browser (pair programming)]**
@@ -178,6 +165,8 @@ If you like this project, Please give me ⭐️ and you can use it following [MI
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 Thanks ❤️ to my coding partner <b> @Santosh-Konappanavar </b> for contributing to creating the contact form section.Also Thanks ❤️ to my coding partner <b> @Baqar Abbas </b> and <b> @Shu Richmond </b> for contributing to checking web accessibility and implement.
+Thanks ❤️ to my coding partner <b> MEHMET Selçuk Güler
+</b> for contributing to creating the mobile menu interactivity.
 
 I would like to thank and appreciate who contributes this project.
 
