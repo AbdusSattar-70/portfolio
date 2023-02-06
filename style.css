@@ -62,7 +62,7 @@ header {
 }
 
 .mobile-menu {
-  min-height: 655px;
+  min-height: 755px;
   min-width: 327px;
   display: none;
   flex-direction: row-reverse;
