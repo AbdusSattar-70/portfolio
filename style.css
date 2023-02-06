@@ -78,8 +78,8 @@ form ul {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 5%;
+  margin-top: 90px;
+  margin-left: 10%;
 }
 
 .tag-ul-1 li {
@@ -126,7 +126,8 @@ nav li a {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  line-height: 44px;
+  font-size: 32px;
   color: hsl(40, 100%, 94%);
 }
 
