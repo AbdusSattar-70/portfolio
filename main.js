@@ -19,6 +19,6 @@ const menuNone = () => {
 
 hamImg.addEventListener('click', menu);
 crossImg.addEventListener('click', menuNone);
-mobileMenuItems.forEach(item => {
+mobileMenuItems.forEach((item) => {
   item.addEventListener('click', menuNone);
 });
