@@ -12,6 +12,18 @@ body {
   min-width: 375px;
 }
 
+/* popup window style start */
+
+#popUpContFirst {
+  /* position: fixed; */
+  top: 0;
+  height: 700px;
+  width: 100vw;
+  border: 2px solid rgb(244, 6, 6);
+}
+
+/* popup window style end */
+
 .navbar-container,
 .headline-container,
 .works-container,

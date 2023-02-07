@@ -91,4 +91,59 @@ const projectInfo = [
   },
 ];
 
+function getTechList(technologies) {
+  let list = '';
+  if (technologies) {
+    technologies.forEach((tech) => {
+      list += `<li class="tag">${tech}</li>`;
+    });
+  }
+  return list;
+}
+
+function loadData() {
+  const popUpContFirst = document.querySelector('#popUpContFirst');
+  popUpContFirst.innerHTML = `
+      <div class="projectPreview" data-target="${projectInfo[0].id}">
+        <div class="projectHeader">
+          <div class="head">
+            <h2>${projectInfo[0].name}</h2>
+            <img id="crossPopUp" src="icons/cross.png" alt="cross">
+          </div>
+          <ul class="technologiesPreview">
+            ${getTechList(projectInfo[0].modalTechs)}
+          </ul>
+        </div>
+        <div class="projectElements">
+          <img class="projectImg" src="${projectInfo[0].img.src}" alt="${projectInfo[0].img.alt}" />
+          <div class="projectContent">
+            <div class="projectDescription">
+              <p>
+                ${projectInfo[0].description}
+              </p>
+            </div>
+            <div class="projectButtons">
+              <div>
+                <button class="button cardButtons" href="${projectInfo[0].links.live}">
+                  <span>See Live</span>
+                  <img src="icons/seeLiveIcon.svg" alt="Live" />
+                </button>
+              </div>
+              <div>
+                <button class="button cardButtons" href="${projectInfo[0].links.live}">
+                  <span>See Source</span>
+                  <img src="icons/whiteGitHubIcon.png" alt="Source" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      `;
+}
+
+const popUpContFirstBtn = document.querySelector('#popUpContFirstBtn');
+popUpContFirstBtn.addEventListener('click', loadData);
+
 /* pop up window end */
