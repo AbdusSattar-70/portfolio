@@ -290,38 +290,28 @@ function loadDataPopFirst() {
   const popUpWinFirst = document.querySelector('.popUpWinFirst');
   popUpWinFirst.innerHTML = `
      <div class="projectPreview">
-        <div class="projectHeader">
-          <div class="head">
-            <h2>${projectInfo[0].title}</h2>
-           <img src="icons/cross.png" alt="cross">
-          </div>
-          <ul class="technologiesPreview'>
-            ${getTechList(projectInfo[0].technologies)}
-          </ul>
+        <div class="head">
+          <h2>${projectInfo[0].title}</h2>
+          <img src="icons/cross.png" alt="cross">
         </div>
-        <div class="projectElements">
-          <img class="projectImg" src="${projectInfo[0].imagePop}" alt="pop up image" />
-          <div class="projectContent">
-            <div class="projectDescription">
-              <p>
-                ${projectInfo[0].description}
-              </p>
-            </div>
-            <div class="projectButtons">
-              <div>
-                <button class="button cardButtons" href="${projectInfo[0].link}">
-                  <span>See Live</span>
-                   <img src="icons/seeLiveIcon.svg" alt="live" />
-                </button>
-              </div>
-              <div>
-                <button class="button cardButtons" href="${projectInfo[0].github}">
-                  <span>See Source</span>
-                  <img src="icons/whiteGitHubIcon.png" alt="Source" />
-                </button>
-              </div>
-            </div>
-          </div>
+        <ul class="technologiesPreview">
+          ${getTechList(projectInfo[0].technologies)}
+        </ul>
+        <img class="projectImg" src="${projectInfo[0].imagePop}" alt="pop up image" />
+        <div class="projectDescription">
+          <p>
+            ${projectInfo[0].description}
+          </p>
+        </div>
+        <div class="projectButtons">
+          <button class="button cardButtons" href="${projectInfo[0].link}">
+            <span>See Live</span>
+            <img src="icons/seeLiveIcon.svg" alt="live" />
+          </button>
+          <button class="button cardButtons" href="${projectInfo[0].github}">
+            <span>See Source</span>
+            <img src="icons/whiteGitHubIcon.png" alt="Source" />
+          </button>
         </div>
       </div>
       `;

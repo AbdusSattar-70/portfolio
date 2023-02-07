@@ -14,12 +14,54 @@ body {
 
 /* popup window style start */
 
-#popUpContFirst {
-  /* position: fixed; */
-  top: 0;
-  height: 700px;
-  width: 100vw;
-  border: 2px solid rgb(244, 6, 6);
+.popUpWinFirst {
+  margin: auto auto;
+  height: 90vh;
+  max-width: 90vw;
+  background-color: #fff;
+}
+
+.projectPreview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.projectButtons{
+  width: 83vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectImg {
+  width: 83vw;
+}
+
+.technologiesPreview {
+  width: 83vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 83vw;
+}
+
+.tag {
+  border: 1px solid #979493;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.projectDescription {
+  width: 83vw;
 }
 
 /* popup window style end */
