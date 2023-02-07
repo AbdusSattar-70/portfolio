@@ -26,7 +26,8 @@ mobileMenuItems.forEach((item) => {
 });
 
 /* mobile menu end */
-/* pop up window start */
+/* project data load start */
+
 const worksContainer = document.querySelector('.works-container');
 
 const projectInfo = [
@@ -35,7 +36,7 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    button: 'See Project',
+    imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/background-2.svg',
     link: '',
     github: 'https://github.com/AbdusSattar-70/portfolio',
@@ -45,7 +46,7 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    button: 'See Project',
+    imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-1.svg',
     link: '',
     github: 'https://github.com/AbdusSattar-70/portfolio',
@@ -55,7 +56,7 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    button: 'See Project',
+    imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-2.svg',
     link: '',
     github: 'https://github.com/AbdusSattar-70/portfolio',
@@ -65,7 +66,7 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    button: 'See Project',
+    imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-3.svg',
     link: '',
     github: 'https://github.com/AbdusSattar-70/portfolio',
@@ -75,7 +76,7 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    button: 'See Project',
+    imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-1.svg',
     link: '',
     github: 'https://github.com/AbdusSattar-70/portfolio',
@@ -85,7 +86,7 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    button: 'See Project',
+    imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-2.svg',
     link: '',
     github: 'https://github.com/AbdusSattar-70/portfolio',
@@ -95,7 +96,7 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    button: 'See Project',
+    imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-3.svg',
     link: '',
     github: 'https://github.com/AbdusSattar-70/portfolio',
@@ -201,102 +202,76 @@ function loadData() {
         <div class="desktop-cards">
           <article class="desktop-card-1 desk-card">
             <div class="card-text">
-              <h3>Profesional Art <br>
-                Printing Data more</h3>
+              <h3>${projectInfo[1].title}</h3>
               <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's
-                standard
+               ${projectInfo[1].description}
               </p>
               <ul>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
+                  ${getTechList(projectInfo[1].technologies)}
               </ul>
             </div>
             <button type="button">See Project </button>
           </article>
           <article class="desktop-card-2 desk-card">
             <div class="card-text">
-              <h3> Data Dashboard <br>
-                Healthcare
+              <h3>
+              ${projectInfo[2].title}
               </h3>
               <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's
-                standard
+                  ${projectInfo[2].description}
               </p>
               <ul>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
+                 ${getTechList(projectInfo[2].technologies)}
               </ul>
             </div>
             <button type="button">See Project </button>
           </article>
           <article class="desktop-card-3 desk-card">
             <div class="card-text">
-              <h3>Website Protfolio</h3>
+              <h3> ${projectInfo[3].title}</h3>
               <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's
-                standard
+                ${projectInfo[3].description}
               </p>
               <ul>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
+                ${getTechList(projectInfo[3].technologies)}
               </ul>
             </div>
             <button type="button">See Project </button>
           </article>
           <article class="desktop-card-4 desk-card">
             <div class="card-text">
-              <h3>Profesional Art <br>
-                Printing Data more</h3>
+              <h3> ${projectInfo[4].title}</h3>
               <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's
-                standard
+                ${projectInfo[4].description}
               </p>
               <ul>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
+              ${getTechList(projectInfo[4].technologies)}
               </ul>
             </div>
             <button type="button" autofocus>See Project </button>
           </article>
           <article class="desktop-card-5 desk-card">
             <div class="card-text">
-              <h3> Data Dashboard <br>
-                Healthcare
+              <h3>
+               ${projectInfo[5].title}
               </h3>
               <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's
-                standard
+                ${projectInfo[5].description}
               </p>
               <ul>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
+                ${getTechList(projectInfo[5].technologies)}
               </ul>
             </div>
             <button type="button">See Project </button>
           </article>
           <article class="desktop-card-6 desk-card">
             <div class="card-text">
-              <h3>Website Protfolio</h3>
+              <h3> ${projectInfo[6].title}</h3>
               <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's
-                standard
+                ${projectInfo[6].description}
               </p>
               <ul>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
+               ${getTechList(projectInfo[6].technologies)}
               </ul>
             </div>
             <button type="button">See Project </button>
@@ -305,7 +280,94 @@ function loadData() {
       `;
 }
 
-
-
 loadData();
-/* pop up window end */
+/* project data load end */
+/* pop up window start */
+
+const popUpWinSecond = document.querySelector('.popUpWinSecond');
+
+function loadDataPopFirst() {
+  const popUpWinFirst = document.querySelector('.popUpWinFirst');
+  popUpWinFirst.innerHTML = `
+     <div class="projectPreview">
+        <div class="projectHeader">
+          <div class="head">
+            <h2>${projectInfo[0].title}</h2>
+           <img src="icons/cross.png" alt="cross">
+          </div>
+          <ul class="technologiesPreview'>
+            ${getTechList(projectInfo[0].technologies)}
+          </ul>
+        </div>
+        <div class="projectElements">
+          <img class="projectImg" src="${projectInfo[0].imagePop}" alt="pop up image" />
+          <div class="projectContent">
+            <div class="projectDescription">
+              <p>
+                ${projectInfo[0].description}
+              </p>
+            </div>
+            <div class="projectButtons">
+              <div>
+                <button class="button cardButtons" href="${projectInfo[0].link}">
+                  <span>See Live</span>
+                   <img src="icons/seeLiveIcon.svg" alt="live" />
+                </button>
+              </div>
+              <div>
+                <button class="button cardButtons" href="${projectInfo[0].github}">
+                  <span>See Source</span>
+                  <img src="icons/whiteGitHubIcon.png" alt="Source" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      `;
+}
+
+const popUpContFirstBtn = document.querySelector('#popUpContFirstBtn');
+popUpContFirstBtn.addEventListener('click', loadDataPopFirst);
+
+// function loadDataPopFirst() {
+//   const popUpWinFirst = document.querySelector('.popUpWinFirst');
+//   popUpWinFirst.innerHTML = `
+//      <div class="projectPreview">
+//         <div class="projectHeader">
+//           <div class="head">
+//             <h2>${projectInfo[0].title}</h2>
+//            <img src="icons/cross.png" alt="cross">
+//           </div>
+//           <ul class="technologiesPreview'>
+//             ${getTechList(projectInfo[0].technologies)}
+//           </ul>
+//         </div>
+//         <div class="projectElements">
+//           <img class="projectImg" src="${projectInfo[0].imagePop}" alt="pop up image" />
+//           <div class="projectContent">
+//             <div class="projectDescription">
+//               <p>
+//                 ${projectInfo[0].description}
+//               </p>
+//             </div>
+//             <div class="projectButtons">
+//               <div>
+//                 <button class="button cardButtons" href="${projectInfo[0].link}">
+//                   <span>See Live</span>
+//                    <img src="icons/seeLiveIcon.svg" alt="live" />
+//                 </button>
+//               </div>
+//               <div>
+//                 <button class="button cardButtons" href="${projectInfo[0].github}">
+//                   <span>See Source</span>
+//                   <img src="icons/whiteGitHubIcon.png" alt="Source" />
+//                 </button>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//       `;
+// }
+/* pop up window start */
