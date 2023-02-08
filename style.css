@@ -19,6 +19,26 @@ body {
   height: 90vh;
   max-width: 90vw;
   background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: tranform 0.4s, top 0.4s;
+  visibility: hidden;
+}
+
+.popUpOpen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.6rem;
+  margin: 6rem 1.6rem 4rem;
+  height: auto;
+  gap: 2.4rem;
+  top: 50%;
+  z-index: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .projectPreview {
@@ -28,7 +48,7 @@ body {
   height: 100%;
 }
 
-.projectButtons{
+.projectButtons {
   width: 83vw;
   display: flex;
   justify-content: space-between;
@@ -935,9 +955,13 @@ media query for mobile from 450px to 767px screen
     justify-content: space-between;
   }
 
-  .desk-card:hover,
-  .desk-card:focus {
-    box-shadow: 10px 5px 5px 0 rgba(0, 0, 0, 0.75);
+  .desk-card:hover .card-text {
+    display: none;
+  }
+
+  .desk-card:hover .seeProBtn {
+    display: block;
+    margin-top: 100%;
   }
 
   .desk-card li {
@@ -952,10 +976,9 @@ media query for mobile from 450px to 767px screen
     background-color: rgba(255, 255, 255, 0.24);
   }
 
-  .desk-card button {
+  .seeProBtn {
     height: 40px;
     border: 1px solid #f55800;
-    margin-top: 8%;
     display: none;
   }
 

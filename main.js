@@ -28,8 +28,6 @@ mobileMenuItems.forEach((item) => {
 /* mobile menu end */
 /* project data load start */
 
-const worksContainer = document.querySelector('.works-container');
-
 const projectInfo = [
   {
     title: 'Multi-Post Stories',
@@ -39,7 +37,7 @@ const projectInfo = [
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/background-2.svg',
     link: '',
-    github: 'https://github.com/AbdusSattar-70/portfolio',
+    github: '',
   },
   {
     title: 'Profesional Art Printing Data',
@@ -49,7 +47,7 @@ const projectInfo = [
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-1.svg',
     link: '',
-    github: 'https://github.com/AbdusSattar-70/portfolio',
+    github: '',
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -59,7 +57,7 @@ const projectInfo = [
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-2.svg',
     link: '',
-    github: 'https://github.com/AbdusSattar-70/portfolio',
+    github: '',
   },
   {
     title: 'Website Protfolio',
@@ -69,7 +67,7 @@ const projectInfo = [
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-3.svg',
     link: '',
-    github: 'https://github.com/AbdusSattar-70/portfolio',
+    github: '',
   },
   {
     title: 'Profesional Art Printing Data',
@@ -79,7 +77,7 @@ const projectInfo = [
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-1.svg',
     link: '',
-    github: 'https://github.com/AbdusSattar-70/portfolio',
+    github: '',
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -89,7 +87,7 @@ const projectInfo = [
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-2.svg',
     link: '',
-    github: 'https://github.com/AbdusSattar-70/portfolio',
+    github: '',
   },
   {
     title: 'Website Protfolio',
@@ -99,7 +97,7 @@ const projectInfo = [
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-3.svg',
     link: '',
-    github: 'https://github.com/AbdusSattar-70/portfolio',
+    github: '',
   },
 ];
 
@@ -114,6 +112,7 @@ function getTechList(technologies) {
 }
 
 function loadData() {
+  const worksContainer = document.querySelector('.works-container');
   worksContainer.innerHTML = `
     <article class="Recent-work">
       <div class="work-title-dv">
@@ -143,7 +142,7 @@ function loadData() {
             <ul class="card-ul">
               ${getTechList(projectInfo[1].technologies)}
             </ul>
-            <button class="see-project-btn" type="button" autofocus>See Project </button>
+            <button class="see-project-btn seeProBtn" type="button" autofocus>See Project </button>
           </article>
           <article class="work-card-2 card">
             <h3>${projectInfo[2].title}</h3>
@@ -153,7 +152,7 @@ function loadData() {
             <ul class="card-ul">
               ${getTechList(projectInfo[2].technologies)}
             </ul>
-            <button class="see-project-btn" type="button" autofocus>See Project </button>
+            <button class="see-project-btn seeProBtn" type="button" autofocus>See Project </button>
           </article>
           <article class="work-card-3 card">
             <h3>${projectInfo[3].title}</h3>
@@ -163,7 +162,7 @@ function loadData() {
             <ul class="card-ul">
               ${getTechList(projectInfo[3].technologies)}
             </ul>
-            <button class="see-project-btn" type="button" autofocus>See Project </button>
+            <button class="see-project-btn seeProBtn" type="button" autofocus>See Project </button>
           </article>
           <article class="work-card-4 card">
             <h3>${projectInfo[4].title}</h3>
@@ -173,7 +172,7 @@ function loadData() {
             <ul class="card-ul">
               ${getTechList(projectInfo[4].technologies)}
             </ul>
-            <button class="see-project-btn" type="button" autofocus>See Project </button>
+            <button class="see-project-btn seeProBtn" type="button" autofocus>See Project </button>
           </article>
           <article class="work-card-5 card">
             <h3>${projectInfo[5].title}</h3>
@@ -183,7 +182,7 @@ function loadData() {
             <ul class="card-ul">
               ${getTechList(projectInfo[5].technologies)}
             </ul>
-            <button class="see-project-btn" type="button" autofocus>See Project </button>
+            <button class="see-project-btn seeProBtn" type="button" autofocus>See Project </button>
           </article>
           <article class="work-card-6 card">
             <h3>${projectInfo[6].title}</h3>
@@ -193,7 +192,7 @@ function loadData() {
             <ul class="card-ul">
               ${getTechList(projectInfo[6].technologies)}
             </ul>
-            <button class="see-project-btn" type="button" autofocus>See Project </button>
+            <button class="see-project-btn seeProBtn" type="button" autofocus>See Project </button>
           </article>
         </div>
 
@@ -210,7 +209,7 @@ function loadData() {
                   ${getTechList(projectInfo[1].technologies)}
               </ul>
             </div>
-            <button type="button">See Project </button>
+            <button class = "seeProBtn" type="button">See Project </button>
           </article>
           <article class="desktop-card-2 desk-card">
             <div class="card-text">
@@ -224,7 +223,7 @@ function loadData() {
                  ${getTechList(projectInfo[2].technologies)}
               </ul>
             </div>
-            <button type="button">See Project </button>
+            <button class = "seeProBtn" type="button">See Project </button>
           </article>
           <article class="desktop-card-3 desk-card">
             <div class="card-text">
@@ -236,7 +235,7 @@ function loadData() {
                 ${getTechList(projectInfo[3].technologies)}
               </ul>
             </div>
-            <button type="button">See Project </button>
+            <button class = "seeProBtn" type="button">See Project </button>
           </article>
           <article class="desktop-card-4 desk-card">
             <div class="card-text">
@@ -248,7 +247,7 @@ function loadData() {
               ${getTechList(projectInfo[4].technologies)}
               </ul>
             </div>
-            <button type="button" autofocus>See Project </button>
+            <button class = "seeProBtn" type="button" autofocus>See Project </button>
           </article>
           <article class="desktop-card-5 desk-card">
             <div class="card-text">
@@ -262,7 +261,7 @@ function loadData() {
                 ${getTechList(projectInfo[5].technologies)}
               </ul>
             </div>
-            <button type="button">See Project </button>
+            <button class = "seeProBtn" type="button">See Project </button>
           </article>
           <article class="desktop-card-6 desk-card">
             <div class="card-text">
@@ -274,7 +273,7 @@ function loadData() {
                ${getTechList(projectInfo[6].technologies)}
               </ul>
             </div>
-            <button type="button">See Project </button>
+            <button class = "seeProBtn" type="button">See Project </button>
           </article>
         </div>
       `;
@@ -283,16 +282,26 @@ function loadData() {
 loadData();
 /* project data load end */
 /* pop up window start */
-
+const popUpWinFirst = document.querySelector('.popUpWinFirst');
 const popUpWinSecond = document.querySelector('.popUpWinSecond');
 
+function popUpOPenClose(section) {
+  section.classList.add('popUpOpen');
+  document.querySelector('#main').style.filter = 'blur(5px)';
+  document.querySelector('.hightNone').style.display = 'none';
+  document.querySelector('#crossPop').addEventListener('click', () => {
+    section.classList.remove('popUpOpen');
+    document.querySelector('#main').style.filter = 'none';
+    document.querySelector('.hightNone').style.display = 'block';
+  });
+}
+
 function loadDataPopFirst() {
-  const popUpWinFirst = document.querySelector('.popUpWinFirst');
   popUpWinFirst.innerHTML = `
      <div class="projectPreview">
         <div class="head">
           <h2>${projectInfo[0].title}</h2>
-          <img src="icons/cross.png" alt="cross">
+          <img id ="crossPop" src="icons/cross.png" alt="cross">
         </div>
         <ul class="technologiesPreview">
           ${getTechList(projectInfo[0].technologies)}
@@ -304,60 +313,58 @@ function loadDataPopFirst() {
           </p>
         </div>
         <div class="projectButtons">
-          <button class="button cardButtons" href="${projectInfo[0].link}">
+          <button class="cardButtons" href="${projectInfo[0].link}">
             <span>See Live</span>
             <img src="icons/seeLiveIcon.svg" alt="live" />
           </button>
-          <button class="button cardButtons" href="${projectInfo[0].github}">
+          <button class="cardButtons" href="${projectInfo[0].github}">
             <span>See Source</span>
             <img src="icons/whiteGitHubIcon.png" alt="Source" />
           </button>
         </div>
       </div>
       `;
+
+  popUpOPenClose(popUpWinFirst);
 }
 
-const popUpContFirstBtn = document.querySelector('#popUpContFirstBtn');
-popUpContFirstBtn.addEventListener('click', loadDataPopFirst);
+document.querySelector('#popUpContFirstBtn').addEventListener('click', loadDataPopFirst);
 
-// function loadDataPopFirst() {
-//   const popUpWinFirst = document.querySelector('.popUpWinFirst');
-//   popUpWinFirst.innerHTML = `
-//      <div class="projectPreview">
-//         <div class="projectHeader">
-//           <div class="head">
-//             <h2>${projectInfo[0].title}</h2>
-//            <img src="icons/cross.png" alt="cross">
-//           </div>
-//           <ul class="technologiesPreview'>
-//             ${getTechList(projectInfo[0].technologies)}
-//           </ul>
-//         </div>
-//         <div class="projectElements">
-//           <img class="projectImg" src="${projectInfo[0].imagePop}" alt="pop up image" />
-//           <div class="projectContent">
-//             <div class="projectDescription">
-//               <p>
-//                 ${projectInfo[0].description}
-//               </p>
-//             </div>
-//             <div class="projectButtons">
-//               <div>
-//                 <button class="button cardButtons" href="${projectInfo[0].link}">
-//                   <span>See Live</span>
-//                    <img src="icons/seeLiveIcon.svg" alt="live" />
-//                 </button>
-//               </div>
-//               <div>
-//                 <button class="button cardButtons" href="${projectInfo[0].github}">
-//                   <span>See Source</span>
-//                   <img src="icons/whiteGitHubIcon.png" alt="Source" />
-//                 </button>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//       `;
-// }
-/* pop up window start */
+function loadDataPopCard() {
+  projectInfo.forEach((info) => {
+    popUpWinSecond.innerHTML = `
+     <div class="projectPreview">
+        <div class="head">
+          <h2>${info.title}</h2>
+          <img id ="crossPop" src="icons/cross.png" alt="cross">
+        </div>
+        <ul class="technologiesPreview">
+          ${getTechList(info.technologies)}
+        </ul>
+        <img class="projectImg" src="${info.imagePop}" alt="pop up image" />
+        <div class="projectDescription">
+          <p>
+            ${info.description}
+          </p>
+        </div>
+        <div class="projectButtons">
+          <button class="cardButtons" href="${info.link}">
+            <span>See Live</span>
+            <img src="icons/seeLiveIcon.svg" alt="live" />
+          </button>
+          <button class="cardButtons" href="${info.github}">
+            <span>See Source</span>
+            <img src="icons/whiteGitHubIcon.png" alt="Source" />
+          </button>
+        </div>
+      </div>
+      `;
+  });
+  popUpOPenClose(popUpWinSecond);
+}
+
+const seeProBtns = document.querySelectorAll('.seeProBtn');
+seeProBtns.forEach((seeProBtn) => {
+  seeProBtn.addEventListener('click', loadDataPopCard);
+});
+/* pop up window end */
