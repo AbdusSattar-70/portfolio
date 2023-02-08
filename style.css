@@ -352,6 +352,7 @@ recent work section style
   font-size: 16px;
   line-height: 24px;
   color: #091e42;
+  overflow: hidden;
 }
 
 .tag-ul-1 {
@@ -852,6 +853,7 @@ media query for mobile from 450px to 767px screen
     height: 100%;
     margin: auto;
     width: 100%;
+    justify-content: space-between;
   }
 
   #name_container {
@@ -865,14 +867,11 @@ media query for mobile from 450px to 767px screen
     justify-content: flex-start;
   }
 
-  .projectImg {
-    width: 45.83vw;
-  }
-
   .technologiesPreview {
     max-width: 25%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 16px;
   }
 
   .head {
@@ -909,17 +908,18 @@ media query for mobile from 450px to 767px screen
   }
 
   .projectDescription {
-    width: 268px;
-    height: 155px;
+    width: 400px;
+    height: 336px;
     word-break: break-word;
     text-overflow: clip;
     font-family: Inter;
     overflow: hidden;
-    font-size: 9px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 15px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
+    font-family: Inter;
   }
 
   .cardButtons {
@@ -927,26 +927,26 @@ media query for mobile from 450px to 767px screen
     justify-content: center;
     align-items: center;
     padding: 10px 15px;
-    width: 70px;
-    height: 30px;
+    width: 135px;
+    height: 48px;
   }
 
   .cardButtons span {
-    font-size: 6px;
+    font-size: 17px;
   }
 
   .cardButtons img {
-    width: 12px;
-    height: 12px;
+    width: 24px;
+    height: 24px;
     background-size: cover;
   }
 
   .project_elements {
     display: flex;
     flex-direction: row;
-    height: 65%;
+    height: 80%;
     width: 100%;
-    gap: 5%;
+    gap: 20px;
   }
 
   /* popup window style end */
