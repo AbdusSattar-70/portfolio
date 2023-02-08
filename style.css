@@ -794,6 +794,73 @@ media query for mobile from 450px to 767px screen
 
   /* work section media query for desktop version */
 
+  /* popup window style start */
+
+  .popUpWinFirst {
+    margin: auto auto;
+    height: 45vh;
+    max-width: 90vw;
+  }
+
+  .popUpOpen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.6rem;
+    margin: 6rem 1.6rem 4rem;
+    height: auto;
+    gap: 2.4rem;
+    top: 50%;
+    z-index: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .projectPreview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .projectButtons {
+    width: 83vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .projectImg {
+    width: 35vw;
+  }
+
+  .technologiesPreview {
+    width: 35vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    width: 83vw;
+  }
+
+  .tag {
+    border: 1px solid #979493;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    padding: 10px 12px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .projectDescription {
+    width: 83vw;
+  }
+
+  /* popup window style end */
+
   .works-container {
     width: 75%;
     margin: 0 12%;
