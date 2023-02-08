@@ -306,21 +306,25 @@ function loadDataPopFirst() {
         <ul class="technologiesPreview">
           ${getTechList(projectInfo[0].technologies)}
         </ul>
-        <img class="projectImg" src="${projectInfo[0].imagePop}" alt="pop up image" />
-        <div class="projectDescription">
-          <p>
-            ${projectInfo[0].description}
-          </p>
-        </div>
-        <div class="projectButtons">
-          <button class="cardButtons" href="${projectInfo[0].link}">
-            <span>See Live</span>
-            <img src="icons/seeLiveIcon.svg" alt="live" />
-          </button>
-          <button class="cardButtons" href="${projectInfo[0].github}">
-            <span>See Source</span>
-            <img src="icons/whiteGitHubIcon.png" alt="Source" />
-          </button>
+        <div class="project_elements">
+          <img class="projectImg" src="${projectInfo[0].imagePop}" alt="pop up image" />
+          <div class="details_container">
+            <div class="projectDescription">
+              <p>
+                ${projectInfo[0].description} ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
+              </p>
+            </div>
+            <div class="projectButtons">
+              <button class="cardButtons" href="${projectInfo[0].link}">
+                <span>See Live</span>
+                <img src="icons/seeLiveIcon.svg" alt="live" />
+              </button>
+              <button class="cardButtons" href="${projectInfo[0].github}">
+                <span>See Source</span>
+                <img src="icons/whiteGitHubIcon.png" alt="Source" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       `;
