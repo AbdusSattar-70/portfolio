@@ -296,6 +296,8 @@ function popUpOPenClose(section) {
   });
 }
 
+const moreText = ['when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'];
+
 function loadDataPopFirst() {
   popUpWinFirst.innerHTML = `
      <div class="projectPreview">
@@ -311,7 +313,7 @@ function loadDataPopFirst() {
           <div class="details_container">
             <div class="projectDescription">
               <p>
-                ${projectInfo[0].description}
+                ${projectInfo[0].description}  and ${moreText}
               </p>
             </div>
             <div class="projectButtons">
@@ -333,7 +335,6 @@ function loadDataPopFirst() {
 }
 
 document.querySelector('#popUpContFirstBtn').addEventListener('click', loadDataPopFirst);
-
 function loadDataPopCard() {
   projectInfo.forEach((info) => {
     popUpWinSecond.innerHTML = `
@@ -350,7 +351,7 @@ function loadDataPopCard() {
           <div class="details_container">
             <div class="projectDescription">
               <p>
-                ${info.description}
+                ${info.description} and ${moreText}
               </p>
             </div>
             <div class="projectButtons">
