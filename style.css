@@ -36,19 +36,25 @@ body {
   display: flex;
   flex-direction: column;
   height: 80vh;
+  gap: 16px;
 }
 
 .project_elements {
-  /* height: 38vh; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.projectImg {
-  height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
 }
 
 .details_container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#name_container {
+  width: 260px;
+  height: 82px;
 }
 
 .technologiesPreview {
@@ -75,16 +81,23 @@ body {
 
 .projectDescription {
   width: 83vw;
+  height: 219px;
+  text-overflow: clip;
+  font-family: Inter;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .head h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  /* line-height: 44px; */
+  font-size: 30px;
   color: #172b4d;
-  /* margin-bottom: 10px; */
 }
 
 #crossPop {
@@ -829,8 +842,8 @@ media query for mobile from 450px to 767px screen
   /* popup window style start */
 
   .popUpOpen {
-    height: 65vh;
-    top: 50%;
+    height: 70vh;
+    width: 80vw;
   }
 
   .projectPreview {
@@ -841,23 +854,25 @@ media query for mobile from 450px to 767px screen
     width: 100%;
   }
 
+  #name_container {
+    width: 1056px;
+    height: 40px;
+  }
+
   .projectButtons {
-    width: 100%;
     display: flex;
     gap: 10px;
     justify-content: flex-start;
   }
 
   .projectImg {
-    height: 36vh;
-    width: fit-content;
+    width: 45.83vw;
   }
 
   .technologiesPreview {
     max-width: 25%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 75px;
   }
 
   .head {
@@ -865,17 +880,16 @@ media query for mobile from 450px to 767px screen
     justify-content: space-between;
     width: 100%;
     margin-top: 0;
-    margin-bottom: auto;
+    margin-bottom: 0;
   }
 
   .head h2 {
-    font-family: "Crete Round", serif;
+    font-family: 'Crete Round';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
-    color: #172b4d;
-    text-align: left;
+    color: #172B4D;
   }
 
   .tag {
@@ -895,12 +909,16 @@ media query for mobile from 450px to 767px screen
   }
 
   .projectDescription {
-    width: 100%;
-    height: 50%;
-    word-break: break-all;
-  }
-
-  .projectDescription p {
+    width: 268px;
+    height: 155px;
+    word-break: break-word;
+    text-overflow: clip;
+    font-family: Inter;
+    overflow: hidden;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
     text-align: left;
   }
 
@@ -909,10 +927,23 @@ media query for mobile from 450px to 767px screen
     justify-content: center;
     align-items: center;
     padding: 10px 15px;
+    width: 70px;
+    height: 30px;
+  }
+
+  .cardButtons span {
+    font-size: 6px;
+  }
+
+  .cardButtons img {
+    width: 12px;
+    height: 12px;
+    background-size: cover;
   }
 
   .project_elements {
     display: flex;
+    flex-direction: row;
     height: 65%;
     width: 100%;
     gap: 5%;

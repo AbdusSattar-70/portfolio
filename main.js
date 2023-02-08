@@ -32,7 +32,7 @@ const projectInfo = [
   {
     title: 'Multi-Post Stories',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/background-2.svg',
@@ -296,13 +296,15 @@ function popUpOPenClose(section) {
   });
 }
 
-const moreText = ['when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'];
+const moreText = 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
 
 function loadDataPopFirst() {
   popUpWinFirst.innerHTML = `
      <div class="projectPreview">
         <div class="head">
-          <h2>${projectInfo[0].title}</h2>
+          <div id= "name_container">
+            <h2>${projectInfo[0].title}</h2>
+          </div>
           <img id ="crossPop" src="icons/cross.png" alt="cross">
         </div>
         <ul class="technologiesPreview">
@@ -312,9 +314,7 @@ function loadDataPopFirst() {
           <img class="projectImg" src="${projectInfo[0].imagePop}" alt="pop up image" />
           <div class="details_container">
             <div class="projectDescription">
-              <p>
                 ${projectInfo[0].description}  and ${moreText}
-              </p>
             </div>
             <div class="projectButtons">
               <button class="cardButtons" href="${projectInfo[0].link}">
@@ -340,7 +340,9 @@ function loadDataPopCard() {
     popUpWinSecond.innerHTML = `
       <div class="projectPreview">
         <div class="head">
-          <h2>${info.title}</h2>
+          <div id= "name_container">
+            <h2>${info.title}</h2>
+          </div>
           <img id ="crossPop" src="icons/cross.png" alt="cross">
         </div>
         <ul class="technologiesPreview">
@@ -350,9 +352,7 @@ function loadDataPopCard() {
           <img class="projectImg" src="${info.imagePop}" alt="pop up image" />
           <div class="details_container">
             <div class="projectDescription">
-              <p>
                 ${info.description} and ${moreText}
-              </p>
             </div>
             <div class="projectButtons">
               <button class="cardButtons" href="${info.link}">
