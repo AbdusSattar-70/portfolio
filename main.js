@@ -42,7 +42,7 @@ const projectInfo = [
   {
     title: 'Profesional Art Printing Data',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-1.svg',
@@ -52,7 +52,7 @@ const projectInfo = [
   {
     title: 'Data Dashboard Healthcare',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-2.svg',
@@ -62,7 +62,7 @@ const projectInfo = [
   {
     title: 'Website Protfolio',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-3.svg',
@@ -72,7 +72,7 @@ const projectInfo = [
   {
     title: 'Profesional Art Printing Data',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-1.svg',
@@ -82,7 +82,7 @@ const projectInfo = [
   {
     title: 'Data Dashboard Healthcare',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-2.svg',
@@ -92,7 +92,7 @@ const projectInfo = [
   {
     title: 'Website Protfolio',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/dc-3.svg',
@@ -311,7 +311,7 @@ function loadDataPopFirst() {
           <div class="details_container">
             <div class="projectDescription">
               <p>
-                ${projectInfo[0].description} ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
+                ${projectInfo[0].description}
               </p>
             </div>
             <div class="projectButtons">
@@ -337,7 +337,7 @@ document.querySelector('#popUpContFirstBtn').addEventListener('click', loadDataP
 function loadDataPopCard() {
   projectInfo.forEach((info) => {
     popUpWinSecond.innerHTML = `
-     <div class="projectPreview">
+      <div class="projectPreview">
         <div class="head">
           <h2>${info.title}</h2>
           <img id ="crossPop" src="icons/cross.png" alt="cross">
@@ -345,21 +345,25 @@ function loadDataPopCard() {
         <ul class="technologiesPreview">
           ${getTechList(info.technologies)}
         </ul>
-        <img class="projectImg" src="${info.imagePop}" alt="pop up image" />
-        <div class="projectDescription">
-          <p>
-            ${info.description}
-          </p>
-        </div>
-        <div class="projectButtons">
-          <button class="cardButtons" href="${info.link}">
-            <span>See Live</span>
-            <img src="icons/seeLiveIcon.svg" alt="live" />
-          </button>
-          <button class="cardButtons" href="${info.github}">
-            <span>See Source</span>
-            <img src="icons/whiteGitHubIcon.png" alt="Source" />
-          </button>
+        <div class="project_elements">
+          <img class="projectImg" src="${info.imagePop}" alt="pop up image" />
+          <div class="details_container">
+            <div class="projectDescription">
+              <p>
+                ${info.description}
+              </p>
+            </div>
+            <div class="projectButtons">
+              <button class="cardButtons" href="${info.link}">
+                <span>See Live</span>
+                <img src="icons/seeLiveIcon.svg" alt="live" />
+              </button>
+              <button class="cardButtons" href="${info.github}">
+                <span>See Source</span>
+                <img src="icons/whiteGitHubIcon.png" alt="Source" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       `;

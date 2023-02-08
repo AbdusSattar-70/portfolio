@@ -15,26 +15,16 @@ body {
 /* popup window style start */
 
 .popUpWinFirst {
-  margin: auto auto;
+  padding: 16px;
   height: 90vh;
   max-width: 90vw;
   background-color: #fff;
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.1);
-  transition: tranform 0.4s, top 0.4s;
   visibility: hidden;
 }
 
 .popUpOpen {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1.6rem;
-  margin: 6rem 1.6rem 4rem;
-  height: auto;
-  gap: 2.4rem;
+  left: 50%;
   top: 50%;
   z-index: 1;
   visibility: visible;
@@ -56,12 +46,13 @@ body {
 
 .projectImg {
   width: 83vw;
+  margin: 24px 0;
 }
 
 .technologiesPreview {
   width: 83vw;
   display: flex;
-  justify-content: space-between;
+  gap: 3%;
 }
 
 .head {
@@ -82,6 +73,41 @@ body {
 
 .projectDescription {
   width: 83vw;
+}
+
+.head h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 10px;
+}
+
+#crossPop {
+  width: 40px;
+  height: 40px;
+}
+
+.projectDescription p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: left;
+  padding: 5px 0;
+}
+
+.cardButtons {
+  border: none;
+  padding: 10px 15px;
+}
+
+.cardButtons span {
+  font-size: 17px;
+  color: #fff;
 }
 
 /* popup window style end */
@@ -796,19 +822,9 @@ media query for mobile from 450px to 767px screen
 
   /* popup window style start */
 
-  .popUpWinFirst {
-    margin: auto auto;
-    height: 45vh;
-    max-width: 90vw;
-  }
-
   .popUpOpen {
-    width: 80%;
-    height: 72%;
+    height: 65vh;
     top: 50%;
-    z-index: 1;
-    visibility: visible;
-    transform: translate(-50%, -50%) scale(1);
   }
 
   .projectPreview {
@@ -817,17 +833,18 @@ media query for mobile from 450px to 767px screen
     height: 100%;
     margin: auto;
     width: 100%;
-    justify-content: space-evenly;
   }
 
   .projectButtons {
-    width: 70%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    justify-content: flex-start;
   }
 
   .projectImg {
-    background-size: contain;
+    height: 36vh;
+    width: fit-content;
   }
 
   .technologiesPreview {
@@ -844,14 +861,15 @@ media query for mobile from 450px to 767px screen
     margin-top: 0;
     margin-bottom: auto;
   }
-  
-  .head h2 {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 44px;
-    letter-spacing: 0em;
-    text-align: left;
 
+  .head h2 {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    text-align: left;
   }
 
   .tag {
@@ -864,46 +882,34 @@ media query for mobile from 450px to 767px screen
     line-height: 16px;
   }
 
-  .details_container{
+  .details_container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 37%;
   }
 
   .projectDescription {
     width: 100%;
-    height: 80%;
+    height: 50%;
     word-break: break-all;
   }
 
   .projectDescription p {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
     text-align: left;
   }
 
   .cardButtons {
     display: flex;
-    border: none;
     justify-content: center;
     align-items: center;
     padding: 10px 15px;
   }
 
-  .cardButtons span {
-    font-size: 17px;
-    color: #fff;
-  }
-
   .project_elements {
     display: flex;
-    justify-content: space-between;
-    gap: 42px;
-    width: 95%;
+    height: 65%;
+    width: 100%;
+    gap: 5%;
   }
 
   /* popup window style end */
@@ -1073,6 +1079,12 @@ media query for mobile from 450px to 767px screen
     display: none;
   }
 
+  .seeProBtn {
+    height: 40px;
+    border: 1px solid #f55800;
+    display: none;
+  }
+
   .desk-card:hover .seeProBtn {
     display: block;
     margin-bottom: 0;
@@ -1089,12 +1101,6 @@ media query for mobile from 450px to 767px screen
     padding: 6px 8px;
     margin-right: 8px;
     background-color: rgba(255, 255, 255, 0.24);
-  }
-
-  .seeProBtn {
-    height: 40px;
-    border: 1px solid #f55800;
-    display: none;
   }
 
   .form-container p {
@@ -1185,6 +1191,31 @@ media query for mobile from 450px to 767px screen
 
 @media screen and (min-width: 1000px) {
   /* work section media query for desktop version */
+
+  /* popup window style start */
+
+  /* .popUpWinFirst {
+    margin: auto auto;
+    width: 150vw;
+  }
+
+  .popUpOpen {
+    height: auto;
+    top: 45%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .projectButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .projectImg {
+    height: fit-content;
+  } */
+
+  /* popup window style end */
 
   .works-container {
     width: 75%;

@@ -2,7 +2,7 @@
 
 <div align="center">
  <h3><b>Portfolio is my demo project for learning Git and GitHub workflows</b></h3>
-<h5>This is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed.I create a complete mobile version and desktop version. It has four main sections headline, works, about me, and a contact form. Thanks ❤️ to my coding partner <b> MEHMET Selçuk Güler </b> for contributing to creating the mobile menu interactivity.<b> In this milestone, we have created mobile-menu using js </b>.
+<h5>This is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed.I create a complete mobile version and desktop version. It has four main sections headline, works, about me, and a contact form. Thanks ❤️ to my coding partner <b> MEHMET Selçuk Güler </b> for contributing to creating the mobile menu interactivity.<b> In this milestone, we have created mobile and desktop version popUp window using js </b>.
  </h5>
 </div>
 
@@ -134,7 +134,6 @@ gitHub
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Preserve data in the browser ]**
-- [ ] **[Details modal (pair programming)]**
 - [ ] **[Validate contact form (pair programming)]**
 - [ ] **[ Preserve data in the browser (pair programming)]**
 
