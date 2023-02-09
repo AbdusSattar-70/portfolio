@@ -31,8 +31,9 @@ mobileMenuItems.forEach((item) => {
 const projectInfo = [
   {
     title: 'Multi-Post Stories',
+    moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
     imagePop: 'images/Snapshoot Portfolio.svg',
     image: 'images/background-2.svg',
@@ -41,6 +42,7 @@ const projectInfo = [
   },
   {
     title: 'Profesional Art Printing Data',
+    moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
@@ -51,6 +53,7 @@ const projectInfo = [
   },
   {
     title: 'Data Dashboard Healthcare',
+    moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
@@ -61,6 +64,7 @@ const projectInfo = [
   },
   {
     title: 'Website Protfolio',
+    moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
        "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
@@ -71,6 +75,7 @@ const projectInfo = [
   },
   {
     title: 'Profesional Art Printing Data',
+    moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
@@ -81,6 +86,7 @@ const projectInfo = [
   },
   {
     title: 'Data Dashboard Healthcare',
+    moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
@@ -91,6 +97,7 @@ const projectInfo = [
   },
   {
     title: 'Website Protfolio',
+    moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
@@ -286,17 +293,14 @@ const popUpWinFirst = document.querySelector('.popUpWinFirst');
 const popUpWinSecond = document.querySelector('.popUpWinSecond');
 
 function popUpOPenClose(section) {
-  section.classList.add('popUpOpen');
+  section.style.display = 'block';
   document.querySelector('#main').style.filter = 'blur(5px)';
-  document.querySelector('.hightNone').style.display = 'none';
   document.querySelector('#crossPop').addEventListener('click', () => {
-    section.classList.remove('popUpOpen');
+    section.style.display = 'none';
+
     document.querySelector('#main').style.filter = 'none';
-    document.querySelector('.hightNone').style.display = 'block';
   });
 }
-
-const moreText = 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
 
 function loadDataPopFirst() {
   popUpWinFirst.innerHTML = `
@@ -314,7 +318,7 @@ function loadDataPopFirst() {
           <img class="projectImg" src="${projectInfo[0].imagePop}" alt="pop up image" />
           <div class="details_container">
             <div class="projectDescription">
-                ${projectInfo[0].description}  and ${moreText}
+                ${projectInfo[0].description}  and ${projectInfo[0].moreText}
             </div>
             <div class="projectButtons">
               <button class="cardButtons" href="${projectInfo[0].link}">
@@ -352,7 +356,7 @@ function loadDataPopCard() {
           <img class="projectImg" src="${info.imagePop}" alt="pop up image" />
           <div class="details_container">
             <div class="projectDescription">
-                ${info.description} and ${moreText}
+                ${info.description} and ${info.moreText}
             </div>
             <div class="projectButtons">
               <button class="cardButtons" href="${info.link}">
