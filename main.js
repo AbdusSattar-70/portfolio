@@ -35,7 +35,7 @@ const projectInfo = [
     description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/snapshot.png',
     image: 'images/background-2.svg',
     link: '',
     github: '',
@@ -46,7 +46,7 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/snapshot.png',
     image: 'images/dc-1.svg',
     link: '',
     github: '',
@@ -57,7 +57,7 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/snapshot.png',
     image: 'images/dc-2.svg',
     link: '',
     github: '',
@@ -68,7 +68,7 @@ const projectInfo = [
     description:
        "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/snapshot.png',
     image: 'images/dc-3.svg',
     link: '',
     github: '',
@@ -79,7 +79,7 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/snapshot.png',
     image: 'images/dc-1.svg',
     link: '',
     github: '',
@@ -90,7 +90,7 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/snapshot.png',
     image: 'images/dc-2.svg',
     link: '',
     github: '',
@@ -101,7 +101,7 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/snapshot.png',
     image: 'images/dc-3.svg',
     link: '',
     github: '',
@@ -304,35 +304,7 @@ function popUpOPenClose(section) {
 
 function loadDataPopFirst() {
   popUpWinFirst.innerHTML = `
-     <div class="projectPreview">
-        <div class="head">
-          <div id= "name_container">
-            <h2>${projectInfo[0].title}</h2>
-          </div>
-          <img id ="crossPop" src="icons/cross.png" alt="cross">
-        </div>
-        <ul class="technologiesPreview">
-          ${getTechList(projectInfo[0].technologies)}
-        </ul>
-        <div class="project_elements">
-          <img class="projectImg" src="${projectInfo[0].imagePop}" alt="pop up image" />
-          <div class="details_container">
-            <div class="projectDescription">
-                ${projectInfo[0].description}  and ${projectInfo[0].moreText}
-            </div>
-            <div class="projectButtons">
-              <button class="cardButtons" href="${projectInfo[0].link}">
-                <span>See Live</span>
-                <img src="icons/seeLiveIcon.svg" alt="live" />
-              </button>
-              <button class="cardButtons" href="${projectInfo[0].github}">
-                <span>See Source</span>
-                <img src="icons/whiteGitHubIcon.png" alt="Source" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+
       `;
 
   popUpOPenClose(popUpWinFirst);
