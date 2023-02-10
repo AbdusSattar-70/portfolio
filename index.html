@@ -20,54 +20,52 @@
     rel="stylesheet" />
 </head>
 
-<body>
+<body id="body">
+  <!-- for popup windows -->
+  <section class="popUpWinFirst popUpWinSecond"></section>
   <!------------ header start---------------------- -->
-  <header>
-    <nav class="navbar-container">
-      <div class="logo-container">
-        <img class="branding-logo" src="./logo/a.sattar.svg" alt="logo Placeholder" />
-        <img id="hamImg" src="./icons/Enabled.svg" alt="hamburger menu" />
-      </div>
-      <div class="mobile-menu">
-        <img id="crossImg" src="./icons/cross.png" alt="menu toggler link" />
-        <ul>
+  <main id="main">
+    <header>
+      <nav class="navbar-container">
+        <div class="logo-container">
+          <img class="branding-logo" src="./logo/a.sattar.svg" alt="logo Placeholder" />
+          <img id="hamImg" src="./icons/Enabled.svg" alt="hamburger menu" />
+        </div>
+        <div class="mobile-menu">
+          <img id="crossImg" src="./icons/cross.png" alt="menu toggler link" />
+          <ul>
+            <li>
+              <a class="mob-items" href="#portfolio" target="_self" rel="noopener">Portfolio</a>
+            </li>
+            <hr>
+            <li>
+              <a class="mob-items" href="#about" target="_self" rel="noopener">About</a>
+            </li>
+            <hr>
+            <li>
+              <a class="mob-items" href="#form" target="_self" rel="noopener">Contact</a>
+            </li>
+            <hr>
+          </ul>
+        </div>
+        <ul class="desk-menu">
           <li>
-            <a class="mob-items" href="#portfolio" target="_self" rel="noopener">Portfolio</a>
+            <a href="index.html" target="_self" rel="noopener">Portfolio</a>
           </li>
-          <hr>
           <li>
-            <a class="mob-items" href="#about" target="_self" rel="noopener">About</a>
+            <a href="#about" target="_self" rel="noopener">About</a>
           </li>
-          <hr>
           <li>
-            <a class="mob-items" href="#form" target="_self" rel="noopener">Contact</a>
+            <a href="#form" target="_self" rel="noopener">Contact</a>
           </li>
-          <hr>
+          <li>
+            <a href="https://www.linkedin.com/in/abdus-sattar-a41a26215/" target="_blank" rel="noopener">
+              <img src="icons/Mail.png" alt="message link">
+            </a>
+          </li>
         </ul>
-      </div>
-      <ul class="desk-menu">
-        <li>
-          <a href="index.html" target="_self" rel="noopener">Portfolio</a>
-        </li>
-        <li>
-          <a href="#about" target="_self" rel="noopener">About</a>
-        </li>
-        <li>
-          <a href="#form" target="_self" rel="noopener">Contact</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/abdus-sattar-a41a26215/" target="_blank" rel="noopener">
-            <img src="icons/Mail.png" alt="message link">
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!---------------------- header end ------------------------------>
-
-  <main>
-
+      </nav>
+    </header>
     <!-- headline-container start -->
     <section class="section">
       <div class="headline-container">
@@ -115,352 +113,133 @@
     </section>
 
     <!-- headline-container end -->
+    <section class="hightNone">
+      <!-- My Recent Works section start -->
 
-    <!-- My Recent Works section start -->
+      <section id="portfolio" class="work-section">
+        <div class="works-container"></div>
+      </section>
 
-    <section  id="portfolio" class="work-section">
-      <div class="works-container">
-        <article class="Recent-work">
-          <div class="work-title-dv">
-            <h2 class="works-title">My Recent Works</h2>
-            <hr>
-          </div>
-          <div class="feature-area">
-            <img class="feature-image" src="./images/background-desk-2.svg" alt="feature image about works">
-            <div class="post-text">
-              <h3 class="title-post">Multi-Post Stories</h3>
-              <p class="post-description">
-                A daily selection of privately personalized reads;
-                no accounts or sign-ups required. has been the industry's standard
-                dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-              </p>
-              <ul class="tag-ul-1">
+      <!-- My Recent Works section end  -->
+      <!-- About me section start -->
+
+      <section id="about" class="about-section">
+        <div class="about-container">
+          <article class="about-me">
+            <h2>About me</h2>
+            <p>Hello I'm a software developer! I can help you build a product , feature or website Look through some of
+              my
+              work and
+              experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
+            </p>
+            <button type="button" autofocus>Get My Resume</button>
+          </article>
+          <hr>
+          <ul class="skills-list">
+            <li class="skill-1">Language
+              <ul class="Languages">
+                <li>Javascript</li>
+                <li>Ruby</li>
+                <li>Html</li>
                 <li>CSS</li>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
               </ul>
-              <button type="button" autofocus> See Project</button>
-            </div>
-          </div>
-        </article>
-        <div class="work-cards">
-          <article class="work-card-1 card">
-            <h3>Profesional Art <br>
-              Printing Data</h3>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-              industry's
-              standard
-            </p>
-            <ul class="card-ul">
-              <li>Html</li>
-              <li>Bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <button class="see-project-btn" type="button" autofocus>See Project </button>
-          </article>
-          <article class="work-card-2 card">
-            <h3>Profesional Art <br>
-              Printing Data</h3>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-              industry's
-              standard
-            </p>
-            <ul class="card-ul">
-              <li>Html</li>
-              <li>Bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <button class="see-project-btn" type="button" autofocus>See Project </button>
-          </article>
-          <article class="work-card-3 card">
-            <h3>Profesional Art <br>
-              Printing Data</h3>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-              industry's
-              standard
-            </p>
-            <ul class="card-ul">
-              <li>Html</li>
-              <li>Bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <button class="see-project-btn" type="button" autofocus>See Project </button>
-          </article>
-          <article class="work-card-4 card">
-            <h3>Profesional Art <br>
-              Printing Data</h3>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-              industry's
-              standard
-            </p>
-            <ul class="card-ul">
-              <li>Html</li>
-              <li>Bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <button class="see-project-btn" type="button" autofocus>See Project </button>
-          </article>
-          <article class="work-card-5 card">
-            <h3>Profesional Art <br>
-              Printing Data</h3>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-              industry's
-              standard
-            </p>
-            <ul class="card-ul">
-              <li>Html</li>
-              <li>Bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <button class="see-project-btn" type="button" autofocus>See Project </button>
-          </article>
-          <article class="work-card-6 card">
-            <h3>Profesional Art <br>
-              Printing Data</h3>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-              industry's
-              standard
-            </p>
-            <ul class="card-ul">
-              <li>Html</li>
-              <li>Bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <button class="see-project-btn" type="button" autofocus>See Project </button>
-          </article>
-        </div>
-
-        <!-- new created desktop work cards part -->
-
-        <div class="desktop-cards">
-          <article class="desktop-card-1 desk-card">
-            <div class="card-text">
-              <h3>Profesional Art <br>
-                Printing Data more</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's
-                standard
-              </p>
-              <ul>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button">See Project </button>
-          </article>
-          <article class="desktop-card-2 desk-card">
-            <div class="card-text">
-              <h3> Data Dashboard <br>
-                Healthcare
-              </h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's
-                standard
-              </p>
-              <ul>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button">See Project </button>
-          </article>
-          <article class="desktop-card-3 desk-card">
-            <div class="card-text">
-              <h3>Website Protfolio</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's
-                standard
-              </p>
-              <ul>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button">See Project </button>
-          </article>
-          <article class="desktop-card-4 desk-card">
-            <div class="card-text">
-              <h3>Profesional Art <br>
-                Printing Data more</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's
-                standard
-              </p>
-              <ul>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button" autofocus>See Project </button>
-          </article>
-          <article class="desktop-card-5 desk-card">
-            <div class="card-text">
-              <h3> Data Dashboard <br>
-                Healthcare
-              </h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's
-                standard
-              </p>
-              <ul>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button">See Project </button>
-          </article>
-          <article class="desktop-card-6 desk-card">
-            <div class="card-text">
-              <h3>Website Protfolio</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's
-                standard
-              </p>
-              <ul>
-                <li>Html</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button">See Project </button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- My Recent Works section end  -->
-    <!-- About me section start -->
-
-    <section id="about" class="about-section">
-      <div class="about-container">
-        <article class="about-me">
-          <h2>About me</h2>
-          <p>Hello I'm a software developer! I can help you build a product , feature or website Look through some of my
-            work and
-            experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
-          </p>
-          <button type="button" autofocus>Get My Resume</button>
-        </article>
-        <hr>
-        <ul class="skills-list">
-          <li class="skill-1">Language
-            <ul class="Languages">
-              <li>Javascript</li>
-              <li>Ruby</li>
-              <li>Html</li>
-              <li>CSS</li>
-            </ul>
-          </li>
-          <li class="skill-2">Frameworks
-            <ul class="frameworks">
-              <li>Bootstrap</li>
-              <li>Ruby on Rails</li>
-              <li>RSPec</li>
-              <li>CapyBara</li>
-              <li>Selenium</li>
-            </ul>
-          </li>
-          <li class="skill-3">Skills
-            <ul class="skills">
-              <li>Codekit</li>
-              <li>Github</li>
-              <li>Codepen</li>
-              <li>Gitlab</li>
-              <li>Terminal</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- About me section end -->
-    <!-- contact form section  -->
-    <section id="form">
-      <div class="form-container">
-        <p>
-          I'm always interested <br> in hearing about new projects,<br>
-          so if you'd like to chat <br> please get in touch.
-        </p>
-        <form action="https://formspree.io/f/xeqwonbn" method="POST">
-          <ul>
-            <li>
-              <label for="name">
-                <input type="text" name="name" id="name" maxlength="30" required placeholder="Full name">
-              </label>
             </li>
-            <li>
-              <label for="email">
-                <input type="email" name="email" id="email" required placeholder="Email address">
-              </label>
+            <li class="skill-2">Frameworks
+              <ul class="frameworks">
+                <li>Bootstrap</li>
+                <li>Ruby on Rails</li>
+                <li>RSPec</li>
+                <li>CapyBara</li>
+                <li>Selenium</li>
+              </ul>
             </li>
-            <li>
-              <label for="message">
-                <textarea name="message" id="message" maxlength="500" required placeholder="Enter text here">Enter Text Here
-            </textarea>
-              </label>
-            </li>
-            <li>
-              <button type="submit">Get in touch</button>
+            <li class="skill-3">Skills
+              <ul class="skills">
+                <li>Codekit</li>
+                <li>Github</li>
+                <li>Codepen</li>
+                <li>Gitlab</li>
+                <li>Terminal</li>
+              </ul>
             </li>
           </ul>
-        </form>
-      </div>
+        </div>
+      </section>
+
+      <!-- About me section end -->
+      <!-- contact form section  -->
+      <section id="form">
+        <div class="form-container">
+          <p>
+            I'm always interested <br> in hearing about new projects,<br>
+            so if you'd like to chat <br> please get in touch.
+          </p>
+          <form action="https://formspree.io/f/xeqwonbn" method="POST">
+            <ul>
+              <li>
+                <label for="name">
+                  <input type="text" name="name" id="name" maxlength="30" required placeholder="Full name">
+                </label>
+              </li>
+              <li>
+                <label for="email">
+                  <input type="email" name="email" id="email" required placeholder="Email address">
+                </label>
+              </li>
+              <li>
+                <label for="message">
+                  <textarea name="message" id="message" maxlength="500" required placeholder="Enter text here">Enter Text Here
+              </textarea>
+                </label>
+              </li>
+              <li>
+                <button type="submit">Get in touch</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+
+      <!-- contact form end-->
+
+      <footer>
+        <hr class="top-line">
+        <div class="footer">
+          <ul class="social_navigation">
+            <li class="item">
+              <a href="https://github.com/AbdusSattar-70/portfolio" target="_blank" rel="noopener">
+                <img src="icons/footer-git.svg" alt="gitHub icon link" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="https://www.linkedin.com/in/abdus-sattar-a41a26215/" target="_blank" rel="noopener">
+                <img src="icons/footer-link.svg" alt="linkedin icon link" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" target="_self" rel="noopener">
+                <img src="icons/footer-ang.svg" alt="angel icon link" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="https://twitter.com/Abdus_Sattar70" target="_blank" rel="noopener">
+                <img src="icons/footer-witter.svg" alt="twitter icon link" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" target="_self" rel="noopener">
+                <img src="icons/footer-Medium.svg" alt="medium icon link" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <hr class="liner">
+      </footer>
     </section>
-
-    <!-- contact form end-->
-
-    <footer>
-      <hr class="top-line">
-      <div class="footer">
-        <ul class="social_navigation">
-          <li class="item">
-            <a href="https://github.com/AbdusSattar-70/portfolio" target="_blank" rel="noopener">
-              <img src="icons/footer-git.svg" alt="gitHub icon link" />
-            </a>
-          </li>
-          <li class="item">
-            <a href="https://www.linkedin.com/in/abdus-sattar-a41a26215/" target="_blank" rel="noopener">
-              <img src="icons/footer-link.svg" alt="linkedin icon link" />
-            </a>
-          </li>
-          <li class="item">
-            <a href="#" target="_self" rel="noopener">
-              <img src="icons/footer-ang.svg" alt="angel icon link" />
-            </a>
-          </li>
-          <li class="item">
-            <a href="https://twitter.com/Abdus_Sattar70" target="_blank" rel="noopener">
-              <img src="icons/footer-witter.svg" alt="twitter icon link" />
-            </a>
-          </li>
-          <li class="item">
-            <a href="#" target="_self" rel="noopener">
-              <img src="icons/footer-Medium.svg" alt="medium icon link" />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <hr class="liner">
-    </footer>
   </main>
+
+  <!-- custom js file link -->
+
   <script src="main.js"></script>
 </body>
 
