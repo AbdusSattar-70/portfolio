@@ -46,3 +46,17 @@ formEmail.onchange = () => {
 message.onchange = () => {
   saveToStorage('message', message.value);
 };
+
+function populateForm() {
+  formData.nameC = localStorage.getItem('name');
+  formData.formEmail = localStorage.getItem('email');
+  formData.message = localStorage.getItem('message');
+
+  nameC.value = formData.nameC;
+  formEmail.value = formData.formEmail;
+  message.value = formData.message;
+}
+
+window.onload = () => {
+  populateForm();
+};
