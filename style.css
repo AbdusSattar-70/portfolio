@@ -14,6 +14,104 @@ body {
 
 /* popup window style start */
 
+.popUpWinFirst {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  left: 35px;
+  top: 50px;
+  width: 80%;
+  height: 90%;
+  background-color: #fff;
+}
+
+.projectPreview {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin: 24px;
+}
+
+.project_elements {
+  display: flex;
+  flex-direction: column;
+}
+
+.details_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImg {
+  width: 100%;
+  height: 80%;
+  margin: 10px 0;
+}
+
+.technologiesPreview {
+  display: flex;
+  gap: 3%;
+  margin: 20px 0;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag {
+  border: 1px solid #979493;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  padding: 5px 12px;
+  font-size: 15px;
+}
+
+.projectDescription {
+  height: 50%;
+  text-overflow: clip;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.head h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #172b4d;
+}
+
+#crossPop {
+  width: 40px;
+  height: 40px;
+}
+
+.projectButtons {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardButtons {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 8px 5px;
+}
+
+.cardButtons span {
+  font-size: 15px;
+  color: #fff;
+}
+
 /* popup window style end */
 
 .navbar-container,
@@ -568,13 +666,11 @@ media query for mobile from 450px to 767px screen
 
 @media screen and (min-width: 450px) {
   /* popup window style start */
-  .popUpWinFirst {
-    height: 80vh;
-    width: 73vw;
-  }
 
-  .projectImg {
-    width: 68vw;
+  .projectPreview {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
   }
 
   /* popup window style end */
@@ -740,52 +836,64 @@ media query for mobile from 450px to 767px screen
   /* popup window style start */
 
   .popUpWinFirst {
-    height: 65vh;
-    width: 90vw;
-  }
-
-  .tag {
-    font-size: 17px;
+    height: 80%;
+    width: 90%;
+    left: 50px;
+    overflow: hidden;
   }
 
   .head h2 {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .technologiesPreview {
+    gap: 6px;
+    margin: 12px 0 24px 0;
   }
 
   .projectImg {
-    width: 50vw;
+    width: 70%;
+    margin: 0;
   }
 
   .projectPreview {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 60vh;
-  }
-
-  .project_elements {
-    height: 50vh;
-    width: 86vw;
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .details_container {
-    display: flex;
-    flex-direction: column;
+    height: 100%;
     justify-content: space-between;
   }
 
+  .project_elements {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    gap: 24px;
+  }
+
+  .details_container {
+    overflow: hidden;
+    width: 40%;
+    height: 78%;
+  }
+
   .projectDescription {
-    height: 236px;
-    font-size: 20px;
+    width: 325px;
+    margin: 0;
+    height: 80%;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
   }
 
   .projectButtons {
     height: 40px;
-    display: flex;
-    align-items: flex-start;
-    width: 65%;
+    gap: 5%;
+    margin-top: 12%;
+    width: 100%;
+    justify-content: flex-start;
   }
 
   /* popup window style end */
@@ -1066,6 +1174,23 @@ media query for mobile from 450px to 767px screen
 ------------------------------------------------- */
 
 @media screen and (min-width: 1000px) {
+  .details_container {
+    width: 40%;
+  }
+
+  .head h2 {
+    width: 100%;
+    margin-left: 17%;
+  }
+
+  .technologiesPreview {
+    margin-left: 5%;
+  }
+
+  .project_elements {
+    gap: 0;
+  }
+
   .works-container {
     width: 75%;
     margin: 0 12%;
@@ -1197,46 +1322,44 @@ media query for mobile from 450px to 767px screen
   }
 }
 
-@media screen and (min-width: 1206px) {
-  /* popup window style start */
+@media screen and (min-width: 1200px) {
   .popUpWinFirst {
-    width: 90vw;
-    height: 90vh;
-  }
-
-  .technologiesPreview {
-    margin-top: 20px;
-    gap: 10px;
-  }
-
-  .projectButtons {
-    margin-top: 33%;
-    width: 40%;
-  }
-
-  .projectImg {
-    width: 50vw;
-  }
-
-  .details_container {
-    width: 720px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .projectDescription {
-    height: 250px;
-    padding-right: 10%;
-    line-height: 29px;
+    height: 85%;
+    left: 80px;
   }
 
   .project_elements {
-    margin-top: 2%;
-    height: 90vh;
-    width: 90vw;
-    flex-direction: row;
+    height: 80%;
+    gap: 3%;
+    width: 100%;
+    margin-bottom: 10%;
   }
 
-  /* popup window style end */
+  .projectImg {
+    max-width: 655px;
+    max-height: 421px;
+    width: auto;
+    height: auto;
+  }
+
+  .details_container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .projectDescription {
+    width: 450px;
+  }
+
+  .projectButtons {
+    margin-top: 5%;
+  }
+
+  .head h2 {
+    margin-left: 0;
+  }
+
+  .technologiesPreview {
+    margin-left: 0;
+  }
 }
