@@ -406,3 +406,17 @@ email.addEventListener('input', () => {
 form.addEventListener('submit', () => {
   validateEmail();
 });
+
+function populateForm() {
+  formData.nameC = localStorage.getItem('name');
+  formData.formEmail = localStorage.getItem('email');
+  formData.message = localStorage.getItem('message');
+
+  nameC.value = formData.nameC;
+  formEmail.value = formData.formEmail;
+  message.value = formData.message;
+}
+
+window.onload = () => {
+  populateForm();
+};
