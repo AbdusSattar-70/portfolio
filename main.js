@@ -385,7 +385,6 @@ seeProBtns.forEach((seeProBtn) => {
 
 // Email Validation
 const email = document.getElementById('email');
-const form = document.getElementsByTagName('form');
 const submitButton = document.getElementById('submitBtn');
 
 function validateEmail() {
@@ -403,6 +402,6 @@ email.addEventListener('input', () => {
   validateEmail();
 });
 
-form.addEventListener('submit', () => {
+submitButton.addEventListener('submit', () => {
   validateEmail();
 });
