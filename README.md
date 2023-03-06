@@ -1,8 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
- <h3><b>Portfolio is my demo project for learning Git and GitHub workflows</b></h3>
-<h5>This is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed.I create a complete mobile version and desktop version. It has four main sections headline, works, about me, and a contact form. Thanks ❤️ to my coding partner <b> MEHMET Selçuk Güler </b> for contributing to creating the mobile menu interactivity.<b> In this milestone, we have created mobile and desktop version popUp window using js </b>.
+ <h3><b>Portfolio </b>.
  </h5>
 </div>
 
@@ -10,7 +9,6 @@
 <h3><b>Mobible version screenshot</b></h3>
 <img src="images/Screenshot-1.png" alt="screenshoot" width="140"  height="auto"/>
 <img src="images/Screenshot-2png.png" alt="screenshoot" width="140"  height="auto"/>
-<img src="images/screencapture-3.png" alt="screenshoot" width="140"  height="auto"/>
 <img src="images/screencapture-4.png" alt="screenshoot" width="140"  height="auto"/>
 </div>
 
@@ -41,7 +39,8 @@
 
 # 📖 [portfolio] <a name="about-project"></a>
 
-**[portfolio]** is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed.
+**portfolio** is my first project for learning Git and GitHub workflows</b></h3>
+<h5>This is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed.I create a complete mobile version and desktop version. It has four main sections headline, works, about me, and a contact form. Thanks ❤️ to my coding partner <b> MEHMET Selçuk Güler </b> for contributing to creating the mobile menu interactivity.<b> In this milestone, we have created mobile and desktop version popUp window using js 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -121,7 +120,7 @@ gitHub
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
+👤 **Abdus Sattar**
 
 - GitHub: [@githubhandle](https://github.com/AbdusSattar-70)
 - Twitter: [@twitterhandle](twitter.com/Abdus_Sattar70)
@@ -171,14 +170,10 @@ I would like to thank and appreciate who contributes this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is under [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
