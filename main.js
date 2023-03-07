@@ -35,10 +35,10 @@ const projectInfo = [
     description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/ToDoList.png',
     image: 'images/background-2.svg',
-    link: '',
-    github: '',
+    link: 'https://abdussattar-70.github.io/To-Do-List/dist/',
+    github: 'https://github.com/AbdusSattar-70/To-Do-List',
   },
   {
     title: 'Profesional Art Printing Data',
