@@ -26,6 +26,10 @@ body {
   background-color: #fff;
 }
 
+.popUpWinSecond {
+  display: none;
+}
+
 .projectPreview {
   display: flex;
   flex-direction: column;

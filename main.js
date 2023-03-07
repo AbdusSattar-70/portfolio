@@ -35,10 +35,10 @@ const projectInfo = [
     description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/ToDoList.png',
     image: 'images/background-2.svg',
-    link: '',
-    github: '',
+    link: 'https://abdussattar-70.github.io/To-Do-List/dist/',
+    github: 'https://github.com/AbdusSattar-70/To-Do-List',
   },
   {
     title: 'Profesional Art Printing Data',
@@ -46,10 +46,10 @@ const projectInfo = [
     description:
       "A daily selection of privatelyperson alized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/capstone.png',
     image: 'images/dc-1.svg',
-    link: '',
-    github: '',
+    link: 'https://abdussattar-70.github.io/FirstCapstone/',
+    github: 'https://github.com/AbdusSattar-70/FirstCapstone',
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -57,10 +57,10 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/bookStore.png',
     image: 'images/dc-2.svg',
-    link: '',
-    github: '',
+    link: 'https://abdussattar-70.github.io/BookStore/',
+    github: 'https://github.com/AbdusSattar-70/BookStore',
   },
   {
     title: 'Website Protfolio',
@@ -68,10 +68,10 @@ const projectInfo = [
     description:
        "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/bookStore.png',
     image: 'images/dc-3.svg',
-    link: '',
-    github: '',
+    link: 'https://abdussattar-70.github.io/BookStore/',
+    github: 'https://github.com/AbdusSattar-70/BookStore',
   },
   {
     title: 'Profesional Art Printing Data',
@@ -79,10 +79,10 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/ToDoList.png',
     image: 'images/dc-1.svg',
-    link: '',
-    github: '',
+    link: 'https://abdussattar-70.github.io/To-Do-List/dist/',
+    github: 'https://github.com/AbdusSattar-70/To-Do-List',
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -90,10 +90,10 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/capstone.png',
     image: 'images/dc-2.svg',
-    link: '',
-    github: '',
+    link: 'https://abdussattar-70.github.io/FirstCapstone/',
+    github: 'https://github.com/AbdusSattar-70/FirstCapstone',
   },
   {
     title: 'Website Protfolio',
@@ -101,10 +101,10 @@ const projectInfo = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Snapshoot Portfolio.svg',
+    imagePop: 'images/capstone.png',
     image: 'images/dc-3.svg',
-    link: '',
-    github: '',
+    link: 'https://abdussattar-70.github.io/FirstCapstone/',
+    github: 'https://github.com/AbdusSattar-70/FirstCapstone',
   },
 ];
 
@@ -321,14 +321,18 @@ function loadDataPopFirst() {
                 ${projectInfo[0].description}  and ${projectInfo[0].moreText}
             </div>
             <div class="projectButtons">
-              <button class="cardButtons" href="${projectInfo[0].link}">
-                <span>See Live</span>
-                <img src="icons/seeLiveIcon.svg" alt="live" />
+              <a href="${projectInfo[0].link}" target ="_blank">
+               <button class="cardButtons">
+               <span>See Live</span>
+              <img src="icons/seeLiveIcon.svg" alt="live" />
               </button>
-              <button class="cardButtons" href="${projectInfo[0].github}">
+              </a>
+              <a href="${projectInfo[0].github}" target ="_blank">
+              <button class="cardButtons">
                 <span>See Source</span>
                 <img src="icons/whiteGitHubIcon.png" alt="Source" />
               </button>
+              </a>
             </div>
           </div>
         </div>
@@ -339,47 +343,59 @@ function loadDataPopFirst() {
 }
 
 document.querySelector('#popUpContFirstBtn').addEventListener('click', loadDataPopFirst);
-function loadDataPopCard() {
-  projectInfo.forEach((info) => {
-    popUpWinSecond.innerHTML = `
-      <div class="projectPreview">
-        <div class="head">
-          <div id= "name_container">
-            <h2>${info.title}</h2>
-          </div>
-          <img id ="crossPop" src="icons/cross.png" alt="cross">
+function loadDataPopCard(index) {
+  const info = projectInfo[index];
+  let items = '';
+  items = `
+    <div class="projectPreview">
+      <div class="head">
+        <div id="name_container">
+          <h2>${info.title}</h2>
         </div>
-        <ul class="technologiesPreview">
-          ${getTechList(info.technologies)}
-        </ul>
-        <div class="project_elements">
-          <img class="projectImg" src="${info.imagePop}" alt="pop up image" />
-          <div class="details_container">
-            <div class="projectDescription">
-                ${info.description} and ${info.moreText}
-            </div>
-            <div class="projectButtons">
-              <button class="cardButtons" href="${info.link}">
+        <img id="crossPop" src="icons/cross.png" alt="cross">
+      </div>
+      <ul class="technologiesPreview">
+        ${getTechList(info.technologies)}
+      </ul>
+      <div class="project_elements">
+        <img class="projectImg" src="${info.imagePop}" alt="pop up image" />
+        <div class="details_container">
+          <div class="projectDescription">
+            ${info.description} and ${info.moreText}
+          </div>
+          <div class="projectButtons">
+            <a href="${info.link}" target="_blank">
+              <button class="cardButtons">
                 <span>See Live</span>
                 <img src="icons/seeLiveIcon.svg" alt="live" />
               </button>
-              <button class="cardButtons" href="${info.github}">
+            </a>
+            <a href="${info.github}" target="_blank">
+              <button class="cardButtons">
                 <span>See Source</span>
                 <img src="icons/whiteGitHubIcon.png" alt="Source" />
               </button>
-            </div>
+            </a>
           </div>
         </div>
       </div>
-      `;
-  });
+    </div>
+  `;
+  popUpWinSecond.innerHTML = items;
   popUpOPenClose(popUpWinSecond);
 }
 
-const seeProBtns = document.querySelectorAll('.seeProBtn');
-seeProBtns.forEach((seeProBtn) => {
-  seeProBtn.addEventListener('click', loadDataPopCard);
-});
+const popUpWinSecondListener = () => {
+  const seeProBtns = document.querySelectorAll('.seeProBtn');
+  seeProBtns.forEach((seeProBtn, i) => {
+    seeProBtn.addEventListener('click', () => {
+      popUpWinSecond.style.display = 'block';
+      loadDataPopCard(i % projectInfo.length);
+    });
+  });
+};
+
+popUpWinSecondListener();
 
 /* pop up window end */
 
