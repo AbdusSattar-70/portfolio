@@ -70,7 +70,7 @@ const projectInfo = [
     technologies: ['html', 'bootstrap', 'Ruby'],
     imagePop: 'images/bookStore.png',
     image: 'images/dc-3.svg',
-   link: 'https://abdussattar-70.github.io/BookStore/',
+    link: 'https://abdussattar-70.github.io/BookStore/',
     github: 'https://github.com/AbdusSattar-70/BookStore',
   },
   {
@@ -344,9 +344,9 @@ function loadDataPopFirst() {
 
 document.querySelector('#popUpContFirstBtn').addEventListener('click', loadDataPopFirst);
 function loadDataPopCard(index) {
-  let info = projectInfo[index];
-  let items = "";
-   items = `
+  const info = projectInfo[index];
+  let items = '';
+  items = `
     <div class="projectPreview">
       <div class="head">
         <div id="name_container">
@@ -385,7 +385,6 @@ function loadDataPopCard(index) {
   popUpOPenClose(popUpWinSecond);
 }
 
-
 const popUpWinSecondListener = () => {
   const seeProBtns = document.querySelectorAll('.seeProBtn');
   seeProBtns.forEach((seeProBtn, i) => {
@@ -396,7 +395,7 @@ const popUpWinSecondListener = () => {
   });
 };
 
-popUpWinSecondListener()
+popUpWinSecondListener();
 
 /* pop up window end */
 
