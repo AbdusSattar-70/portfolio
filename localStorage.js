@@ -13,6 +13,6 @@ formString.addEventListener('input', () => {
 });
 
 const formObj = JSON.parse(localStorage.getItem('formString'));
-document.getElementById('name').value = formObj.name;
+document.getElementById('name').value = formObj;
 document.getElementById('email').value = formObj.email;
 document.getElementById('message').value = formObj.message;
