@@ -96,6 +96,11 @@ body {
 #crossPop {
   width: 40px;
   height: 40px;
+  cursor: pointer;
+}
+
+#crossPop:hover {
+  box-shadow: 5px 5px 5px rgba(140, 137, 134, 0.462);
 }
 
 .projectButtons {

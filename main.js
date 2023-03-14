@@ -30,7 +30,7 @@ mobileMenuItems.forEach((item) => {
 
 const projectInfo = [
   {
-    title: 'Multi-Post Stories',
+    title: 'To Do List Project details',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
@@ -41,7 +41,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/To-Do-List',
   },
   {
-    title: 'Profesional Art Printing Data',
+    title: 'FirstCapstone project details',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
       "A daily selection of privatelyperson alized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
@@ -52,7 +52,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/FirstCapstone',
   },
   {
-    title: 'Data Dashboard Healthcare',
+    title: 'BookStore Project Detail',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
@@ -63,18 +63,18 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/BookStore',
   },
   {
-    title: 'Website Protfolio',
+    title: 'Leaderboard Protfolio',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
        "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/bookStore.png',
+    imagePop: 'images/Leaderboard.png',
     image: 'images/dc-3.svg',
-    link: 'https://abdussattar-70.github.io/BookStore/',
-    github: 'https://github.com/AbdusSattar-70/BookStore',
+    link: 'https://abdussattar-70.github.io/Leaderboard/dist',
+    github: 'https://github.com/AbdusSattar-70/Leaderboard',
   },
   {
-    title: 'Profesional Art Printing Data',
+    title: 'To Do List Project Detail',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
@@ -85,7 +85,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/To-Do-List',
   },
   {
-    title: 'Data Dashboard Healthcare',
+    title: 'FirstCapstone project details',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
@@ -96,7 +96,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/FirstCapstone',
   },
   {
-    title: 'Website Protfolio',
+    title: 'FirstCapstone project details',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
