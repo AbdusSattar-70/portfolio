@@ -183,6 +183,17 @@ newInfo.forEach((info,i)=>{
 
 /* project data load end */
 
+/* pop up window start */
+function popUpOPenClose() {
+const popUpWindow = document.querySelector('.popUpSection');
+   const crossBtns = document.querySelectorAll('#crossPop');
+   crossBtns.forEach((crossBtn)=>{
+    crossBtn.addEventListener('click', () => {
+    document.querySelector('#main').style.filter = 'none';
+    popUpWindow.style.display = 'none';
+   });
+  });
+}
 /* pop up window end */
 
 // Email Validation
