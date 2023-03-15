@@ -156,6 +156,33 @@ workCards.appendChild(article);
    }
      loadWorkCardMobile();
 
+      const  loadWorkCardDesktop= () => {
+ const desktopCards = document.querySelector('.desktop-cards');
+const newInfo = projectInfo.filter((info,i) => i !==0);
+newInfo.forEach((info,i)=>{
+    const article = document.createElement('article');
+     article.className = `desktop-card-${i} desk-card`;
+  article.innerHTML = `
+   <!-- new created desktop work cards part -->
+            <div class="card-text">
+              <h3>${info.title}</h3>
+              <p>
+               ${info.description}
+              </p>
+              <ul>
+                  ${getTechList(info.technologies)}
+              </ul>
+            </div>
+            <button class = "seeProBtn popUpDesk" type="button">See Project </button>
+  `
+  desktopCards.appendChild(article);
+
+});
+   }
+   loadWorkCardDesktop();
+
+/* project data load end */
+
 /* pop up window end */
 
 // Email Validation
