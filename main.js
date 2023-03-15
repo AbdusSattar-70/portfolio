@@ -30,79 +30,67 @@ mobileMenuItems.forEach((item) => {
 
 const projectInfo = [
   {
+    title: 'FirstCapstone project details',
+    moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: "This repo is a part of the learning purpose that I made to how to use html css and js best practices.The Original design idea is by Cindy Shin in Behance Thanks ❤️ to Cindy Shin Creating such a beautiful design.",
+    technologies: ['HTML','CSS', 'JavaScript', 'Ruby'],
+    image: 'images/capstone.png',
+    bgImg: 'images/background-2.svg',
+    link: 'https://abdussattar-70.github.io/FirstCapstone/',
+    github: 'https://github.com/AbdusSattar-70/FirstCapstone',
+  },
+   {
     title: 'To Do List Project details',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/ToDoList.png',
-    image: 'images/background-2.svg',
+    description: "This repo is created for learning objectives on how to create a To-do-list and use Webpack with ES6 .it is a simple website that displays a list of To do tasks and allows you to add and remove tasks from that list",
+    technologies: ['css', 'html', 'bootstrap'],
+    image: 'images/ToDoList.png',
     link: 'https://abdussattar-70.github.io/To-Do-List/dist/',
     github: 'https://github.com/AbdusSattar-70/To-Do-List',
   },
   {
-    title: 'FirstCapstone project details',
+    title: 'AwesomeBookES6 Project Detail',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description:
-      "A daily selection of privatelyperson alized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
+    description:"AwesomeBookES6 is a simple website that displays a list of books and allows you to add and remove books from that list. unknown printer took a galley of type and scrambled it to make a type specimen book.",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/capstone.png',
-    image: 'images/dc-1.svg',
-    link: 'https://abdussattar-70.github.io/FirstCapstone/',
-    github: 'https://github.com/AbdusSattar-70/FirstCapstone',
-  },
-  {
-    title: 'BookStore Project Detail',
-    moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/bookStore.png',
-    image: 'images/dc-2.svg',
-    link: 'https://abdussattar-70.github.io/BookStore/',
-    github: 'https://github.com/AbdusSattar-70/BookStore',
+    image: 'images/bookStore.png',
+    link: 'https://abdussattar-70.github.io/Awesome-Book-ES6/',
+    github: 'https://github.com/AbdusSattar-70/Awesome-Book-ES6',
   },
   {
     title: 'Leaderboard Protfolio',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description:
-       "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
+    description:"Leaderboard is my demo project for learning the usage of API and Git workflow and it is a simple website that displays a list of players' names and scores and allows you to add that info to the list.",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/Leaderboard.png',
-    image: 'images/dc-3.svg',
+    image: 'images/Leaderboard.png',
     link: 'https://abdussattar-70.github.io/Leaderboard/dist',
     github: 'https://github.com/AbdusSattar-70/Leaderboard',
   },
   {
-    title: 'To Do List Project Detail',
+    title: 'ToDoListAgain Project Detail',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
+      "A daily selection of privately personalized reads; printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap This has been the industry's standard dummy text ever since the 1500s",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/ToDoList.png',
-    image: 'images/dc-1.svg',
-    link: 'https://abdussattar-70.github.io/To-Do-List/dist/',
-    github: 'https://github.com/AbdusSattar-70/To-Do-List',
+    image: 'images/ToDoList.png',
+    link: 'https://abdussattar-70.github.io/ToDoListAgain/dist/',
+    github: 'https://github.com/AbdusSattar-70/ToDoListAgain',
   },
   {
-    title: 'FirstCapstone project details',
+    title: 'Testing-practice project',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
+    description: "In this exercise repo, I wrote a few practical tests for JavaScript functions using the Jest library and followed the AAA pattern to make my tests easier for other developers to read and understand. I also used the TDD approach in practice.",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/capstone.png',
-    image: 'images/dc-2.svg',
-    link: 'https://abdussattar-70.github.io/FirstCapstone/',
-    github: 'https://github.com/AbdusSattar-70/FirstCapstone',
+    image: 'images/capstone.png',
+    link: '',
+    github: 'https://github.com/AbdusSattar-70/Testing-practice',
   },
-  {
+   {
     title: 'FirstCapstone project details',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s",
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    imagePop: 'images/capstone.png',
-    image: 'images/dc-3.svg',
+    description: "This repo is a part of the learning purpose that I made to how to use html css and js best practices.The Original design idea is by Cindy Shin in Behance Thanks ❤️ to Cindy Shin Creating such a beautiful design.",
+    technologies: ['HTML','CSS', 'JavaScript'],
+    image: 'images/capstone.png',
     link: 'https://abdussattar-70.github.io/FirstCapstone/',
     github: 'https://github.com/AbdusSattar-70/FirstCapstone',
   },
@@ -118,284 +106,6 @@ function getTechList(technologies) {
   return list;
 }
 
-function loadData() {
-  const worksContainer = document.querySelector('.works-container');
-  worksContainer.innerHTML = `
-    <article class="Recent-work">
-      <div class="work-title-dv">
-        <h2 class="works-title">${projectInfo[0].title}</h2>
-        <hr>
-      </div>
-      <div class="feature-area">
-        <img class="feature-image" src="${projectInfo[0].image}" alt="feature image about works">
-        <div class="post-text">
-          <h3 class="title-post">Multi-Post Stories</h3>
-          <p class="post-description">
-            ${projectInfo[0].description}
-          </p>
-          <ul class="tag-ul-1">
-            ${getTechList(projectInfo[0].technologies)}
-          </ul>
-          <button id="popUpContFirstBtn" type="button" autofocus> See Project</button>
-        </div>
-      </div>
-    </article>
-    <div class="work-cards">
-          <article class="work-card-1 card">
-            <h3>${projectInfo[1].title}</h3>
-            <p class="description">
-              ${projectInfo[1].description}
-            </p>
-            <ul class="card-ul">
-              ${getTechList(projectInfo[1].technologies)}
-            </ul>
-            <button class="see-project-btn seeProBtn" type="button" autofocus>See Project </button>
-          </article>
-          <article class="work-card-2 card">
-            <h3>${projectInfo[2].title}</h3>
-            <p class="description">
-              ${projectInfo[2].description}
-            </p>
-            <ul class="card-ul">
-              ${getTechList(projectInfo[2].technologies)}
-            </ul>
-            <button class="see-project-btn seeProBtn" type="button" autofocus>See Project </button>
-          </article>
-          <article class="work-card-3 card">
-            <h3>${projectInfo[3].title}</h3>
-            <p class="description">
-              ${projectInfo[3].description}
-            </p>
-            <ul class="card-ul">
-              ${getTechList(projectInfo[3].technologies)}
-            </ul>
-            <button class="see-project-btn seeProBtn" type="button" autofocus>See Project </button>
-          </article>
-          <article class="work-card-4 card">
-            <h3>${projectInfo[4].title}</h3>
-            <p class="description">
-              ${projectInfo[4].description}
-            </p>
-            <ul class="card-ul">
-              ${getTechList(projectInfo[4].technologies)}
-            </ul>
-            <button class="see-project-btn seeProBtn" type="button" autofocus>See Project </button>
-          </article>
-          <article class="work-card-5 card">
-            <h3>${projectInfo[5].title}</h3>
-            <p class="description">
-              ${projectInfo[5].description}
-            </p>
-            <ul class="card-ul">
-              ${getTechList(projectInfo[5].technologies)}
-            </ul>
-            <button class="see-project-btn seeProBtn" type="button" autofocus>See Project </button>
-          </article>
-          <article class="work-card-6 card">
-            <h3>${projectInfo[6].title}</h3>
-            <p class="description">
-              ${projectInfo[6].description}
-            </p>
-            <ul class="card-ul">
-              ${getTechList(projectInfo[6].technologies)}
-            </ul>
-            <button class="see-project-btn seeProBtn" type="button" autofocus>See Project </button>
-          </article>
-        </div>
-
-        <!-- new created desktop work cards part -->
-
-        <div class="desktop-cards">
-          <article class="desktop-card-1 desk-card">
-            <div class="card-text">
-              <h3>${projectInfo[1].title}</h3>
-              <p>
-               ${projectInfo[1].description}
-              </p>
-              <ul>
-                  ${getTechList(projectInfo[1].technologies)}
-              </ul>
-            </div>
-            <button class = "seeProBtn" type="button">See Project </button>
-          </article>
-          <article class="desktop-card-2 desk-card">
-            <div class="card-text">
-              <h3>
-              ${projectInfo[2].title}
-              </h3>
-              <p>
-                  ${projectInfo[2].description}
-              </p>
-              <ul>
-                 ${getTechList(projectInfo[2].technologies)}
-              </ul>
-            </div>
-            <button class = "seeProBtn" type="button">See Project </button>
-          </article>
-          <article class="desktop-card-3 desk-card">
-            <div class="card-text">
-              <h3> ${projectInfo[3].title}</h3>
-              <p>
-                ${projectInfo[3].description}
-              </p>
-              <ul>
-                ${getTechList(projectInfo[3].technologies)}
-              </ul>
-            </div>
-            <button class = "seeProBtn" type="button">See Project </button>
-          </article>
-          <article class="desktop-card-4 desk-card">
-            <div class="card-text">
-              <h3> ${projectInfo[4].title}</h3>
-              <p>
-                ${projectInfo[4].description}
-              </p>
-              <ul>
-              ${getTechList(projectInfo[4].technologies)}
-              </ul>
-            </div>
-            <button class = "seeProBtn" type="button" autofocus>See Project </button>
-          </article>
-          <article class="desktop-card-5 desk-card">
-            <div class="card-text">
-              <h3>
-               ${projectInfo[5].title}
-              </h3>
-              <p>
-                ${projectInfo[5].description}
-              </p>
-              <ul>
-                ${getTechList(projectInfo[5].technologies)}
-              </ul>
-            </div>
-            <button class = "seeProBtn" type="button">See Project </button>
-          </article>
-          <article class="desktop-card-6 desk-card">
-            <div class="card-text">
-              <h3> ${projectInfo[6].title}</h3>
-              <p>
-                ${projectInfo[6].description}
-              </p>
-              <ul>
-               ${getTechList(projectInfo[6].technologies)}
-              </ul>
-            </div>
-            <button class = "seeProBtn" type="button">See Project </button>
-          </article>
-        </div>
-      `;
-}
-
-loadData();
-/* project data load end */
-/* pop up window start */
-const popUpWinFirst = document.querySelector('.popUpWinFirst');
-const popUpWinSecond = document.querySelector('.popUpWinSecond');
-
-function popUpOPenClose(section) {
-  section.style.display = 'block';
-  document.querySelector('#main').style.filter = 'blur(5px)';
-  document.querySelector('#crossPop').addEventListener('click', () => {
-    section.style.display = 'none';
-
-    document.querySelector('#main').style.filter = 'none';
-  });
-}
-
-function loadDataPopFirst() {
-  popUpWinFirst.innerHTML = `
-     <div class="projectPreview">
-        <div class="head">
-          <div id= "name_container">
-            <h2>${projectInfo[0].title}</h2>
-          </div>
-          <img id ="crossPop" src="icons/cross.png" alt="cross">
-        </div>
-        <ul class="technologiesPreview">
-          ${getTechList(projectInfo[0].technologies)}
-        </ul>
-        <div class="project_elements">
-          <img class="projectImg" src="${projectInfo[0].imagePop}" alt="pop up image" />
-          <div class="details_container">
-            <div class="projectDescription">
-                ${projectInfo[0].description}  and ${projectInfo[0].moreText}
-            </div>
-            <div class="projectButtons">
-              <a href="${projectInfo[0].link}" target ="_blank">
-               <button class="cardButtons">
-               <span>See Live</span>
-              <img src="icons/seeLiveIcon.svg" alt="live" />
-              </button>
-              </a>
-              <a href="${projectInfo[0].github}" target ="_blank">
-              <button class="cardButtons">
-                <span>See Source</span>
-                <img src="icons/whiteGitHubIcon.png" alt="Source" />
-              </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      `;
-
-  popUpOPenClose(popUpWinFirst);
-}
-
-document.querySelector('#popUpContFirstBtn').addEventListener('click', loadDataPopFirst);
-function loadDataPopCard(index) {
-  const info = projectInfo[index];
-  let items = '';
-  items = `
-    <div class="projectPreview">
-      <div class="head">
-        <div id="name_container">
-          <h2>${info.title}</h2>
-        </div>
-        <img id="crossPop" src="icons/cross.png" alt="cross">
-      </div>
-      <ul class="technologiesPreview">
-        ${getTechList(info.technologies)}
-      </ul>
-      <div class="project_elements">
-        <img class="projectImg" src="${info.imagePop}" alt="pop up image" />
-        <div class="details_container">
-          <div class="projectDescription">
-            ${info.description} and ${info.moreText}
-          </div>
-          <div class="projectButtons">
-            <a href="${info.link}" target="_blank">
-              <button class="cardButtons">
-                <span>See Live</span>
-                <img src="icons/seeLiveIcon.svg" alt="live" />
-              </button>
-            </a>
-            <a href="${info.github}" target="_blank">
-              <button class="cardButtons">
-                <span>See Source</span>
-                <img src="icons/whiteGitHubIcon.png" alt="Source" />
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
-  popUpWinSecond.innerHTML = items;
-  popUpOPenClose(popUpWinSecond);
-}
-
-const popUpWinSecondListener = () => {
-  const seeProBtns = document.querySelectorAll('.seeProBtn');
-  seeProBtns.forEach((seeProBtn, i) => {
-    seeProBtn.addEventListener('click', () => {
-      popUpWinSecond.style.display = 'block';
-      loadDataPopCard(i % projectInfo.length);
-    });
-  });
-};
-
-popUpWinSecondListener();
 
 /* pop up window end */
 

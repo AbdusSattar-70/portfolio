@@ -14,7 +14,7 @@ body {
 
 /* popup window style start */
 
-.popUpWinFirst {
+.popUpSection {
   display: none;
   position: fixed;
   z-index: 1;
@@ -24,10 +24,6 @@ body {
   width: 80%;
   height: 90%;
   background-color: #fff;
-}
-
-.popUpWinSecond {
-  display: none;
 }
 
 .projectPreview {
@@ -844,7 +840,7 @@ media query for mobile from 450px to 767px screen
 
   /* popup window style start */
 
-  .popUpWinFirst {
+  .popUpSection {
     height: 80%;
     width: 90%;
     left: 50px;
@@ -1001,9 +997,17 @@ media query for mobile from 450px to 767px screen
     grid-row-gap: 2%;
   }
 
+  .desktop-card-0,
+  .desktop-card-3 {
+    background-image: url("images/dc-4.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 40%;
+  }
+
   .desktop-card-1,
   .desktop-card-4 {
-    background-image: url("images/dc-4.svg");
+    background-image: url("images/dc-2.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: 40%;
@@ -1011,14 +1015,6 @@ media query for mobile from 450px to 767px screen
 
   .desktop-card-2,
   .desktop-card-5 {
-    background-image: url("images/dc-2.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: 40%;
-  }
-
-  .desktop-card-3,
-  .desktop-card-6 {
     background-image: url("images/dc-3.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -1045,8 +1041,8 @@ media query for mobile from 450px to 767px screen
     margin-bottom: 7%;
   }
 
-  .desktop-card-3 h3,
-  .desktop-card-6 h3 {
+  .desktop-card-2 h3,
+  .desktop-card-5 h3 {
     line-height: 35px;
   }
 
@@ -1228,6 +1224,11 @@ media query for mobile from 450px to 767px screen
     grid-template: repeat(2, minmax(370px, 1fr)) / repeat(3, minmax(200px, 1fr));
   }
 
+  .desktop-card-0,
+  .desktop-card-3 {
+    background-position-y: 20%;
+  }
+
   .desktop-card-1,
   .desktop-card-4 {
     background-position-y: 20%;
@@ -1235,11 +1236,6 @@ media query for mobile from 450px to 767px screen
 
   .desktop-card-2,
   .desktop-card-5 {
-    background-position-y: 20%;
-  }
-
-  .desktop-card-3,
-  .desktop-card-6 {
     background-position-y: 20%;
   }
 
@@ -1332,7 +1328,7 @@ media query for mobile from 450px to 767px screen
 }
 
 @media screen and (min-width: 1200px) {
-  .popUpWinFirst {
+  .popUpSection {
     height: 85%;
     left: 80px;
   }

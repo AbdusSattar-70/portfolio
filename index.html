@@ -22,7 +22,7 @@
 
 <body id="body">
   <!-- for popup windows -->
-  <section class="popUpWinFirst popUpWinSecond"></section>
+  <section class="popUpSection"></section>
   <!------------ header start---------------------- -->
   <main id="main">
     <header>
@@ -113,129 +113,130 @@
     </section>
 
     <!-- headline-container end -->
-    <section class="hightNone">
-      <!-- My Recent Works section start -->
+    <!-- My Recent Works section start -->
 
-      <section id="portfolio" class="work-section">
-        <div class="works-container"></div>
-      </section>
+    <section id="portfolio" class="work-section">
+      <div class="works-container">
 
-      <!-- My Recent Works section end  -->
-      <!-- About me section start -->
-
-      <section id="about" class="about-section">
-        <div class="about-container">
-          <article class="about-me">
-            <h2>About me</h2>
-            <p>Hello I'm a software developer! I can help you build a product , feature or website Look through some of
-              my
-              work and
-              experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
-            </p>
-            <button type="button" autofocus>Get My Resume</button>
-          </article>
-          <hr>
-          <ul class="skills-list">
-            <li class="skill-1">Language
-              <ul class="Languages">
-                <li>Javascript</li>
-                <li>Ruby</li>
-                <li>Html</li>
-                <li>CSS</li>
-              </ul>
-            </li>
-            <li class="skill-2">Frameworks
-              <ul class="frameworks">
-                <li>Bootstrap</li>
-                <li>Ruby on Rails</li>
-                <li>RSPec</li>
-                <li>CapyBara</li>
-                <li>Selenium</li>
-              </ul>
-            </li>
-            <li class="skill-3">Skills
-              <ul class="skills">
-                <li>Codekit</li>
-                <li>Github</li>
-                <li>Codepen</li>
-                <li>Gitlab</li>
-                <li>Terminal</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- About me section end -->
-      <!-- contact form section  -->
-      <section id="form">
-        <div class="form-container">
-          <p>
-            I'm always interested <br> in hearing about new projects,<br>
-            so if you'd like to chat <br> please get in touch.
-          </p>
-          <form class="form" action="https://formspree.io/f/xeqwonbn" method="POST">
-            <ul>
-              <li>
-                <label for="name">
-                  <input type="text" name="name" id="name" maxlength="30" required placeholder="Full name">
-                </label>
-              </li>
-              <li>
-                <label for="email">
-                  <input type="email" name="email" id="email" required placeholder="Email address">
-                </label>
-              </li>
-              <li>
-                <label for="message">
-                  <textarea name="message" id="message" maxlength="500" required placeholder="Enter text here">
-              </textarea>
-                </label>
-              </li>
-              <li>
-                <button id="submitBtn" type="submit">Get in touch</button>
-              </li>
-            </ul>
-          </form>
-        </div>
-      </section>
-
-      <!-- contact form end-->
-
-      <footer>
-        <hr class="top-line">
-        <div class="footer">
-          <ul class="social_navigation">
-            <li class="item">
-              <a href="https://github.com/AbdusSattar-70/portfolio" target="_blank" rel="noopener">
-                <img src="icons/footer-git.svg" alt="gitHub icon link" />
-              </a>
-            </li>
-            <li class="item">
-              <a href="https://www.linkedin.com/in/abdus-sattar-a41a26215/" target="_blank" rel="noopener">
-                <img src="icons/footer-link.svg" alt="linkedin icon link" />
-              </a>
-            </li>
-            <li class="item">
-              <a href="#" target="_self" rel="noopener">
-                <img src="icons/footer-ang.svg" alt="angel icon link" />
-              </a>
-            </li>
-            <li class="item">
-              <a href="https://twitter.com/Abdus_Sattar70" target="_blank" rel="noopener">
-                <img src="icons/footer-witter.svg" alt="twitter icon link" />
-              </a>
-            </li>
-            <li class="item">
-              <a href="#" target="_self" rel="noopener">
-                <img src="icons/footer-Medium.svg" alt="medium icon link" />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <hr class="liner">
-      </footer>
+      </div>
     </section>
+
+    <!-- My Recent Works section end  -->
+    <!-- About me section start -->
+
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <article class="about-me">
+          <h2>About me</h2>
+          <p>Hello I'm a software developer! I can help you build a product , feature or website Look through some of
+            my
+            work and
+            experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
+          </p>
+          <button type="button" autofocus>Get My Resume</button>
+        </article>
+        <hr>
+        <ul class="skills-list">
+          <li class="skill-1">Language
+            <ul class="Languages">
+              <li>Javascript</li>
+              <li>Ruby</li>
+              <li>Html</li>
+              <li>CSS</li>
+            </ul>
+          </li>
+          <li class="skill-2">Frameworks
+            <ul class="frameworks">
+              <li>Bootstrap</li>
+              <li>Ruby on Rails</li>
+              <li>RSPec</li>
+              <li>CapyBara</li>
+              <li>Selenium</li>
+            </ul>
+          </li>
+          <li class="skill-3">Skills
+            <ul class="skills">
+              <li>Codekit</li>
+              <li>Github</li>
+              <li>Codepen</li>
+              <li>Gitlab</li>
+              <li>Terminal</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About me section end -->
+    <!-- contact form section  -->
+    <section id="form">
+      <div class="form-container">
+        <p>
+          I'm always interested <br> in hearing about new projects,<br>
+          so if you'd like to chat <br> please get in touch.
+        </p>
+        <form class="form" action="https://formspree.io/f/xeqwonbn" method="POST">
+          <ul>
+            <li>
+              <label for="name">
+                <input type="text" name="name" id="name" maxlength="30" required placeholder="Full name">
+              </label>
+            </li>
+            <li>
+              <label for="email">
+                <input type="email" name="email" id="email" required placeholder="Email address">
+              </label>
+            </li>
+            <li>
+              <label for="message">
+                <textarea name="message" id="message" maxlength="500" required placeholder="Enter text here">
+              </textarea>
+              </label>
+            </li>
+            <li>
+              <button id="submitBtn" type="submit">Get in touch</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <!-- contact form end-->
+
+    <footer>
+      <hr class="top-line">
+      <div class="footer">
+        <ul class="social_navigation">
+          <li class="item">
+            <a href="https://github.com/AbdusSattar-70/portfolio" target="_blank" rel="noopener">
+              <img src="icons/footer-git.svg" alt="gitHub icon link" />
+            </a>
+          </li>
+          <li class="item">
+            <a href="https://www.linkedin.com/in/abdus-sattar-a41a26215/" target="_blank" rel="noopener">
+              <img src="icons/footer-link.svg" alt="linkedin icon link" />
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" target="_self" rel="noopener">
+              <img src="icons/footer-ang.svg" alt="angel icon link" />
+            </a>
+          </li>
+          <li class="item">
+            <a href="https://twitter.com/Abdus_Sattar70" target="_blank" rel="noopener">
+              <img src="icons/footer-witter.svg" alt="twitter icon link" />
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" target="_self" rel="noopener">
+              <img src="icons/footer-Medium.svg" alt="medium icon link" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <hr class="liner">
+    </footer>
+
   </main>
 
   <!-- custom js file link -->
