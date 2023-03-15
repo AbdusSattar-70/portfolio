@@ -194,6 +194,49 @@ const popUpWindow = document.querySelector('.popUpSection');
    });
   });
 }
+
+function loadPopUPWindow(newProjectInfo) {
+const popUpWindow = document.querySelector('.popUpSection');
+popUpWindow.innerHTML = '';
+let div = document.createElement('div');
+div.classList.add('projectPreview');
+div.innerHTML += `
+<div class="head">
+          <div id= "name_container">
+            <h2>${newProjectInfo.title}</h2>
+          </div>
+          <img id ="crossPop" src="icons/cross.png" alt="cross">
+        </div>
+        <ul class="technologiesPreview">
+          ${getTechList(newProjectInfo.technologies)}
+        </ul>
+        <div class="project_elements">
+          <img class="projectImg" src="${newProjectInfo.image}" alt="pop up image" />
+          <div class="details_container">
+            <div class="projectDescription">
+                ${newProjectInfo.description}  and ${newProjectInfo.moreText}
+            </div>
+            <div class="projectButtons">
+              <a href="${newProjectInfo.link}" target ="_blank">
+               <button class="cardButtons">
+               <span>See Live</span>
+              <img src="icons/seeLiveIcon.svg" alt="live" />
+              </button>
+              </a>
+              <a href="${newProjectInfo.github}" target ="_blank">
+              <button class="cardButtons">
+                <span>See Source</span>
+                <img src="icons/whiteGitHubIcon.png" alt="Source" />
+              </button>
+              </a>
+            </div>
+          </div>
+        </div> `;
+        popUpWindow.appendChild(div);
+        popUpOPenClose()
+
+}
+
 /* pop up window end */
 
 // Email Validation
