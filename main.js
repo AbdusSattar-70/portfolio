@@ -237,6 +237,18 @@ div.innerHTML += `
 
 }
 
+const popUpWinListenerDesk = () => {
+const popUpWindow = document.querySelector('.popUpSection');
+  const seeProBtns = document.querySelectorAll('.popUpDesk');
+  seeProBtns.forEach((seeProBtn, i) => {
+    seeProBtn.addEventListener('click', () => {
+      popUpWindow.style.display = 'block';
+    document.querySelector('#main').style.filter = 'blur(5px)';
+     loadPopUPWindow(projectInfo[i]);
+    });
+  });
+};
+popUpWinListenerDesk();
 /* pop up window end */
 
 // Email Validation
