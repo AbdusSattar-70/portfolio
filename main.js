@@ -249,6 +249,20 @@ const popUpWindow = document.querySelector('.popUpSection');
   });
 };
 popUpWinListenerDesk();
+
+
+const popUpWinListenerMob = () => {
+const popUpWindow = document.querySelector('.popUpSection');
+  const seeProBtns = document.querySelectorAll('.popUpMob');
+  seeProBtns.forEach((seeProBtn, i) => {
+    seeProBtn.addEventListener('click', () => {
+      popUpWindow.style.display = 'block';
+    document.querySelector('#main').style.filter = 'blur(5px)';
+     loadPopUPWindow(projectInfo[i]);
+    });
+  });
+};
+popUpWinListenerMob();
 /* pop up window end */
 
 // Email Validation
