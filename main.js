@@ -32,17 +32,17 @@ const projectInfo = [
   {
     title: 'FirstCapstone project details',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description: "This repo is a part of the learning purpose that I made to how to use html css and js best practices.The Original design idea is by Cindy Shin in Behance Thanks ❤️ to Cindy Shin Creating such a beautiful design.",
-    technologies: ['HTML','CSS', 'JavaScript', 'Ruby'],
+    description: 'This repo is a part of the learning purpose that I made to how to use html css and js best practices.The Original design idea is by Cindy Shin in Behance Thanks ❤️ to Cindy Shin Creating such a beautiful design.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
     image: 'images/capstone.png',
     bgImg: 'images/background-2.svg',
     link: 'https://abdussattar-70.github.io/FirstCapstone/',
     github: 'https://github.com/AbdusSattar-70/FirstCapstone',
   },
-   {
+  {
     title: 'To Do List Project details',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description: "This repo is created for learning objectives on how to create a To-do-list and use Webpack with ES6 .it is a simple website that displays a list of To do tasks and allows you to add and remove tasks from that list",
+    description: 'This repo is created for learning objectives on how to create a To-do-list and use Webpack with ES6 .it is a simple website that displays a list of To do tasks and allows you to add and remove tasks from that list',
     technologies: ['css', 'html', 'bootstrap'],
     image: 'images/ToDoList.png',
     link: 'https://abdussattar-70.github.io/To-Do-List/dist/',
@@ -51,7 +51,7 @@ const projectInfo = [
   {
     title: 'AwesomeBookES6 Project Detail',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description:"AwesomeBookES6 is a simple website that displays a list of books and allows you to add and remove books from that list. unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    description: 'AwesomeBookES6 is a simple website that displays a list of books and allows you to add and remove books from that list. unknown printer took a galley of type and scrambled it to make a type specimen book.',
     technologies: ['html', 'bootstrap', 'Ruby'],
     image: 'images/bookStore.png',
     link: 'https://abdussattar-70.github.io/Awesome-Book-ES6/',
@@ -60,7 +60,7 @@ const projectInfo = [
   {
     title: 'Leaderboard Protfolio',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description:"Leaderboard is my demo project for learning the usage of API and Git workflow and it is a simple website that displays a list of players' names and scores and allows you to add that info to the list.",
+    description: "Leaderboard is my demo project for learning the usage of API and Git workflow and it is a simple website that displays a list of players' names and scores and allows you to add that info to the list.",
     technologies: ['html', 'bootstrap', 'Ruby'],
     image: 'images/Leaderboard.png',
     link: 'https://abdussattar-70.github.io/Leaderboard/dist',
@@ -79,17 +79,17 @@ const projectInfo = [
   {
     title: 'Testing-practice project',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description: "In this exercise repo, I wrote a few practical tests for JavaScript functions using the Jest library and followed the AAA pattern to make my tests easier for other developers to read and understand. I also used the TDD approach in practice.",
+    description: 'In this exercise repo, I wrote a few practical tests for JavaScript functions using the Jest library and followed the AAA pattern to make my tests easier for other developers to read and understand. I also used the TDD approach in practice.',
     technologies: ['html', 'bootstrap', 'Ruby'],
     image: 'images/capstone.png',
     link: '',
     github: 'https://github.com/AbdusSattar-70/Testing-practice',
   },
-   {
+  {
     title: 'FirstCapstone project details',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description: "This repo is a part of the learning purpose that I made to how to use html css and js best practices.The Original design idea is by Cindy Shin in Behance Thanks ❤️ to Cindy Shin Creating such a beautiful design.",
-    technologies: ['HTML','CSS', 'JavaScript'],
+    description: 'This repo is a part of the learning purpose that I made to how to use html css and js best practices.The Original design idea is by Cindy Shin in Behance Thanks ❤️ to Cindy Shin Creating such a beautiful design.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     image: 'images/capstone.png',
     link: 'https://abdussattar-70.github.io/FirstCapstone/',
     github: 'https://github.com/AbdusSattar-70/FirstCapstone',
@@ -108,7 +108,7 @@ function getTechList(technologies) {
 
 function loadRecentWork() {
   const worksContainer = document.querySelector('.works-container');
-    worksContainer.innerHTML = `
+  worksContainer.innerHTML = `
     <article class="Recent-work">
       <div class="work-title-dv">
         <h2 class="works-title">Recent Work</h2>
@@ -134,14 +134,14 @@ function loadRecentWork() {
 }
 loadRecentWork();
 
- const  loadWorkCardMobile= () => {
- const workCards = document.querySelector('.work-cards');
-workCards.innerHTML = '';
-const newInfo = projectInfo.filter((info,i) => i !==0);
-newInfo.forEach((info)=>{
-  const article = document.createElement('article');
-  article.classList.add('card');
-article.innerHTML = `
+const loadWorkCardMobile = () => {
+  const workCards = document.querySelector('.work-cards');
+  workCards.innerHTML = '';
+  const newInfo = projectInfo.filter((info, i) => i !== 0);
+  newInfo.forEach((info) => {
+    const article = document.createElement('article');
+    article.classList.add('card');
+    article.innerHTML = `
             <h3>${info.title}</h3>
             <p class="description">
               ${info.description}
@@ -150,19 +150,19 @@ article.innerHTML = `
               ${getTechList(info.technologies)}
             </ul>
             <button class="see-project-btn seeProBtn popUpMob" type="button" autofocus>See Project </button>
-`
-workCards.appendChild(article);
-});
-   }
-     loadWorkCardMobile();
+`;
+    workCards.appendChild(article);
+  });
+};
+loadWorkCardMobile();
 
-      const  loadWorkCardDesktop= () => {
- const desktopCards = document.querySelector('.desktop-cards');
-const newInfo = projectInfo.filter((info,i) => i !==0);
-newInfo.forEach((info,i)=>{
+const loadWorkCardDesktop = () => {
+  const desktopCards = document.querySelector('.desktop-cards');
+  const newInfo = projectInfo.filter((info, i) => i !== 0);
+  newInfo.forEach((info, i) => {
     const article = document.createElement('article');
-     article.className = `desktop-card-${i} desk-card`;
-  article.innerHTML = `
+    article.className = `desktop-card-${i} desk-card`;
+    article.innerHTML = `
    <!-- new created desktop work cards part -->
             <div class="card-text">
               <h3>${info.title}</h3>
@@ -174,33 +174,32 @@ newInfo.forEach((info,i)=>{
               </ul>
             </div>
             <button class = "seeProBtn popUpDesk" type="button">See Project </button>
-  `
-  desktopCards.appendChild(article);
-
-});
-   }
-   loadWorkCardDesktop();
+  `;
+    desktopCards.appendChild(article);
+  });
+};
+loadWorkCardDesktop();
 
 /* project data load end */
 
 /* pop up window start */
 function popUpOPenClose() {
-const popUpWindow = document.querySelector('.popUpSection');
-   const crossBtns = document.querySelectorAll('#crossPop');
-   crossBtns.forEach((crossBtn)=>{
+  const popUpWindow = document.querySelector('.popUpSection');
+  const crossBtns = document.querySelectorAll('#crossPop');
+  crossBtns.forEach((crossBtn) => {
     crossBtn.addEventListener('click', () => {
-    document.querySelector('#main').style.filter = 'none';
-    popUpWindow.style.display = 'none';
-   });
+      document.querySelector('#main').style.filter = 'none';
+      popUpWindow.style.display = 'none';
+    });
   });
 }
 
 function loadPopUPWindow(newProjectInfo) {
-const popUpWindow = document.querySelector('.popUpSection');
-popUpWindow.innerHTML = '';
-let div = document.createElement('div');
-div.classList.add('projectPreview');
-div.innerHTML += `
+  const popUpWindow = document.querySelector('.popUpSection');
+  popUpWindow.innerHTML = '';
+  const div = document.createElement('div');
+  div.classList.add('projectPreview');
+  div.innerHTML += `
 <div class="head">
           <div id= "name_container">
             <h2>${newProjectInfo.title}</h2>
@@ -232,33 +231,31 @@ div.innerHTML += `
             </div>
           </div>
         </div> `;
-        popUpWindow.appendChild(div);
-        popUpOPenClose()
-
+  popUpWindow.appendChild(div);
+  popUpOPenClose();
 }
 
 const popUpWinListenerDesk = () => {
-const popUpWindow = document.querySelector('.popUpSection');
+  const popUpWindow = document.querySelector('.popUpSection');
   const seeProBtns = document.querySelectorAll('.popUpDesk');
   seeProBtns.forEach((seeProBtn, i) => {
     seeProBtn.addEventListener('click', () => {
       popUpWindow.style.display = 'block';
-    document.querySelector('#main').style.filter = 'blur(5px)';
-     loadPopUPWindow(projectInfo[i]);
+      document.querySelector('#main').style.filter = 'blur(5px)';
+      loadPopUPWindow(projectInfo[i]);
     });
   });
 };
 popUpWinListenerDesk();
 
-
 const popUpWinListenerMob = () => {
-const popUpWindow = document.querySelector('.popUpSection');
+  const popUpWindow = document.querySelector('.popUpSection');
   const seeProBtns = document.querySelectorAll('.popUpMob');
   seeProBtns.forEach((seeProBtn, i) => {
     seeProBtn.addEventListener('click', () => {
       popUpWindow.style.display = 'block';
-    document.querySelector('#main').style.filter = 'blur(5px)';
-     loadPopUPWindow(projectInfo[i]);
+      document.querySelector('#main').style.filter = 'blur(5px)';
+      loadPopUPWindow(projectInfo[i]);
     });
   });
 };
