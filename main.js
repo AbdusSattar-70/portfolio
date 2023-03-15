@@ -134,6 +134,28 @@ function loadRecentWork() {
 }
 loadRecentWork();
 
+ const  loadWorkCardMobile= () => {
+ const workCards = document.querySelector('.work-cards');
+workCards.innerHTML = '';
+const newInfo = projectInfo.filter((info,i) => i !==0);
+newInfo.forEach((info)=>{
+  const article = document.createElement('article');
+  article.classList.add('card');
+article.innerHTML = `
+            <h3>${info.title}</h3>
+            <p class="description">
+              ${info.description}
+            </p>
+            <ul class="card-ul">
+              ${getTechList(info.technologies)}
+            </ul>
+            <button class="see-project-btn seeProBtn popUpMob" type="button" autofocus>See Project </button>
+`
+workCards.appendChild(article);
+});
+   }
+     loadWorkCardMobile();
+
 /* pop up window end */
 
 // Email Validation
