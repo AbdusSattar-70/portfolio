@@ -106,6 +106,33 @@ function getTechList(technologies) {
   return list;
 }
 
+function loadRecentWork() {
+  const worksContainer = document.querySelector('.works-container');
+    worksContainer.innerHTML = `
+    <article class="Recent-work">
+      <div class="work-title-dv">
+        <h2 class="works-title">Recent Work</h2>
+        <hr>
+      </div>
+      <div class="feature-area">
+        <img class="feature-image" src="${projectInfo[0].bgImg}" alt="feature image about works">
+        <div class="post-text">
+          <h3 class="title-post">${projectInfo[0].title}</h3>
+          <p class="post-description">
+            ${projectInfo[0].description}
+          </p>
+          <ul class="tag-ul-1">
+            ${getTechList(projectInfo[0].technologies)}
+          </ul>
+          <button class="popUpMob popUpDesk" type="button"> See Project</button>
+        </div>
+      </div>
+    </article>
+     <div class="work-cards"></div>
+     <div class="desktop-cards"></div>
+    `;
+}
+loadRecentWork();
 
 /* pop up window end */
 
