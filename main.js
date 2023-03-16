@@ -32,10 +32,10 @@ mobileMenuItems.forEach((item) => {
 
 const projectInfo = [
   {
-    title: 'FirstCapstone project details',
+    title: 'First Capstone',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description: 'This repo is a part of the learning purpose that I made to how to use html css and js best practices.The Original design idea is by Cindy Shin in Behance Thanks ❤️ to Cindy Shin Creating such a beautiful design.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     image: 'images/capstone.png',
     bgImg: 'images/background-2.svg',
     link: 'https://abdussattar-70.github.io/FirstCapstone/',
@@ -44,7 +44,7 @@ const projectInfo = [
   {
     title: 'To Do List Project details',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    description: 'This repo is created for learning objectives on how to create a To-do-list and use Webpack with ES6 .it is a simple website that displays a list of To do tasks and allows you to add and remove tasks from that list',
+    description: 'This repo is created for learning objectives on how to create a To-do-list and use Webpack with ES6 .it is a simple website that displays a list of To do tasks and allows you to add and remove tasks from that list ',
     technologies: ['css', 'html', 'bootstrap'],
     image: 'images/ToDoList.png',
     link: 'https://abdussattar-70.github.io/To-Do-List/dist/',
@@ -113,7 +113,7 @@ function loadRecentWork() {
   worksContainer.innerHTML = `
     <article class="Recent-work">
       <div class="work-title-dv">
-        <h2 class="works-title">Recent Work</h2>
+        <h2 class="works-title">My Recent Works</h2>
         <hr>
       </div>
       <div class="feature-area">
@@ -131,19 +131,19 @@ function loadRecentWork() {
       </div>
     </article>
      <div class="work-cards"></div>
-     <div class="desktop-cards"></div>
     `;
 }
 loadRecentWork();
 
-const loadWorkCardMobile = () => {
+const loadWorkCard = () => {
   const workCards = document.querySelector('.work-cards');
   workCards.innerHTML = '';
   const newInfo = projectInfo.filter((info, i) => i !== 0);
-  newInfo.forEach((info) => {
+  newInfo.forEach((info, i) => {
     const article = document.createElement('article');
-    article.classList.add('card');
+    article.className = `card card-${i}`;
     article.innerHTML = `
+            <div class="card-text">
             <h3>${info.title}</h3>
             <p class="description">
               ${info.description}
@@ -151,36 +151,13 @@ const loadWorkCardMobile = () => {
             <ul class="card-ul">
               ${getTechList(info.technologies)}
             </ul>
+            </div>
             <button class="see-project-btn seeProBtn popUpMob" type="button" autofocus>See Project </button>
 `;
     workCards.appendChild(article);
   });
 };
-loadWorkCardMobile();
-
-const loadWorkCardDesktop = () => {
-  const desktopCards = document.querySelector('.desktop-cards');
-  const newInfo = projectInfo.filter((info, i) => i !== 0);
-  newInfo.forEach((info, i) => {
-    const article = document.createElement('article');
-    article.className = `desktop-card-${i} desk-card`;
-    article.innerHTML = `
-   <!-- new created desktop work cards part -->
-            <div class="card-text">
-              <h3>${info.title}</h3>
-              <p>
-               ${info.description}
-              </p>
-              <ul>
-                  ${getTechList(info.technologies)}
-              </ul>
-            </div>
-            <button class = "seeProBtn popUpDesk" type="button">See Project </button>
-  `;
-    desktopCards.appendChild(article);
-  });
-};
-loadWorkCardDesktop();
+loadWorkCard();
 
 /* project data load end */
 
@@ -238,7 +215,7 @@ function loadPopUPWindow(newProjectInfo) {
 }
 
 const seeProMob = document.querySelectorAll('.popUpMob');
-const seeProDesk = document.querySelectorAll('.popUpDesk');
+// const seeProDesk = document.querySelectorAll('.popUpDesk');
 const popUpWinListener = (seeProBtns) => {
   const popUpWindow = document.querySelector('.popUpSection');
   seeProBtns.forEach((seeProBtn, i) => {
@@ -251,7 +228,7 @@ const popUpWinListener = (seeProBtns) => {
 };
 
 popUpWinListener(seeProMob);
-popUpWinListener(seeProDesk);
+// popUpWinListener(seeProDesk);
 
 /* pop up window end */
 
