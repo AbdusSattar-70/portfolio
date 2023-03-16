@@ -37,14 +37,14 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Portfolio <a name="about-project"></a>
+## 📖 Portfolio <a name="about-project"></a>
 
-**portfolio** is my first project for learning Git and GitHub workflows</b></h3>
+**portfolio** is my first project for learning Git and GitHub workflows</b>
 <h5>This is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed.I create a complete mobile version and desktop version. It has four main sections headline, works, about me, and a contact form. Thanks ❤️ to my coding partner <b> MEHMET Selçuk Güler </b> for contributing to creating the mobile menu interactivity.<b> In this milestone, we have created mobile and desktop version popUp window using js 
 
 ## 🛠 Built With <a name="built-with"></a>
 
-# Tech Stack <a name="tech-stack"></a>
+## Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
@@ -58,7 +58,7 @@
 
 <!-- Features -->
 
-# Key Features <a name="key-features"></a>
+## Key Features <a name="key-features"></a>
 
 - **Showcase developer achievements**
 
@@ -78,7 +78,7 @@
 
 To get a local copy up and running, follow these steps.
 
-# Prerequisites
+## Prerequisites <a name="prerequisites"></a>
 
 In order to run this project you need:
 ### It would be best if you had some familiarity with `HTML`, `CSS`, and `JS`.
@@ -88,7 +88,7 @@ In order to run this project you need:
 - A browser (Chrome,Mozilla,Safari etc...)
 - Version Control System (Git and Github)
 
-# Setup
+# Setup <a name="setup"></a>
 
 Clone this repository to your desired folder:
 
@@ -97,7 +97,7 @@ Clone this repository to your desired folder:
         cd portfolio 
  ```
 
-# Install
+# Install <a name="install"></a>
 
 Install this project with:
 
@@ -105,7 +105,7 @@ Install this project with:
      npm install
 ```
 
-# Run tests
+# Run tests <a name="run-tests"></a>
 
 To run tests, run the following command:
 
@@ -123,7 +123,7 @@ To run tests, run the following command:
   npx hint .
 ```
 
-# Deployment
+# Deployment <a name="triangular_flag_on_post-deployment"></a>
 
 You can deploy this project using:
 
