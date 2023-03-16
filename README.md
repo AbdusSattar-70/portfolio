@@ -140,8 +140,8 @@ You can deploy this project using:
 ## 👤 Abdus Sattar
 
 - GitHub: [AbdusSattar-70](https://github.com/AbdusSattar-70)
-- Twitter: [Abdus_Sattar70](twitter.com/Abdus_Sattar70)
-- LinkedIn: [Abdus-sattar](https://www.linkedin.com/in/abdus-sattar-a41a26215/)
+- Twitter: [Abdus Sattar](https://twitter.com/Abdus_Sattar70)
+- LinkedIn: [Abdus Sattar](https://www.linkedin.com/in/abdus-sattar-a41a26215/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
