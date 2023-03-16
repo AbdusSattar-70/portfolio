@@ -4,21 +4,21 @@ const hamImg = document.querySelector('#hamImg');
 const crossImg = document.querySelector('#crossImg');
 const mobileMenuItems = document.querySelectorAll('.mob-items');
 
-const toggleDisplay = (ids,display)=>{
-  ids.forEach((id)=>{
-const element = document.querySelector(id);
-  element.style.display = display;
+const toggleDisplay = (ids, display) => {
+  ids.forEach((id) => {
+    const element = document.querySelector(id);
+    element.style.display = display;
   });
-}
+};
 
 const menu = () => {
-  toggleDisplay(['.logo-container','#hamImg'],'none');
-  toggleDisplay(['.mobile-menu'],'flex');
+  toggleDisplay(['.logo-container', '#hamImg'], 'none');
+  toggleDisplay(['.mobile-menu'], 'flex');
 };
 
 const menuNone = () => {
-  toggleDisplay(['.logo-container','#hamImg'],'flex');
-  toggleDisplay(['.mobile-menu'],'none');
+  toggleDisplay(['.logo-container', '#hamImg'], 'flex');
+  toggleDisplay(['.mobile-menu'], 'none');
 };
 
 hamImg.addEventListener('click', menu);
@@ -237,8 +237,8 @@ function loadPopUPWindow(newProjectInfo) {
   popUpOPenClose();
 }
 
-  const seeProMob = document.querySelectorAll('.popUpMob');
-  const seeProDesk = document.querySelectorAll('.popUpDesk');
+const seeProMob = document.querySelectorAll('.popUpMob');
+const seeProDesk = document.querySelectorAll('.popUpDesk');
 const popUpWinListener = (seeProBtns) => {
   const popUpWindow = document.querySelector('.popUpSection');
   seeProBtns.forEach((seeProBtn, i) => {
