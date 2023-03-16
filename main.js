@@ -1,22 +1,24 @@
-/* eslint-disable linebreak-style */
 /* mobile menu start */
 
-const logoCon = document.querySelector('.logo-container');
 const hamImg = document.querySelector('#hamImg');
 const crossImg = document.querySelector('#crossImg');
-const mobMenu = document.querySelector('.mobile-menu');
 const mobileMenuItems = document.querySelectorAll('.mob-items');
 
+const toggleDisplay = (ids,display)=>{
+  ids.forEach((id)=>{
+const element = document.querySelector(id);
+  element.style.display = display;
+  });
+}
+
 const menu = () => {
-  logoCon.style.display = 'none';
-  hamImg.style.display = 'none';
-  mobMenu.style.display = 'flex';
+  toggleDisplay(['.logo-container','#hamImg'],'none');
+  toggleDisplay(['.mobile-menu'],'flex');
 };
 
 const menuNone = () => {
-  mobMenu.style.display = 'none';
-  logoCon.style.display = 'flex';
-  hamImg.style.display = 'flex';
+  toggleDisplay(['.logo-container','#hamImg'],'flex');
+  toggleDisplay(['.mobile-menu'],'none');
 };
 
 hamImg.addEventListener('click', menu);
@@ -235,9 +237,10 @@ function loadPopUPWindow(newProjectInfo) {
   popUpOPenClose();
 }
 
-const popUpWinListenerDesk = () => {
+  const seeProMob = document.querySelectorAll('.popUpMob');
+  const seeProDesk = document.querySelectorAll('.popUpDesk');
+const popUpWinListener = (seeProBtns) => {
   const popUpWindow = document.querySelector('.popUpSection');
-  const seeProBtns = document.querySelectorAll('.popUpDesk');
   seeProBtns.forEach((seeProBtn, i) => {
     seeProBtn.addEventListener('click', () => {
       popUpWindow.style.display = 'block';
@@ -246,20 +249,10 @@ const popUpWinListenerDesk = () => {
     });
   });
 };
-popUpWinListenerDesk();
 
-const popUpWinListenerMob = () => {
-  const popUpWindow = document.querySelector('.popUpSection');
-  const seeProBtns = document.querySelectorAll('.popUpMob');
-  seeProBtns.forEach((seeProBtn, i) => {
-    seeProBtn.addEventListener('click', () => {
-      popUpWindow.style.display = 'block';
-      document.querySelector('#main').style.filter = 'blur(5px)';
-      loadPopUPWindow(projectInfo[i]);
-    });
-  });
-};
-popUpWinListenerMob();
+popUpWinListener(seeProMob);
+popUpWinListener(seeProDesk);
+
 /* pop up window end */
 
 // Email Validation
