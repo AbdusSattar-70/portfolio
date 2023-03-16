@@ -353,10 +353,6 @@ recent work section style
   gap: 6px;
 }
 
-.Recent-work button {
-  width: 120px;
-}
-
 button {
   transition: all 1s ease-in;
 }
@@ -374,6 +370,10 @@ form button {
   background-color: var(--color-Safety-Orange);
   border: 1px solid var(--color-Safety-Orange);
   color: var(--color-white);
+}
+
+.Recent-work button {
+  width: 120px;
 }
 
 .Recent-work button,
