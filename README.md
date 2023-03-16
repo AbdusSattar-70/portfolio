@@ -37,39 +37,38 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [portfolio] <a name="about-project"></a>
+## 📖 Portfolio <a name="about-project"></a>
 
 **portfolio** is my first project for learning Git and GitHub workflows</b></h3>
 <h5>This is my portfolio website that is made as a part of Microverse's task although I'll use it for my portfolio when will be completed.I create a complete mobile version and desktop version. It has four main sections headline, works, about me, and a contact form. Thanks ❤️ to my coding partner <b> MEHMET Selçuk Güler </b> for contributing to creating the mobile menu interactivity.<b> In this milestone, we have created mobile and desktop version popUp window using js 
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
+## Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
   <b>This project only works client side right now.</b>
   <ul>
-    <li>HTML, CSS and JS</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
   </ul>
 </details>
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
+## Key Features <a name="key-features"></a>
 
-- **[html]**
-- **[css]**
-- **[css animation]**
+- **Showcase developer achievements**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo and presentation video <a name="live-demo"></a>
+## 🚀 Live Demo<a name="live-demo"></a>
 
-- [Presentation video Link](https://www.loom.com/share/8de0a404588a41e2807963a1b08356f9)
-- [Live Demo Link](https://abdussattar-70.github.io/portfolio/)
+- [Live Demo Link](https://abdussattar-70.github.io/portfolio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,40 +78,58 @@
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
+## Prerequisites
 
 In order to run this project you need:
-To know simple html, css, npm, and linter.
+### It would be best if you had some familiarity with `HTML`, `CSS`, and `JS`.
 
-### Setup
+- A Computer (MAC or PC)
+- code editor (VSCode,Atom etc...)
+- A browser (Chrome,Mozilla,Safari etc...)
+- Version Control System (Git and Github)
+
+## Setup
 
 Clone this repository to your desired folder:
-cd my-folder
-git clone https://github.com/AbdusSattar-70/portfolio.git
 
-### Install
+ ``` bash
+        git clone https://github.com/AbdusSattar-70/portfolio.git
+        cd portfolio 
+ ```
+
+## Install
 
 Install this project with:
 
-cd my-portfolio
-install npm
+``` bash 
+     npm install
+```
 
-### Usage
-
-To run the project, execute the following command:
-git clone
-npm install
-
-### Run tests
+## Run tests
 
 To run tests, run the following command:
-npm audit
-bin/react test test/models/article_test.rb
 
-### Deployment
+- To check Styelint error:-
+
+``` bash
+   npx stylelint "\*_/_.{css,scss}"
+```
+- To check Eslint error:-
+```bash
+  npx exlint .
+```
+- To check webhint error:-
+```bash
+  npx hint .
+```
+
+## Deployment
 
 You can deploy this project using:
-gitHub
+
+```bash
+   npm run build
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,11 +137,11 @@ gitHub
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Abdus Sattar**
+## 👤 Abdus Sattar
 
-- GitHub: [@githubhandle](https://github.com/AbdusSattar-70)
-- Twitter: [@twitterhandle](twitter.com/Abdus_Sattar70)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdus-sattar-a41a26215/)
+- GitHub: [AbdusSattar-70](https://github.com/AbdusSattar-70)
+- Twitter: [Abdus_Sattar70](twitter.com/Abdus_Sattar70)
+- LinkedIn: [Abdus-sattar](https://www.linkedin.com/in/abdus-sattar-a41a26215/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,9 +149,9 @@ gitHub
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Preserve data in the browser ]**
-- [ ] **[Validate contact form (pair programming)]**
-- [ ] **[ Preserve data in the browser (pair programming)]**
+- [ ] **Preserve data in the browser**
+- [ ] **Display Data From API**
+- [ ] **POST Data to API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
