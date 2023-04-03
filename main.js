@@ -215,7 +215,6 @@ function loadPopUPWindow(newProjectInfo) {
 }
 
 const seeProMob = document.querySelectorAll('.popUpMob');
-// const seeProDesk = document.querySelectorAll('.popUpDesk');
 const popUpWinListener = (seeProBtns) => {
   const popUpWindow = document.querySelector('.popUpSection');
   seeProBtns.forEach((seeProBtn, i) => {
@@ -228,7 +227,6 @@ const popUpWinListener = (seeProBtns) => {
 };
 
 popUpWinListener(seeProMob);
-// popUpWinListener(seeProDesk);
 
 /* pop up window end */
 
