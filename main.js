@@ -79,13 +79,13 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/ToDoListAgain',
   },
   {
-    title: 'Testing-practice project',
+    title: 'SpendiGo!',
     moreText: 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     description: 'In this exercise repo, I wrote a few practical tests for JavaScript functions using the Jest library and followed the AAA pattern to make my tests easier for other developers to read and understand. I also used the TDD approach in practice.',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    image: 'images/capstone.png',
-    link: '',
-    github: 'https://github.com/AbdusSattar-70/Testing-practice',
+    technologies: ['html5', 'Ruby', 'Rails'],
+    image: 'images/RoR4.png',
+    link: 'https://spendigo.onrender.com/',
+    github: 'https://github.com/AbdusSattar-70/SpendiGo',
   },
   {
     title: 'FirstCapstone project details',
