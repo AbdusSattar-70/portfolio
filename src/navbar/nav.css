@@ -1,16 +1,11 @@
-a {
-  text-decoration: none !important;
-  font-size: 1rem;
-  font-weight: 700;
-  color: rgba(72, 69, 69, 0.989) !important;
+.nav-link {
+ color: white !important;
 }
 
 .active {
-  background-color: #97bd28;
-  color: white !important;
+  background-color: #56b25f91 !important;
 }
 
-.super_admin a {
-  font-weight: 600;
-  color: #97bd28;
+.social_media a {
+  color: #000 !important;
 }

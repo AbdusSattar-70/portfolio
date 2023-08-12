@@ -1,32 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {
   Nav, NavDropdown, Button, Offcanvas,
 } from 'react-bootstrap';
-import {
-  FaFacebookF, FaGooglePlusG, FaGoogleDrive,
-  FaTwitter, FaLinkedinIn, FaBars, FaXmark,
-} from 'react-icons/fa6';
-// import { useDispatch, useSelector } from 'react-redux';
+import { FaBars, FaXmark } from 'react-icons/fa6';
+import './nav.css';
 
-function NavBar() {
-  // const [showSignUpModal, setShowSignUpModal] = useState(false);
-  // const handleCloseSignUpModal = () => {
-  //   setShowSignUpModal(false);
-  // };
-  // const handleOpenSignUpModal = () => {
-  //   setShowSignUpModal(true);
-  // };
-  const location = useLocation();
-  // const dispatch = useDispatch();
-
-  const handleSignOut = () => {
-    // dispatch(signOut());
-    window.location.href = '/';
-  };
-
-  const isActiveLink = (path) => location.pathname === path;
-
+const NavBar = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
 
@@ -44,72 +24,62 @@ function NavBar() {
     };
   }, []);
 
+  // Responsive navigation toggle for small screens
+  const renderMobileNavToggle = (
+    <div className="d-flex justify-content-between align-items-center">
+      <div className="d-flex align-items-center">
+        <a href="/" className="m-0 ms-2">A.Sattar</a>
+      </div>
+      <div className="nav-toggle-button">
+        <Button type="button" onClick={toggleOffcanvas}>
+          {showOffcanvas ? <FaXmark /> : <FaBars />}
+        </Button>
+      </div>
+    </div>
+  );
+
   return (
     <>
       {isLargeScreen ? (
-        <div className="d-flex flex-column border-end h-100 bg-white">
-          <div className="d-flex align-items-center p-3">
-            <h1 className="m-0 ms-2">A.Sattar</h1>
-          </div>
-          <div className="d-flex flex-column flex-grow-1 px-0">
-            <NavLink to="/delete_doctor" activeClassName="active" isActive={() => isActiveLink('/delete_doctor')} className="p-3">
-              Delete Doctor
-            </NavLink>
-            <NavLink to="/doctors" activeClassName="active" isActive={() => isActiveLink('/doctors')} className="p-3">
-              Doctors
-            </NavLink>
-            <NavLink to="/appointment" activeClassName="active" isActive={() => isActiveLink('/appointment')} className="p-3">
-              Appointment
-            </NavLink>
-            <NavLink to="/my_appointments" activeClassName="active" isActive={() => isActiveLink('/my_appointments')} className="p-3">
-              My Appointments
-            </NavLink>
-            <NavDropdown.Item as="button" onClick={handleSignOut} className="p-3">
-              Sign Out
-            </NavDropdown.Item>
-            <NavDropdown title="For Super Admin" id="nav-dropdown" className="p-3 super_admin">
-              <NavDropdown.Item href="/user_list">User Lists</NavDropdown.Item>
-              <NavDropdown.Item href="/appointment_list">Appointments Lists</NavDropdown.Item>
+        <div className="d-flex bg-primary justify-content-between align-items-center">
+          <a href="/" className="nav-link">A.Sattar</a>
+          <Nav fill variant="tabs">
+            <Nav.Link as={NavLink} to="/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/about" className="nav-link">
+              About
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/contact" className="nav-link">
+              Contact
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/recent_work" className="nav-link">
+              Recent Work
+            </Nav.Link>
+            <NavDropdown title="Favorite Project" id="nav-dropdown">
+              <NavDropdown.Item href="/"> Project-1</NavDropdown.Item>
+              <NavDropdown.Item href="/"> Project-2</NavDropdown.Item>
+              <NavDropdown.Item href="/"> Project-3</NavDropdown.Item>
+              <NavDropdown.Item href="/"> Project-4</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
-          </div>
-          <div className="d-flex align-items-center justify-content-between p-3 social_media">
-            <Nav.Link href="https://www.facebook.com/your_facebook_profile_url" target="_blank">
-              <FaFacebookF />
-            </Nav.Link>
-            <Nav.Link href="https://www.google.com/your_google_plus_profile_url" target="_blank">
-              <FaGooglePlusG />
-            </Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/your_linkedin_profile_url" target="_blank">
-              <FaLinkedinIn />
-            </Nav.Link>
-            <Nav.Link href="https://www.google.com/your_google_drive_url" target="_blank">
-              <FaGoogleDrive />
-            </Nav.Link>
-            <Nav.Link href="https://www.twitter.com/your_twitter_profile_url" target="_blank">
-              <FaTwitter />
-            </Nav.Link>
-          </div>
+          </Nav>
         </div>
       ) : (
         <>
-          <div className="nav-toggle-button">
-            <Button type="button" onClick={toggleOffcanvas}>
-              {showOffcanvas ? <FaXmark /> : <FaBars />}
-            </Button>
-          </div>
-
+          {renderMobileNavToggle}
           <Offcanvas show={showOffcanvas} onHide={() => setShowOffcanvas(false)}>
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>Menu</Offcanvas.Title>
             </Offcanvas.Header>
-            <Offcanvas.Body />
+            <Offcanvas.Body>
+              {/* Add Offcanvas content here */}
+            </Offcanvas.Body>
           </Offcanvas>
         </>
       )}
-
     </>
   );
-}
+};
 
 export default NavBar;
