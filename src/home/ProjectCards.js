@@ -1,74 +1,35 @@
-import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
-import projectInfo from '../data/projectInfo.json';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { v4 as uuid } from 'uuid';
+import Tippy from '@tippyjs/react';
+import projectInfo from '../data/projectInfo';
 
-function ProjectCards() {
-  const navigate = useNavigate();
-  const handleSeeMore = () => {
-    navigate('/recent_work');
-  };
-
-  const [currentGroupIndex, setCurrentGroupIndex] = useState(0);
-
+const ProjectCards = () => {
   if (!projectInfo || projectInfo.length === 0) {
-    return <div>No doctors found.</div>;
+    return <div>No projects found.</div>;
   }
 
-  const groupSize = 3;
-  const totalGroups = Math.ceil(projectInfo.length / groupSize);
-
-  const handleNextGroup = () => {
-    setCurrentGroupIndex((prevIndex) => (prevIndex + 1) % totalGroups);
-  };
-
-  const handlePrevGroup = () => {
-    setCurrentGroupIndex((prevIndex) => (prevIndex - 1 + totalGroups) % totalGroups);
-  };
-
-  setTimeout(() => {
-    handleNextGroup();
-  }, 19000);
-
   return (
-    <>
-      <div className="d-flex justify-content-between align-items-center m-0 p-0">
-        <button
-          type="button"
-          className="btn btn-primary rounded-end-pill"
-          onClick={handlePrevGroup}
-          disabled={currentGroupIndex === 0}
-        >
-          Prev
-        </button>
-        <div className="card-group w-100">
-          {projectInfo
-            .slice(currentGroupIndex * groupSize, (currentGroupIndex + 1) * groupSize)
-            .map((project) => (
-              <div key={project.id} className="card d-flex align-items-center">
-                <img src={project.image} alt={project.name} />
-                <div className="card-body">
-                  <p className="card-title">{project.name}</p>
-                  <p className="card-text">{project.link}</p>
-                </div>
-              </div>
-            ))}
-        </div>
-
-        <button
-          type="button"
-          className="btn btn-primary rounded-start-pill"
-          onClick={handleNextGroup}
-          disabled={currentGroupIndex === totalGroups - 1}
-        >
-          Next
-        </button>
-      </div>
-      <div className="d-flex flex-column align-items-center">
-        <Button onClick={handleSeeMore}>See More </Button>
-      </div>
-    </>
+    <div className="projectCard">
+      {projectInfo.map((project) => (
+        <Link to={`/recent_work/${project.id}`} key={project.id}>
+          <Tippy content="To See Project Details Please Click On It">
+            <div className="boxshadow">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="d-block w-100 h-100"
+              />
+              <p>{project.title}</p>
+              <ul className="d-flex justify-content-between">
+                {project.technologies.map((tech) => <li key={uuid()} className="techStyle">{tech}</li>)}
+              </ul>
+            </div>
+          </Tippy>
+        </Link>
+      ))}
+    </div>
   );
-}
+};
 
 export default ProjectCards;
