@@ -70,12 +70,12 @@
   font-weight: 600;
 }
 
- .mainContainer {
+.mainContainer {
   padding: 2rem;
   background-color: var(--pale-gray);
 }
 
- .subcontainer {
+.subcontainer {
   border-radius: 4px;
   box-shadow: 14px 17px 32px 5px #00000036;
   background-color: var(--z);
@@ -121,7 +121,6 @@
 }
 
 @keyframes shake {
-
   0%,
   100% {
     transform: translateX(0);
@@ -174,7 +173,7 @@
 
 .techStyle:hover {
   background-color: var(--z);
-  color: var(--medium-blue)  ;
+  color: var(--medium-blue);
   animation: shake 0.5s infinite;
   transform-origin: center;
 }
@@ -190,6 +189,6 @@
   }
 
   .Welcome {
-     font-size: 1rem;
-    }
+    font-size: 1rem;
+  }
 }
