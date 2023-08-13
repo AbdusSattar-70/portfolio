@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import {
-  Nav, NavDropdown, Button, Offcanvas,
+  Nav, Navbar, Offcanvas,
 } from 'react-bootstrap';
 import { FaBars, FaXmark } from 'react-icons/fa6';
-import './nav.css';
+import logo from '../assets/logo.png';
 
 const NavBar = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -26,14 +26,22 @@ const NavBar = () => {
 
   // Responsive navigation toggle for small screens
   const renderMobileNavToggle = (
-    <div className="d-flex justify-content-between align-items-center">
+    <div className="d-flex justify-content-between align-items-center bg-white p-4">
       <div className="d-flex align-items-center">
-        <a href="/" className="m-0 ms-2">A.Sattar</a>
+        <Navbar.Brand href="/">
+          <img
+            src={logo}
+            width="30"
+            height="30"
+            className="d-inline-block align-top logo"
+            alt="logo"
+          />
+        </Navbar.Brand>
       </div>
       <div className="nav-toggle-button">
-        <Button type="button" onClick={toggleOffcanvas}>
+        <button type="button" className="humIcon" onClick={toggleOffcanvas}>
           {showOffcanvas ? <FaXmark /> : <FaBars />}
-        </Button>
+        </button>
       </div>
     </div>
   );
@@ -41,29 +49,32 @@ const NavBar = () => {
   return (
     <>
       {isLargeScreen ? (
-        <div className="d-flex bg-primary justify-content-between align-items-center">
-          <a href="/" className="nav-link">A.Sattar</a>
-          <Nav fill variant="tabs">
-            <Nav.Link as={NavLink} to="/">
-              Home
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/about" className="nav-link">
-              About
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/contact" className="nav-link">
-              Contact
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/recent_work" className="nav-link">
-              Recent Work
-            </Nav.Link>
-            <NavDropdown title="Favorite Project" id="nav-dropdown">
-              <NavDropdown.Item href="/"> Project-1</NavDropdown.Item>
-              <NavDropdown.Item href="/"> Project-2</NavDropdown.Item>
-              <NavDropdown.Item href="/"> Project-3</NavDropdown.Item>
-              <NavDropdown.Item href="/"> Project-4</NavDropdown.Item>
-              <NavDropdown.Divider />
-            </NavDropdown>
-          </Nav>
+        <div className="navMainContainer sticky-top">
+          <div className="d-flex bg-white justify-content-between align-items-center">
+            <Navbar.Brand href="/">
+              <img
+                src={logo}
+                width="30"
+                height="30"
+                className="d-inline-block align-top logo"
+                alt="logo"
+              />
+            </Navbar.Brand>
+            <Nav fill variant="tabs">
+              <Nav.Link as={NavLink} to="/">
+                Home
+              </Nav.Link>
+              <Nav.Link as={NavLink} to="/about" className="nav-link">
+                About
+              </Nav.Link>
+              <Nav.Link as={NavLink} to="/contact" className="nav-link">
+                Contact
+              </Nav.Link>
+              <Nav.Link as={NavLink} to="/recent_work" className="nav-link">
+                Recent Work
+              </Nav.Link>
+            </Nav>
+          </div>
         </div>
       ) : (
         <>
@@ -73,7 +84,31 @@ const NavBar = () => {
               <Offcanvas.Title>Menu</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              {/* Add Offcanvas content here */}
+              <div className="d-flex bg-white flex-column justify-content-between">
+                <Navbar.Brand href="/">
+                  <img
+                    src={logo}
+                    width="70"
+                    height="70"
+                    className="d-inline-block align-top"
+                    alt="logo"
+                  />
+                </Navbar.Brand>
+                <Nav fill variant="tabs" className="align-items-start customFontOffCanvas flex-column">
+                  <Nav.Link as={NavLink} to="/">
+                    Home
+                  </Nav.Link>
+                  <Nav.Link as={NavLink} to="/about" className="nav-link">
+                    About
+                  </Nav.Link>
+                  <Nav.Link as={NavLink} to="/contact" className="nav-link">
+                    Contact
+                  </Nav.Link>
+                  <Nav.Link as={NavLink} to="/recent_work" className="nav-link">
+                    Recent Work
+                  </Nav.Link>
+                </Nav>
+              </div>
             </Offcanvas.Body>
           </Offcanvas>
         </>
