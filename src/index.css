@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
+  text-decoration: none ;
   font-family: var(--font-family-monts);
 }
 
@@ -45,7 +45,7 @@
 }
 
 .boxshadow {
-  background-color: #8ba1f75c;
+  background-color: var(--z);
   box-shadow: 0 0 10px #0000001a;
   padding: 20px;
   border-radius: 10px;
@@ -56,6 +56,19 @@
 .boxshadow:hover {
   background-color: #99d2f65c;
 }
+
+
+/* .projectItem {
+  display: flex;
+  background-color: var(--very-light-pink);
+  border-radius: 8px;
+  box-shadow: 3px 10px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projectItem:hover {
+  transform: translateY(-5px);
+} */
 
 .humIcon {
   border: none;
@@ -75,6 +88,7 @@
   background-color: var(--pale-gray);
 }
 
+.projectItem,
 .subcontainer {
   border-radius: 4px;
   box-shadow: 14px 17px 32px 5px #00000036;
@@ -109,6 +123,10 @@
   max-height: 58vh;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.button a {
+  color: var(--white-two) !important;
 }
 
 .projectCard a {
@@ -160,7 +178,7 @@
 }
 
 .iconSize:hover {
-  color: var(--very-light-pink);
+  color: var(--white-two);
   animation: shake 0.5s infinite;
   transform-origin: center;
 }
@@ -172,8 +190,8 @@
 }
 
 .techStyle:hover {
-  background-color: var(--z);
-  color: var(--medium-blue);
+  background-color: var(--cool-blue);
+  color: var(--z);
   animation: shake 0.5s infinite;
   transform-origin: center;
 }
@@ -191,4 +209,27 @@
   .Welcome {
     font-size: 1rem;
   }
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: var(--white-two);
+  background-color:var(--azure);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px var(--very-light-pink);
+}
+
+.button:hover {
+  background-color:var(--medium-blue)
+}
+
+.button:active {
+  background-color: var(--cool-blue);
+  box-shadow: 0 5px var(--pale-gray);
+  transform: translateY(4px);
 }
