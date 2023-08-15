@@ -9,6 +9,7 @@ import pdf from '../data/resume.pdf';
 
 const NavBar = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
+
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
 
   const toggleOffcanvas = () => {
@@ -36,7 +37,7 @@ const NavBar = () => {
 
   // Responsive navigation toggle for small screens
   const renderMobileNavToggle = (
-    <div className="d-flex justify-content-between align-items-center bg-white p-4">
+    <div className="d-flex justify-content-between align-items-center bg-white p-4 sticky-top">
       <div className="d-flex align-items-center">
         <Navbar.Brand href="/">
           <img
@@ -108,16 +109,16 @@ const NavBar = () => {
                   />
                 </Navbar.Brand>
                 <Nav fill variant="tabs" className="align-items-start customFontOffCanvas flex-column">
-                  <Nav.Link as={NavLink} to="/">
+                  <Nav.Link as={NavLink} to="/" onClick={() => setShowOffcanvas(false)}>
                     Home
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/about" className="nav-link">
+                  <Nav.Link as={NavLink} to="/about" className="nav-link" onClick={() => setShowOffcanvas(false)}>
                     About
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/contact" className="nav-link">
+                  <Nav.Link as={NavLink} to="/contact" className="nav-link" onClick={() => setShowOffcanvas(false)}>
                     Contact
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/recent_work" className="nav-link">
+                  <Nav.Link as={NavLink} to="/recent_work" className="nav-link" onClick={() => setShowOffcanvas(false)}>
                     Recent Work
                   </Nav.Link>
                 </Nav>

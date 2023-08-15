@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { Button, Form, Toast } from 'react-bootstrap';
+import Footer from './Footer';
 
 const Contact = () => {
   const [state, handleSubmit] = useForm('mnqydkga');
@@ -106,6 +107,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
 
   );
