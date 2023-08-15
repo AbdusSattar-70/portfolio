@@ -45,7 +45,7 @@
 }
 
 .boxshadow {
-  background-color: #8ba1f75c;
+  background-color: var(--z);
   box-shadow: 0 0 10px #0000001a;
   padding: 20px;
   border-radius: 10px;
@@ -55,6 +55,30 @@
 
 .boxshadow:hover {
   background-color: #99d2f65c;
+}
+
+.boxshadowRecent {
+  box-shadow: -7px 7px 32px 30px #64e0e029;
+  background-color: var(--z);
+  margin: 3rem !important;
+}
+
+.custom-modal {
+  max-width: 90vw !important;
+  margin: 0 auto;
+}
+
+.projectCardBtn {
+  border: none;
+  outline: none;
+}
+
+.projectImg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.projectImg:hover {
+  transform: scale(1.05);
 }
 
 .humIcon {
@@ -75,6 +99,7 @@
   background-color: var(--pale-gray);
 }
 
+.projectItem,
 .subcontainer {
   border-radius: 4px;
   box-shadow: 14px 17px 32px 5px #00000036;
@@ -105,10 +130,32 @@
   background-color: var(--white-two);
 }
 
+.modal-header {
+  box-shadow: 3px 3px 3px #1af9f956;
+  background-color: var(--white-two) !important;
+  margin: 0.5rem !important;
+}
+
+.displayNone {
+  height: 3rem;
+  margin: 0 0 0.6rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  border: solid 2px #e8e8e8;
+  background-color: var(--white-two);
+}
+
+.displayNone p {
+  visibility: hidden;
+}
+
 .scrollable {
   max-height: 58vh;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.button a {
+  color: var(--white-two) !important;
 }
 
 .projectCard a {
@@ -166,23 +213,40 @@
 }
 
 .techStyle {
-  border: 1px solid var(--very-light-pink);
-  padding: 0.5rem 1rem;
-  transition: background-color 0.3s, transform 0.3s;
+  padding: 2px 3px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s, border 0.3s;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 4px rgba(2, 126, 235, 0.1);
 }
 
 .techStyle:hover {
-  background-color: var(--z);
-  color: var(--medium-blue);
+  color: var(--cool-blue);
   animation: shake 0.5s infinite;
   transform-origin: center;
+  border-color: var(--cool-blue);
+}
+
+.getResume {
+  border: 1px solid rgba(255, 72, 0, 0.684) !important;
+  border-radius: 0 !important;
+}
+
+.social-media-overlay {
+  position: absolute;
+  top: 60%;
+  left: 17%;
+  display: flex;
+  gap: 30%;
+  z-index: 1;
 }
 
 .logo {
   animation: moveLogo 1s linear infinite;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
   .techStyle {
     padding: 0.3rem;
     font-size: 14px;
@@ -191,4 +255,41 @@
   .Welcome {
     font-size: 1rem;
   }
+
+  .social-media-overlay {
+    gap: 7%;
+  }
+
+  .iconSize {
+    height: 1em;
+    width: 1em;
+  }
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: var(--white-two);
+  background-color: var(--azure);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px var(--very-light-pink);
+}
+
+.button:hover {
+  background-color: var(--medium-blue);
+}
+
+.button:active {
+  background-color: var(--cool-blue);
+  box-shadow: 0 5px var(--pale-gray);
+  transform: translateY(4px);
+}
+
+.modalBtn {
+  padding: 5px 15px;
+  font-size: 16px;
 }

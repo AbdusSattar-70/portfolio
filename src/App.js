@@ -4,7 +4,6 @@ import Home from './home/Home';
 import RecentWork from './RecentWork';
 import Contact from './Contact';
 import About from './About';
-import RecentWorkDetails from './RecentWorkDetails';
 import NavBar from './navbar/NavBar';
 
 const App = () => (
@@ -15,7 +14,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/recent_work" element={<RecentWork />} />
-          <Route path="/recent_work/:id" element={<RecentWorkDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
         </Routes>

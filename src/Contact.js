@@ -45,15 +45,14 @@ const Contact = () => {
               <div className="boxshadow">
                 <Form onSubmit={handleFormSubmit}>
                   <Form.Group controlId="name" className="mb-2">
-                    <Form.Control type="text" name="name" placeholder="Name" required autoComplete="name" />
+                    <Form.Control type="text" name="name" placeholder="What's Your Name?" required autoComplete="name" />
                   </Form.Group>
                   <Form.Group controlId="email" className="mb-2">
                     <Form.Control
                       type="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder="What's Your Email?"
                       required
-                      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
                     />
                     <ValidationError
                       prefix="Email"
@@ -77,7 +76,7 @@ const Contact = () => {
                       errors={state.errors}
                     />
                   </Form.Group>
-                  <Button variant="primary" type="submit" disabled={state.submitting} className="mb-2 w-100">
+                  <Button variant="primary" type="submit" disabled={state.submitting} className="mb-2 w-100 button">
                     Submit
                   </Button>
                 </Form>

@@ -5,6 +5,7 @@ import {
 } from 'react-bootstrap';
 import { FaBars, FaXmark } from 'react-icons/fa6';
 import logo from '../assets/logo.png';
+import pdf from '../data/resume.pdf';
 
 const NavBar = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -23,6 +24,15 @@ const NavBar = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  const handleResumeLinkClick = () => {
+    const link = document.createElement('a');
+    link.href = pdf;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.download = 'sattar_resume.pdf';
+    link.click();
+  };
 
   // Responsive navigation toggle for small screens
   const renderMobileNavToggle = (
@@ -72,6 +82,9 @@ const NavBar = () => {
               </Nav.Link>
               <Nav.Link as={NavLink} to="/recent_work" className="nav-link">
                 Recent Work
+              </Nav.Link>
+              <Nav.Link className="nav-link getResume" onClick={handleResumeLinkClick}>
+                Get Resume
               </Nav.Link>
             </Nav>
           </div>

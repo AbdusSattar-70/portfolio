@@ -18,7 +18,7 @@ const Home = () => (
     <div className="row">
       <div className="col-lg-6 mb-4">
         <div className="d-flex justify-content-center align-items-center">
-          <div className="boxshadow">
+          <div className="boxshadow projectImg">
             <h1>
               Hey There,
               <br />
