@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none ;
+  text-decoration: none;
   font-family: var(--font-family-monts);
 }
 
@@ -57,11 +57,10 @@
   background-color: #99d2f65c;
 }
 
-
 .boxshadowRecent {
-      box-shadow: -7px 7px 32px 30px #64e0e029;
-        background-color: var(--z);
-        margin: 3rem !important;
+  box-shadow: -7px 7px 32px 30px #64e0e029;
+  background-color: var(--z);
+  margin: 3rem !important;
 }
 
 .custom-modal {
@@ -131,7 +130,7 @@
   background-color: var(--white-two);
 }
 
-.modal-header{
+.modal-header {
   box-shadow: 3px 3px 3px #1af9f956;
   background-color: var(--white-two) !important;
   margin: 0.5rem !important;
@@ -139,10 +138,10 @@
 
 .displayNone {
   height: 3rem;
-    margin: 0 0 0.6rem;
-    padding: 1.438rem 6.188rem 1.688rem 6.25rem;
-    border: solid 2px #e8e8e8;
-    background-color: var(--white-two);
+  margin: 0 0 0.6rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  border: solid 2px #e8e8e8;
+  background-color: var(--white-two);
 }
 
 .displayNone p {
@@ -235,12 +234,12 @@
 }
 
 .social-media-overlay {
-    position: absolute;
-      top: 60%;
-      left: 17%;
-      display: flex;
-      gap: 30%;
-      z-index: 1;
+  position: absolute;
+  top: 60%;
+  left: 17%;
+  display: flex;
+  gap: 30%;
+  z-index: 1;
 }
 
 .logo {
@@ -257,14 +256,14 @@
     font-size: 1rem;
   }
 
-    .social-media-overlay {
-        gap: 7%;
-    }
+  .social-media-overlay {
+    gap: 7%;
+  }
 
-        .iconSize {
-          height: 1em;
-          width: 1em;
-        }
+  .iconSize {
+    height: 1em;
+    width: 1em;
+  }
 }
 
 .button {
@@ -274,14 +273,14 @@
   cursor: pointer;
   outline: none;
   color: var(--white-two);
-  background-color:var(--azure);
+  background-color: var(--azure);
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px var(--very-light-pink);
 }
 
 .button:hover {
-  background-color:var(--medium-blue)
+  background-color: var(--medium-blue);
 }
 
 .button:active {
@@ -292,5 +291,5 @@
 
 .modalBtn {
   padding: 5px 15px;
-    font-size: 16px;
+  font-size: 16px;
 }
