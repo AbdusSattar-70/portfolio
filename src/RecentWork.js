@@ -1,7 +1,7 @@
 import React from 'react';
 import { v4 as uuid } from 'uuid';
 import { Row, Col } from 'react-bootstrap';
-import { FaGithub, FaArrowUpRightFromSquare } from 'react-icons/fa6';
+import { FaGithub, FaArrowUpRightFromSquare, FaHandsHoldingCircle } from 'react-icons/fa6';
 import projectInfo from './data/projectInfo';
 
 const RecentWork = () => {
@@ -10,22 +10,30 @@ const RecentWork = () => {
   }
 
   return (
-    <div className="projectCard">
+    <div className="projectCard ">
       {projectInfo.map((project) => (
         <div key={project.id}>
-          <Row>
-            <Col md={4} className="mb-4">
+          <Row className="border boxshadowRecent projectImg">
+            <Col md={4} className="mx-0 px-0">
               <img
                 src={project.image}
                 alt={project.title}
-                className="d-block w-100 h-100 projectItem"
+                className="d-block w-100 h-100 projectImg"
               />
             </Col>
-            <Col md={8}>
+            <Col md={8} className="p-4">
               <div>
-                <h3>{project.title}</h3>
+                <h3>
+                  {project.title}
+                  {' '}
+                  <span>
+                    <FaHandsHoldingCircle className="iconSize" />
+                    {' '}
+                    {project.made}
+                  </span>
+                </h3>
                 <p>{project.description}</p>
-                <ul className="techList d-flex">
+                <ul className="techList d-flex justify-content-between">
                   {project.technologies.map((tech) => (
                     <li key={uuid()} className="techStyle">
                       {tech}
@@ -34,23 +42,26 @@ const RecentWork = () => {
                 </ul>
               </div>
               <div className="d-flex justify-content-between">
-                <button type="button" className="button">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <button type="button" className="button modalBtn">
                     <FaArrowUpRightFromSquare />
                     {' '}
                     See Live
-                  </a>
-                </button>
-                <button type="button" className="button">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  </button>
+                </a>
+                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <button type="button" className="button modalBtn">
                     <FaGithub />
                     {' '}
                     Source
-                  </a>
-                </button>
+                  </button>
+                </a>
               </div>
             </Col>
           </Row>
+          <div className="displayNone">
+            <p>display none</p>
+          </div>
         </div>
       ))}
     </div>
