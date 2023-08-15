@@ -44,7 +44,7 @@ const About = () => (
     </Row>
     <Row className="mt-4">
       <Col>
-        <h2>SUMMARY</h2>
+        <h2>About Me</h2>
         <p>
           Software Engineer with a strong background in building scalable web
           applications for mid-sized companies. Proficient in all aspects of
@@ -65,7 +65,11 @@ const About = () => (
       <Col>
         <h2>EXPERIENCE</h2>
         <p>
-          Microverse, Remote
+          <strong>
+            <a href="https://www.microverse.org" target="_blank" rel="noopener noreferrer">
+              MICROVERSE, Remote
+            </a>
+          </strong>
           <br />
           <strong>Code Reviewer · Part-time</strong>
           <br />
@@ -77,7 +81,11 @@ const About = () => (
           Evaluate code clarity, style, and best practices on project Pull Requests.
         </p>
         <p>
-          MICROVERSE, Remote
+          <strong>
+            <a href="https://www.microverse.org" target="_blank" rel="noopener noreferrer">
+              MICROVERSE, Remote
+            </a>
+          </strong>
           <br />
           <strong>Mentor (Volunteer)</strong>
           <br />
@@ -89,7 +97,11 @@ const About = () => (
           motivation to maintain longevity in the program.
         </p>
         <p>
-          Bangladesh Rural Electrification Board, Dhaka, Bangladesh
+          <strong>
+            <a href="http://www.reb.gov.bd/" target="_blank" rel="noopener noreferrer">
+              Bangladesh Rural Electrification Board, Dhaka, Bangladesh
+            </a>
+          </strong>
           <br />
           <strong>Line Technician</strong>
           <br />
@@ -110,7 +122,11 @@ const About = () => (
       <Col>
         <h2>EDUCATION</h2>
         <p>
-          <strong>MICROVERSE, January 2023– present</strong>
+          <strong>
+            <a href="https://www.microverse.org" target="_blank" rel="noopener noreferrer">
+              MICROVERSE, January 2023– present
+            </a>
+          </strong>
           <br />
           <em>Remote Full Stack Web Development Program, Full Time</em>
           <br />
